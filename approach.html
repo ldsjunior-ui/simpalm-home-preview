@@ -347,7 +347,7 @@
 }
 </script>
 
-<link rel="stylesheet" href="assets/css/site-approach.17f2bdc9c8.css">
+<link rel="stylesheet" href="assets/css/site-approach.4af218ce2c.css">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to main content</a>
@@ -425,7 +425,7 @@
      Art: an isometric gold circuit board drawn on canvas. Process, People and Price chips feed one Product chip; pulses travel the
      traces. The four legend buttons drive it (keyboard, touch), the canvas is decorative. Namespace: .aph-* -->
 <section class="aph on-dark" id="ap-hero" aria-labelledby="aph-title">
-  <div class="aph-bg" aria-hidden="true"><div class="aph-blueprint"></div><div class="noise"></div></div>
+  <div class="aph-bg" aria-hidden="true"><div class="aph-blueprint"></div><canvas class="aph-bgcv" id="aph-bgcv"></canvas><div class="aph-vignette"></div><div class="noise"></div></div>
   <div class="container aph-wrap">
     <div class="aph-copy">
       <nav class="aph-crumbs" aria-label="Breadcrumb">
@@ -451,6 +451,7 @@
     <figure class="aph-art" aria-labelledby="aph-art-cap">
       <div class="aph-stage">
         <canvas class="aph-cv" id="aph-cv" aria-hidden="true"></canvas>
+        <span class="aph-hint" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16"><path d="M4 12h16M4 12l4-4M4 12l4 4M20 12l-4-4M20 12l-4 4"/></svg><span class="aph-hint-m">Drag to rotate</span> <span class="aph-hint-t">Swipe to rotate</span></span>
       </div>
       <div class="aph-tip" id="aph-tip" role="status" aria-live="polite"><b class="aph-tip-k">Product</b> <span class="aph-tip-v">Fully-formed project designs, accurate time and cost estimates, and sensible sprint plans.</span></div>
       <figcaption class="sr-only" id="aph-art-cap">Process, People and Price, drawn as three chips on a gold circuit board, all feeding one Product chip.</figcaption>
@@ -480,8 +481,9 @@
       <p class="apw-p reveal" data-delay="1">Methodology purists might label our up-front process,  Waterfall. We at Simpalm don’t care about labels. Results are what matters. Simpalm’s process outlined below yields fully-formed project designs, accurate time and cost estimates, and sensible sprint plans.</p>
     </div>
 
-    <figure class="apw-art reveal" data-reveal="scale" data-mode="hybrid">
+    <figure class="apw-art reveal" data-reveal="scale" data-mode="hybrid" data-tilt data-tilt-max="6">
       <div class="apw-switch" role="group" aria-label="Compare the three ways of working">
+        <span class="apw-pill" aria-hidden="true"></span>
         <button type="button" class="apw-btn" data-mode="waterfall" aria-pressed="false">Waterfall</button>
         <button type="button" class="apw-btn" data-mode="agile" aria-pressed="false">Agile</button>
         <button type="button" class="apw-btn" data-mode="hybrid" aria-pressed="true">The Simpalm Way</button>
@@ -491,6 +493,9 @@
           <title id="apw-svg-t">The six steps: Discovery and Ideation, Planning, Design, Development, Testing and Launch, Support and Enhancements</title>
           <defs>
             <linearGradient id="apw-g" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#F3D98B"/><stop offset=".5" stop-color="#D4A83F"/><stop offset="1" stop-color="#B8892B"/></linearGradient>
+            <filter id="apw-lift" x="-20%" y="-30%" width="140%" height="190%"><feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#0E345B" flood-opacity=".22"/></filter>
+            <filter id="apw-glow" x="-200%" y="-200%" width="500%" height="500%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+            <radialGradient id="apw-tokg"><stop offset="0" stop-color="#FFF4D6"/><stop offset=".55" stop-color="#E6C25F"/><stop offset="1" stop-color="#B8892B"/></radialGradient>
                       </defs>
           <!-- the up-front zone and the sprint loop, shown per mode -->
           <g class="apw-zone apw-zone--front"><rect x="14" y="20" width="236" height="300" rx="22"/><text x="34" y="50">Up front · deep dives</text></g>
@@ -501,13 +506,18 @@
           <path class="apw-wire apw-wire--hybrid" d="M132 112 V148 M132 188 V236 M198 257 C232 257 236 200 248 194"/>
           <ellipse class="apw-ring apw-ring--hybrid" cx="410" cy="190" rx="92" ry="106"/>
           <!-- six step nodes; every mode moves them with transform only -->
-          <g class="apw-node n0" style="--i:0"><rect x="-66" y="-19" width="132" height="38" rx="19"/><text y="5">Discovery</text></g>
-          <g class="apw-node n1" style="--i:1"><rect x="-66" y="-19" width="132" height="38" rx="19"/><text y="5">Planning</text></g>
-          <g class="apw-node n2" style="--i:2"><rect x="-66" y="-19" width="132" height="38" rx="19"/><text y="5">Design</text></g>
-          <g class="apw-node n3" style="--i:3"><rect x="-66" y="-19" width="132" height="38" rx="19"/><text y="5">Development</text></g>
-          <g class="apw-node n4" style="--i:4"><rect x="-66" y="-19" width="132" height="38" rx="19"/><text y="5">Testing &amp; Launch</text></g>
-          <g class="apw-node n5" style="--i:5"><rect x="-66" y="-19" width="132" height="38" rx="19"/><text y="5">Support</text></g>
+          <g class="apw-node n0" style="--i:0" filter="url(#apw-lift)"><rect x="-66" y="-19" width="132" height="38" rx="19"/><text y="5">Discovery</text></g>
+          <g class="apw-node n1" style="--i:1" filter="url(#apw-lift)"><rect x="-66" y="-19" width="132" height="38" rx="19"/><text y="5">Planning</text></g>
+          <g class="apw-node n2" style="--i:2" filter="url(#apw-lift)"><rect x="-66" y="-19" width="132" height="38" rx="19"/><text y="5">Design</text></g>
+          <g class="apw-node n3" style="--i:3" filter="url(#apw-lift)"><rect x="-66" y="-19" width="132" height="38" rx="19"/><text y="5">Development</text></g>
+          <g class="apw-node n4" style="--i:4" filter="url(#apw-lift)"><rect x="-66" y="-19" width="132" height="38" rx="19"/><text y="5">Testing &amp; Launch</text></g>
+          <g class="apw-node n5" style="--i:5" filter="url(#apw-lift)"><rect x="-66" y="-19" width="132" height="38" rx="19"/><text y="5">Support</text></g>
+          <!-- a token of light runs the active route (SMIL, paused off screen and with reduced motion) -->
+          <g class="apw-tok apw-tok--waterfall"><circle r="7" fill="url(#apw-tokg)" filter="url(#apw-glow)"><animateMotion dur="4.8s" repeatCount="indefinite" calcMode="linear" path="M92 55 H168 V99 H244 V143 H320 V187 H396 V231 H472 V275"/></circle></g>
+          <g class="apw-tok apw-tok--agile"><circle r="7" fill="url(#apw-tokg)" filter="url(#apw-glow)"><animateMotion dur="6s" repeatCount="indefinite" path="M280 68 A190 118 0 1 1 279.9 68 Z"/></circle></g>
+          <g class="apw-tok apw-tok--hybrid"><circle r="7" fill="url(#apw-tokg)" filter="url(#apw-glow)"><animateMotion dur="7.5s" repeatCount="indefinite" calcMode="paced" path="M132 93 V169 V257 C232 257 236 200 318 190 A92 106 0 1 1 502 190 A92 106 0 1 1 318 190 A92 106 0 1 1 502 190 A92 106 0 1 1 318 190"/></circle></g>
         </svg>
+        <span class="apw-glass" aria-hidden="true"></span>
       </div>
       <figcaption class="apw-cap" aria-live="polite">
         <span class="apw-cap-t" data-for="waterfall">“Methodology purists might label our up-front process,  Waterfall.”</span>
@@ -547,7 +557,7 @@
       <div class="aps-panels">
 
         <article class="aps-panel is-active" role="tabpanel" id="aps-p-1" aria-labelledby="aps-tab-1" tabindex="0">
-          <div class="aps-art aps-art--1" aria-hidden="true">
+          <div class="aps-art aps-art--1" aria-hidden="true" data-tilt data-tilt-max="7"><span class="aps-floor"></span><span class="aps-scan"></span>
             <svg viewBox="0 0 420 220"><g class="aps-board"><rect x="20" y="18" width="250" height="168" rx="14"/></g>
               <g class="aps-notes"><rect class="aps-note" style="--d:0" x="40" y="40" width="58" height="44" rx="6"/><rect class="aps-note" style="--d:1" x="110" y="40" width="58" height="44" rx="6"/><rect class="aps-note" style="--d:2" x="180" y="40" width="58" height="44" rx="6"/><rect class="aps-note aps-note--b" style="--d:3" x="40" y="100" width="58" height="44" rx="6"/><rect class="aps-note aps-note--b" style="--d:4" x="110" y="100" width="58" height="44" rx="6"/></g>
               <path class="aps-sketch" d="M186 110h60v58h-60z M196 124h40 M196 138h28 M196 152h34"/>
@@ -572,7 +582,7 @@
         </article>
 
         <article class="aps-panel" role="tabpanel" id="aps-p-2" aria-labelledby="aps-tab-2" tabindex="0">
-          <div class="aps-art aps-art--2" aria-hidden="true">
+          <div class="aps-art aps-art--2" aria-hidden="true" data-tilt data-tilt-max="7"><span class="aps-floor"></span><span class="aps-scan"></span>
             <svg viewBox="0 0 420 220"><g class="aps-grid"><path d="M60 30v160 M140 30v160 M220 30v160 M300 30v160 M380 30v160"/></g>
               <g class="aps-bars"><rect class="aps-bar" style="--d:0" x="60" width="110" y="44" height="20" rx="10"/><rect class="aps-bar" style="--d:1" x="120" width="130" y="80" height="20" rx="10"/><rect class="aps-bar" style="--d:2" x="190" width="120" y="116" height="20" rx="10"/><rect class="aps-bar" style="--d:3" x="270" width="100" y="152" height="20" rx="10"/></g>
               <g class="aps-ms"><path style="--d:0" d="M170 54l7-7 7 7-7 7z"/><path style="--d:1" d="M250 90l7-7 7 7-7 7z"/><path style="--d:2" d="M310 126l7-7 7 7-7 7z"/><path style="--d:3" d="M370 162l7-7 7 7-7 7z"/></g>
@@ -592,7 +602,7 @@
         </article>
 
         <article class="aps-panel" role="tabpanel" id="aps-p-3" aria-labelledby="aps-tab-3" tabindex="0">
-          <div class="aps-art aps-art--3" aria-hidden="true">
+          <div class="aps-art aps-art--3" aria-hidden="true" data-tilt data-tilt-max="7"><span class="aps-floor"></span><span class="aps-scan"></span>
             <svg viewBox="0 0 420 220"><g class="aps-wire"><rect x="40" y="24" width="150" height="176" rx="14"/><rect x="56" y="44" width="118" height="54" rx="6"/><path d="M56 114h118 M56 128h86 M56 142h100"/><rect x="56" y="160" width="60" height="22" rx="11"/></g>
               <path class="aps-morph-arrow" d="M204 112h26 M222 104l8 8-8 8"/>
               <g class="aps-ui-card"><rect class="aps-ui-frame" x="244" y="24" width="150" height="176" rx="14"/><rect class="aps-ui-hero" x="260" y="44" width="118" height="54" rx="8"/><circle class="aps-ui-dot" cx="282" cy="71" r="10"/><path class="aps-ui-line" d="M260 114h118 M260 128h86 M260 142h100"/><rect class="aps-ui-btn" x="260" y="160" width="60" height="22" rx="11"/></g>
@@ -613,7 +623,7 @@
         </article>
 
         <article class="aps-panel" role="tabpanel" id="aps-p-4" aria-labelledby="aps-tab-4" tabindex="0">
-          <div class="aps-art aps-art--4" aria-hidden="true">
+          <div class="aps-art aps-art--4" aria-hidden="true" data-tilt data-tilt-max="7"><span class="aps-floor"></span><span class="aps-scan"></span>
             <svg viewBox="0 0 420 220"><g class="aps-loop"><circle cx="110" cy="110" r="70"/><path class="aps-loop-run" d="M110 40a70 70 0 1 1-1 0"/><text x="110" y="104">Sprint</text><text class="aps-small" x="110" y="124">review · next</text></g>
               <g class="aps-pipe"><path d="M210 110h180"/><g class="aps-st" style="--d:0"><circle cx="228" cy="110" r="16"/><text x="228" y="146">commit</text></g><g class="aps-st" style="--d:1"><circle cx="300" cy="110" r="16"/><text x="300" y="146">test</text></g><g class="aps-st" style="--d:2"><circle cx="372" cy="110" r="16"/><text x="372" y="146">deploy</text></g>
               <path class="aps-tick" style="--d:0" d="M221 110l5 5 9-10"/><path class="aps-tick" style="--d:1" d="M293 110l5 5 9-10"/><path class="aps-tick" style="--d:2" d="M365 110l5 5 9-10"/><text class="aps-ci" x="300" y="66">CI / CD</text></g></svg>
@@ -633,7 +643,7 @@
         </article>
 
         <article class="aps-panel" role="tabpanel" id="aps-p-5" aria-labelledby="aps-tab-5" tabindex="0">
-          <div class="aps-art aps-art--5" aria-hidden="true">
+          <div class="aps-art aps-art--5" aria-hidden="true" data-tilt data-tilt-max="7"><span class="aps-floor"></span><span class="aps-scan"></span>
             <svg viewBox="0 0 420 220"><g class="aps-phone"><rect x="56" y="14" width="112" height="196" rx="20"/><rect class="aps-scr" x="66" y="34" width="92" height="156" rx="8"/><path d="M98 24h28"/></g>
               <g class="aps-build"><rect x="72" y="46" width="80" height="22" rx="11"/><text x="112" y="61">test build</text></g>
               <g class="aps-checks"><g style="--d:0"><rect x="200" y="36" width="20" height="20" rx="5"/><path class="aps-ck" d="M204 46l4 4 8-9"/><text x="232" y="51">Required behavior</text></g><g style="--d:1"><rect x="200" y="76" width="20" height="20" rx="5"/><path class="aps-ck" d="M204 86l4 4 8-9"/><text x="232" y="91">Intuitive navigation</text></g><g style="--d:2"><rect x="200" y="116" width="20" height="20" rx="5"/><path class="aps-ck" d="M204 126l4 4 8-9"/><text x="232" y="131">Minimum clicks</text></g><g style="--d:3"><rect x="200" y="156" width="20" height="20" rx="5"/><path class="aps-ck" d="M204 166l4 4 8-9"/><text x="232" y="171">End to end</text></g></g>
@@ -654,7 +664,7 @@
         </article>
 
         <article class="aps-panel" role="tabpanel" id="aps-p-6" aria-labelledby="aps-tab-6" tabindex="0">
-          <div class="aps-art aps-art--6" aria-hidden="true">
+          <div class="aps-art aps-art--6" aria-hidden="true" data-tilt data-tilt-max="7"><span class="aps-floor"></span><span class="aps-scan"></span>
             <svg viewBox="0 0 420 220"><g class="aps-lane"><rect x="20" y="22" width="120" height="176" rx="12"/><text x="80" y="44">Backlog</text></g>
               <g class="aps-cards"><rect style="--d:0" x="34" y="58" width="92" height="26" rx="7"/><rect style="--d:1" x="34" y="92" width="92" height="26" rx="7"/><rect style="--d:2" x="34" y="126" width="92" height="26" rx="7"/><rect style="--d:3" x="34" y="160" width="92" height="26" rx="7"/></g>
               <path class="aps-cad" d="M164 150h232"/>
@@ -687,8 +697,9 @@
 <!-- == pages/approach/sections/40-aptools.html == -->
 <!-- ============================ COLLABORATION TOOLS ============================
      Copy: verbatim (the reference sentence is cut off after "first-class"; completed as "first-class products." and flagged).
-     Art: the eleven tools from the reference as glass chips on a slow elliptical orbit around a Simpalm / client core (CSS trig,
-     @property angle; pauses on hover/focus, static ring without @property, plain grid on phones and with reduced motion).
+     Art: a real 3D orbit (CSS preserve-3d): the eleven tools as chips on a tilted ring around a Simpalm / client core, data spokes
+     with pulses from the core to every tool, a light arc riding the ring. Chips behind the core pass behind it. Pointer tilt and
+     drag to spin on fine pointers. Plain grid on phones, without CSS trig, and a still ring with reduced motion.
      Tool names are written as text chips (no third-party logos are copied). Category tags are plain descriptions of each tool.
      Namespace: .apt-* -->
 <section class="section section--dark apt cv spotlight" id="tools" aria-labelledby="apt-title" style="--cis:820px">
@@ -710,7 +721,9 @@
     </div>
 
     <div class="apt-orbit" aria-label="Collaboration tools" role="group">
-      <div class="apt-ring" aria-hidden="true"><span></span><span></span></div>
+      <div class="apt-scene">
+      <div class="apt-ring" aria-hidden="true"><span></span><span></span><span class="apt-arc"></span></div>
+      <div class="apt-spokes" aria-hidden="true"><span class="apt-spoke" style="--i:0"></span><span class="apt-spoke" style="--i:1"></span><span class="apt-spoke" style="--i:2"></span><span class="apt-spoke" style="--i:3"></span><span class="apt-spoke" style="--i:4"></span><span class="apt-spoke" style="--i:5"></span><span class="apt-spoke" style="--i:6"></span><span class="apt-spoke" style="--i:7"></span><span class="apt-spoke" style="--i:8"></span><span class="apt-spoke" style="--i:9"></span><span class="apt-spoke" style="--i:10"></span></div>
       <div class="apt-core" aria-hidden="true">
         <svg viewBox="0 0 64 64" width="56" height="56"><rect x="17" y="17" width="30" height="30" rx="5" fill="none" stroke="currentColor" stroke-width="2.4"/><rect x="26" y="26" width="12" height="12" rx="2" fill="currentColor"/><path d="M24 17v-8M32 17v-8M40 17v-8M24 47v8M32 47v8M40 47v8M17 24h-8M17 32h-8M17 40h-8M47 24h8M47 32h8M47 40h8" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
         <b>Simpalm</b> <span>⇄ you</span>
@@ -728,6 +741,8 @@
         <li class="apt-chip" style="--i:9"><i class="apt-c apt-c--share" aria-hidden="true"></i><b>Dropbox</b> <span>Share files</span></li>
         <li class="apt-chip" style="--i:10"><i class="apt-c apt-c--plan" aria-hidden="true"></i><b>Time Doctor</b> <span>Time tracking</span></li>
       </ul>
+      </div>
+      <span class="apt-hint" aria-hidden="true">Drag to spin</span>
     </div>
   </div>
 </section>
@@ -756,21 +771,21 @@
 
     <ul class="apm-cards" data-stagger="80">
       <li class="apm-card card beam reveal" data-model="fixed" data-tilt data-tilt-max="5">
-        <div class="apm-ico" aria-hidden="true"><svg viewBox="0 0 48 48" width="48" height="48"><rect x="8" y="12" width="32" height="26" rx="6"/><path d="M16 12V9a8 8 0 0 1 16 0v3"/><path class="apm-ico-a" d="M24 22v8M20 26h8"/></svg></div>
+        <div class="apm-ico tilt-depth" style="--depth:22" aria-hidden="true"><svg viewBox="0 0 48 48" width="48" height="48"><rect x="8" y="12" width="32" height="26" rx="6"/><path d="M16 12V9a8 8 0 0 1 16 0v3"/><path class="apm-ico-a" d="M24 22v8M20 26h8"/></svg></div>
         <span class="apm-tag">Well-defined scope</span>
-        <h3 class="h3">Fixed Cost</h3>
+        <h3 class="h3 tilt-depth" style="--depth:10">Fixed Cost</h3>
         <p>This is one of our unique selling propositions. If you have a well-defined scope, we can create a fixed-cost estimate for your product. Fixed-cost pricing is advantageous in managing project costs.</p>
       </li>
       <li class="apm-card card beam reveal" data-model="tm" data-tilt data-tilt-max="5">
-        <div class="apm-ico" aria-hidden="true"><svg viewBox="0 0 48 48" width="48" height="48"><path d="M14 8h20M14 40h20M16 8c0 10 16 12 16 16s-16 6-16 16M32 8c0 10-16 12-16 16s16 6 16 16"/><path class="apm-ico-a" d="M20 36h8"/></svg></div>
+        <div class="apm-ico tilt-depth" style="--depth:22" aria-hidden="true"><svg viewBox="0 0 48 48" width="48" height="48"><path d="M14 8h20M14 40h20M16 8c0 10 16 12 16 16s-16 6-16 16M32 8c0 10-16 12-16 16s16 6 16 16"/><path class="apm-ico-a" d="M20 36h8"/></svg></div>
         <span class="apm-tag">Exploratory research</span>
-        <h3 class="h3">Time And Materials</h3>
+        <h3 class="h3 tilt-depth" style="--depth:10">Time And Materials</h3>
         <p>A Time and Materials model is appropriate when the project scope is not clearly defined or when a project requires exploratory research and development.</p>
       </li>
       <li class="apm-card card beam reveal" data-model="team" data-tilt data-tilt-max="5">
-        <div class="apm-ico" aria-hidden="true"><svg viewBox="0 0 48 48" width="48" height="48"><circle cx="17" cy="17" r="6"/><circle cx="33" cy="17" r="6"/><path d="M6 38c1-7 6-11 11-11s10 4 11 11M22 38c1-7 6-11 11-11s10 4 11 11"/><path class="apm-ico-a" d="M24 6v6M21 9h6"/></svg></div>
+        <div class="apm-ico tilt-depth" style="--depth:22" aria-hidden="true"><svg viewBox="0 0 48 48" width="48" height="48"><circle cx="17" cy="17" r="6"/><circle cx="33" cy="17" r="6"/><path d="M6 38c1-7 6-11 11-11s10 4 11 11M22 38c1-7 6-11 11-11s10 4 11 11"/><path class="apm-ico-a" d="M24 6v6M21 9h6"/></svg></div>
         <span class="apm-tag">On retainer · on-site or remote</span>
-        <h3 class="h3">Dedicated Teams</h3>
+        <h3 class="h3 tilt-depth" style="--depth:10">Dedicated Teams</h3>
         <p>Several of our clients require dedicated software engineers on retainer basis. We provide best in class resources who will work as your extended team, either on-site or remotely to augment your pre-existing teams.</p>
       </li>
     </ul>
@@ -1738,153 +1753,308 @@ window.addEventListener('hashchange', function () { if ((window.pageYOffset || 0
 (function () {
 var root = document.getElementById('ap-hero');
 if (!root || !window.SP) return;
-var cv = document.getElementById('aph-cv'), tip = document.getElementById('aph-tip');
+var cv = document.getElementById('aph-cv'), bcv = document.getElementById('aph-bgcv'), tip = document.getElementById('aph-tip');
 var keys = [].slice.call(root.querySelectorAll('.aph-key'));
 if (!cv || !cv.getContext) return;
-var ctx = cv.getContext('2d');
+var ctx = cv.getContext('2d'), bx = bcv && bcv.getContext ? bcv.getContext('2d') : null;
 var TXT = [
 ['Process', 'Discovery & Ideation, Planning, Design, Development, Testing & Launch, Support & Enhancements.'],
 ['People', 'Simpalm business analysts, project managers, developers and designers, in collaborative sessions with the client.'],
 ['Price', 'Fixed Cost, Time And Materials or Dedicated Teams: stellar products at a fair price.'],
 ['Product', 'Fully-formed project designs, accurate time and cost estimates, and sensible sprint plans.']
 ];
-var CH = [[3, 3.1, 2.3, .55], [3.1, 8.9, 2.3, .55], [8.9, 3, 2.3, .55], [8.6, 8.6, 3.5, .8]];
+var D2R = Math.PI / 180;
+var CH = [[-3, -2.9, 2.3, .55], [-2.9, 2.9, 2.3, .55], [2.9, -3, 2.3, .55], [2.6, 2.6, 3.5, .8]];
 var BUS = [
-{ k: 0, pts: [[4.2, 3.1], [6.2, 3.1], [6.2, 6.4], [7.6, 6.4], [7.6, 6.9]] },
-{ k: 1, pts: [[4.3, 8.9], [6.9, 8.9]] },
-{ k: 2, pts: [[8.9, 4.2], [8.9, 6.9]] }
+{ k: 0, pts: [[-1.8, -2.9], [.2, -2.9], [.2, .4], [1.6, .4], [1.6, .95]] },
+{ k: 1, pts: [[-1.7, 2.9], [.9, 2.9]] },
+{ k: 2, pts: [[2.9, -1.8], [2.9, .95]] }
 ];
-var sel = 3, hover = -1, W = 0, H = 0, dpr = 1, S = 20, OX = 0, OY = 0, lift = [0, 0, 0, .25], t0 = 0;
-var C30 = Math.cos(Math.PI / 6), S30 = .5;
-function P(x, y, z) { return [OX + (x - y) * C30 * S, OY + (x + y) * S30 * S - (z || 0) * S]; }
-function size() {
-var r = cv.getBoundingClientRect(); dpr = Math.min(2, window.devicePixelRatio || 1);
-W = r.width; H = r.height; if (!W || !H) return;
-cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr);
-S = Math.min(W / 21.4, H / 13.6); OX = W / 2; OY = H * .5 - 6 * S + .9 * S;
+var LX = -.42, LY = .86, LZ = -.29; // key light (normalised)
+var sel = 3, hover = -1, W = 0, H = 0, dpr = 1, S = 20, OX = 0, OY = 0, F = 40;
+var ca = 1, sa = 0, cp = 1, sp = 0, yaw = 45, pitch = 30, t0 = 0, lastT = 0;
+var lift = [0, 0, 0, .2], dragYaw = 0, vel = 0, drag = null, idleAt = 0, scrollK = 0;
+var rnd = (function (s) { return function () { s = (s * 16807) % 2147483647; return s / 2147483647; }; })(7);
+var sparks = [], motes = [];
+for (var i = 0; i < 34; i++) sparks.push({ a: rnd() * 6.28, r: rnd() * 1.1, y: rnd() * 4, v: .6 + rnd() * .9, s: .5 + rnd() });
+for (i = 0; i < 26; i++) motes.push({ x: rnd() * 12 - 6, z: rnd() * 12 - 6, y: .6 + rnd() * 2.8, ph: rnd() * 6.28 });
+function cam() { ca = Math.cos(yaw * D2R); sa = Math.sin(yaw * D2R); cp = Math.cos(pitch * D2R); sp = Math.sin(pitch * D2R); }
+function P(x, y, z) {
+var x1 = x * ca - z * sa, z1 = x * sa + z * ca, sy = z1 * sp - y * cp, d = z1 * cp + y * sp, k = F / (F - d);
+return [OX + x1 * S * k, OY + sy * S * k, d, k];
+}
+function facing(nx, ny, nz) { return (nx * sa + nz * ca) * cp + ny * sp; }
+function lit(rgb, nx, ny, nz, amb) {
+var d = Math.max(0, nx * LX + ny * LY + nz * LZ), f = (amb || .48) + .62 * d;
+return 'rgb(' + Math.min(255, rgb[0] * f | 0) + ',' + Math.min(255, rgb[1] * f | 0) + ',' + Math.min(255, rgb[2] * f | 0) + ')';
 }
 function poly(pts, fill, stroke, lw) {
-ctx.beginPath(); pts.forEach(function (p, i) { i ? ctx.lineTo(p[0], p[1]) : ctx.moveTo(p[0], p[1]); }); ctx.closePath();
+ctx.beginPath(); for (var i = 0; i < pts.length; i++) i ? ctx.lineTo(pts[i][0], pts[i][1]) : ctx.moveTo(pts[i][0], pts[i][1]); ctx.closePath();
 if (fill) { ctx.fillStyle = fill; ctx.fill(); }
 if (stroke) { ctx.strokeStyle = stroke; ctx.lineWidth = lw || 1; ctx.stroke(); }
 }
-function slab() {
-var a = P(0, 0, 0), b = P(12, 0, 0), c = P(12, 12, 0), d = P(0, 12, 0), T = .55;
-var b2 = P(12, 0, -T), c2 = P(12, 12, -T), d2 = P(0, 12, -T);
-poly([b, c, c2, b2], '#0B2C52'); poly([d, c, c2, d2], '#081F3D');
-var g = ctx.createLinearGradient(a[0], a[1], c[0], c[1]); g.addColorStop(0, '#123E6E'); g.addColorStop(1, '#0C2E57');
-poly([a, b, c, d], g, 'rgba(212,168,63,.55)', 1.2);
-ctx.strokeStyle = 'rgba(212,168,63,.85)'; ctx.lineWidth = 1.4; ctx.beginPath(); ctx.moveTo(b2[0], b2[1]); ctx.lineTo(c2[0], c2[1]); ctx.lineTo(d2[0], d2[1]); ctx.stroke();
-ctx.fillStyle = 'rgba(243,217,139,.22)';
-for (var i = 1; i < 12; i++) for (var j = 1; j < 12; j++) { var q = P(i, j, 0); ctx.fillRect(q[0] - .8, q[1] - .8, 1.6, 1.6); }
+function box(cx, cz, hx, hz, y0, y1, rgb, topFill, edge) {
+var a = cx - hx, b = cx + hx, c = cz - hz, d = cz + hz;
+var F5 = [[1, 0, 0, [[b, y0, c], [b, y0, d], [b, y1, d], [b, y1, c]]], [-1, 0, 0, [[a, y0, c], [a, y0, d], [a, y1, d], [a, y1, c]]],
+[0, 0, 1, [[a, y0, d], [b, y0, d], [b, y1, d], [a, y1, d]]], [0, 0, -1, [[a, y0, c], [b, y0, c], [b, y1, c], [a, y1, c]]]];
+var vis = [];
+F5.forEach(function (f) { if (facing(f[0], f[1], f[2]) > 0) { var q = f[3].map(function (p) { return P(p[0], p[1], p[2]); }); poly(q, lit(rgb, f[0], f[1], f[2]), edge, .8); vis.push(f); } });
+var top = [P(a, y1, c), P(b, y1, c), P(b, y1, d), P(a, y1, d)];
+if (facing(0, 1, 0) > 0) poly(top, typeof topFill === 'function' ? topFill(top) : topFill);
+return { top: top, vis: vis };
 }
-function busLines(b) {
-var out = [-.28, 0, .28].map(function (o) {
-return b.pts.map(function (p, i) {
-var q = b.pts[Math.min(i + 1, b.pts.length - 1)], r = b.pts[Math.max(i - 1, 0)];
-var dx = (q[0] - r[0]), dy = (q[1] - r[1]); var L = Math.hypot(dx, dy) || 1;
-return [p[0] - dy / L * o, p[1] + dx / L * o];
-});
-});
-return out;
+function size() {
+var r = cv.getBoundingClientRect(); dpr = Math.min(2, window.devicePixelRatio || 1);
+W = r.width; H = r.height;
+if (W && H) { cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr); S = Math.min(W / 17.2, H / 11.4); OX = W / 2; OY = H * .57; }
+if (bx) sizeBg();
 }
-var LINES = BUS.map(function (b) { return { k: b.k, ls: busLines(b) }; });
-function lenOf(pts) { var L = 0; for (var i = 1; i < pts.length; i++) L += Math.hypot(pts[i][0] - pts[i - 1][0], pts[i][1] - pts[i - 1][1]); return L; }
-function at(pts, f) {
-var L = lenOf(pts) * f;
+var BW = 0, BH = 0, traces = [];
+function sizeBg() {
+var r = root.getBoundingClientRect(); BW = r.width; BH = r.height; if (!BW || !BH) return;
+bcv.width = Math.round(BW * dpr); bcv.height = Math.round(BH * dpr);
+var g = (function (s) { return function () { s = (s * 48271) % 2147483647; return s / 2147483647; }; })(11);
+traces = []; var n = BW < 760 ? 14 : 34;
+for (var k = 0; k < n; k++) {
+var x = BW * (.08 + .92 * Math.pow(g(), .62)), y = BH + 12, pts = [[x, y]], stop = BH * (.18 + g() * .6);
+while (y > stop) {
+y -= 26 + g() * 100; pts.push([x, y]);
+if (g() < .42) { var j = (g() < .5 ? -1 : 1) * (14 + g() * 30); x += j; y -= Math.abs(j); pts.push([x, y]); }
+}
+var len = 0; for (var q = 1; q < pts.length; q++) len += Math.hypot(pts[q][0] - pts[q - 1][0], pts[q][1] - pts[q - 1][1]);
+var mask = BW < 1025 ? .55 : Math.min(1, Math.max(.18, (x / BW - .3) / .4));
+traces.push({ pts: pts, len: len, a: (.16 + g() * .2) * mask, d: g() * 1100, per: 3600 + g() * 4600, off: g(), pulse: k % 2 === 0 });
+}
+}
+function along(pts, L) {
 for (var i = 1; i < pts.length; i++) {
 var s = Math.hypot(pts[i][0] - pts[i - 1][0], pts[i][1] - pts[i - 1][1]);
-if (L <= s) { var k = L / s; return [pts[i - 1][0] + (pts[i][0] - pts[i - 1][0]) * k, pts[i - 1][1] + (pts[i][1] - pts[i - 1][1]) * k]; }
+if (L <= s) { var k = L / s; return [pts[i - 1][0] + (pts[i][0] - pts[i - 1][0]) * k, pts[i - 1][1] + (pts[i][1] - pts[i - 1][1]) * k, i]; }
 L -= s;
 }
-return pts[pts.length - 1];
+var e = pts[pts.length - 1]; return [e[0], e[1], pts.length];
 }
-function traces(grow, t) {
+function drawBg(t, isStatic) {
+if (!bx || !BW) return;
+bx.setTransform(dpr, 0, 0, dpr, 0, 0); bx.clearRect(0, 0, BW, BH); bx.lineCap = 'round'; bx.lineJoin = 'round';
+traces.forEach(function (tr) {
+var gr = isStatic ? 1 : Math.min(1, Math.max(0, (t - t0 - tr.d) / 1600)); gr = 1 - Math.pow(1 - gr, 3);
+if (gr <= 0) return;
+var L = tr.len * gr, end = along(tr.pts, L);
+bx.beginPath(); bx.moveTo(tr.pts[0][0], tr.pts[0][1]);
+for (var i = 1; i < end[2]; i++) bx.lineTo(tr.pts[i][0], tr.pts[i][1]);
+bx.lineTo(end[0], end[1]);
+bx.strokeStyle = 'rgba(212,168,63,' + tr.a + ')'; bx.lineWidth = 1.3; bx.stroke();
+if (gr >= 1) { bx.beginPath(); bx.arc(end[0], end[1], 2.6, 0, 6.3); bx.fillStyle = 'rgba(243,217,139,' + (tr.a * 2.2) + ')'; bx.fill(); }
+if (!isStatic && gr >= 1 && tr.pulse) {
+var f = ((t / tr.per) + tr.off) % 1, p = along(tr.pts, tr.len * f);
+var gg = bx.createRadialGradient(p[0], p[1], 0, p[0], p[1], 5.5);
+gg.addColorStop(0, 'rgba(255,236,190,' + Math.min(.55, tr.a * 2.4) + ')'); gg.addColorStop(1, 'rgba(255,236,190,0)');
+bx.fillStyle = gg; bx.beginPath(); bx.arc(p[0], p[1], 5.5, 0, 6.3); bx.fill();
+}
+});
+}
+function busLines(b) {
+return [-.28, 0, .28].map(function (o) {
+return b.pts.map(function (p, i) {
+var q = b.pts[Math.min(i + 1, b.pts.length - 1)], r = b.pts[Math.max(i - 1, 0)], dx = q[0] - r[0], dz = q[1] - r[1], L = Math.hypot(dx, dz) || 1;
+return [p[0] - dz / L * o, p[1] + dx / L * o];
+});
+});
+}
+var LINES = BUS.map(function (b) { return { k: b.k, ls: busLines(b) }; });
+function plen(pts) { var L = 0; for (var i = 1; i < pts.length; i++) L += Math.hypot(pts[i][0] - pts[i - 1][0], pts[i][1] - pts[i - 1][1]); return L; }
+function at(pts, f) {
+var L = plen(pts) * f;
+for (var i = 1; i < pts.length; i++) {
+var s = Math.hypot(pts[i][0] - pts[i - 1][0], pts[i][1] - pts[i - 1][1]);
+if (L <= s) { var k = L / s; return [pts[i - 1][0] + (pts[i][0] - pts[i - 1][0]) * k, pts[i - 1][1] + (pts[i][1] - pts[i - 1][1]) * k, i]; }
+L -= s;
+}
+var e = pts[pts.length - 1]; return [e[0], e[1], pts.length];
+}
+function board(t) {
+var res = box(0, 0, 6, 6, -.55, 0, [13, 44, 80], function (q) {
+var g = ctx.createLinearGradient(q[0][0], q[0][1], q[2][0], q[2][1]); g.addColorStop(0, '#16467A'); g.addColorStop(.55, '#0F3762'); g.addColorStop(1, '#0B2C52'); return g;
+}, null);
+var sh = ctx.createLinearGradient(res.top[0][0], res.top[0][1], res.top[2][0], res.top[2][1]), m = (.5 + Math.sin(yaw * D2R * 2 + t / 4000) * .35);
+sh.addColorStop(Math.max(0, m - .18), 'rgba(255,255,255,0)'); sh.addColorStop(m, 'rgba(255,236,190,.07)'); sh.addColorStop(Math.min(1, m + .18), 'rgba(255,255,255,0)');
+poly(res.top, sh, 'rgba(212,168,63,.75)', 1.4);
+ctx.strokeStyle = 'rgba(212,168,63,.8)'; ctx.lineWidth = 1.2;
+res.vis.forEach(function (f) { var q = f[3]; var a = P(q[0][0], q[0][1], q[0][2]), b = P(q[1][0], q[1][1], q[1][2]); ctx.beginPath(); ctx.moveTo(a[0], a[1]); ctx.lineTo(b[0], b[1]); ctx.stroke(); });
+ctx.fillStyle = 'rgba(243,217,139,.24)';
+for (var i = -5; i <= 5; i++) for (var j = -5; j <= 5; j++) { var p = P(i, 0, j), r = 1.1 * p[3]; ctx.fillRect(p[0] - r / 2, p[1] - r / 2, r, r); }
+}
+function traces3d(grow, t, isStatic) {
+ctx.lineCap = 'round'; ctx.lineJoin = 'round';
 LINES.forEach(function (b) {
-var on = sel === b.k || sel === 3 || hover === b.k;
+var on = sel === b.k || sel === 3 || hover === b.k, hot = sel === b.k || hover === b.k;
 b.ls.forEach(function (pts, li) {
-var n = Math.max(2, Math.ceil(grow * 40)), seg = [];
-for (var i = 0; i <= n; i++) seg.push(P.apply(null, at(pts, grow * i / n).concat(0)));
+var e = at(pts, grow), seg = [];
+for (var i = 0; i < e[2]; i++) seg.push(P(pts[i][0], .012, pts[i][1]));
+seg.push(P(e[0], .012, e[1]));
 ctx.beginPath(); seg.forEach(function (p, i) { i ? ctx.lineTo(p[0], p[1]) : ctx.moveTo(p[0], p[1]); });
-ctx.strokeStyle = on ? 'rgba(243,217,139,.95)' : 'rgba(212,168,63,.45)'; ctx.lineWidth = on ? 1.8 : 1.3; ctx.stroke();
-var e = seg[0]; ctx.beginPath(); ctx.arc(e[0], e[1], 2.4, 0, 6.3); ctx.fillStyle = '#D4A83F'; ctx.fill();
-if (grow >= 1) { // pulses
-for (var p = 0; p < 2; p++) {
-var f = ((t / 2600) + li * .21 + p * .5 + b.k * .13) % 1, c = P.apply(null, at(pts, f).concat(0));
-var g = ctx.createRadialGradient(c[0], c[1], 0, c[0], c[1], on ? 9 : 6);
-g.addColorStop(0, on ? 'rgba(255,240,200,.95)' : 'rgba(243,217,139,.6)'); g.addColorStop(1, 'rgba(243,217,139,0)');
-ctx.fillStyle = g; ctx.beginPath(); ctx.arc(c[0], c[1], on ? 9 : 6, 0, 6.3); ctx.fill();
+if (hot) { ctx.strokeStyle = 'rgba(243,217,139,.28)'; ctx.lineWidth = 6; ctx.stroke(); }
+ctx.strokeStyle = on ? 'rgba(243,217,139,.95)' : 'rgba(212,168,63,.42)'; ctx.lineWidth = on ? 1.9 : 1.3; ctx.stroke();
+var s0 = seg[0]; ctx.beginPath(); ctx.arc(s0[0], s0[1], 2.6, 0, 6.3); ctx.fillStyle = '#E6C25F'; ctx.fill();
+if (grow >= 1 && !isStatic) {
+ctx.globalCompositeOperation = 'lighter';
+for (var pz = 0; pz < 2; pz++) {
+var f = ((t / (hot ? 1500 : 2600)) + li * .21 + pz * .5 + b.k * .13) % 1;
+for (var tl = 0; tl < 6; tl++) {
+var ff = f - tl * .018; if (ff < 0) continue;
+var c = at(pts, ff), q = P(c[0], .02, c[1]), rr = (on ? 7 : 5) * (1 - tl / 7) * q[3];
+var g = ctx.createRadialGradient(q[0], q[1], 0, q[0], q[1], rr);
+g.addColorStop(0, 'rgba(255,238,196,' + (on ? .9 : .5) * (1 - tl / 6) + ')'); g.addColorStop(1, 'rgba(255,238,196,0)');
+ctx.fillStyle = g; ctx.beginPath(); ctx.arc(q[0], q[1], rr, 0, 6.3); ctx.fill();
 }
+}
+ctx.globalCompositeOperation = 'source-over';
 }
 });
 });
 }
-function chip(i, t) {
-var c = CH[i], h = c[2] / 2, x0 = c[0] - h, y0 = c[1] - h, x1 = c[0] + h, y1 = c[1] + h;
-var z0 = .08 + lift[i] + (SP.reduced ? 0 : Math.sin(t / 900 + i) * .03), z1 = z0 + c[3], prod = i === 3, hot = sel === i || hover === i;
-poly([P(x0 + .2, y0 + .3, 0), P(x1 + .3, y0 + .3, 0), P(x1 + .3, y1 + .3, 0), P(x0 + .2, y1 + .3, 0)], 'rgba(0,0,0,.28)');
-ctx.strokeStyle = 'rgba(243,217,139,.75)'; ctx.lineWidth = 1.2;
-for (var k = 1; k < 6; k++) {
-var u = x0 + (x1 - x0) * k / 6, v = y0 + (y1 - y0) * k / 6, a, b;
-a = P(u, y1, z0 + .1); b = P(u, y1 + .35, 0); ctx.beginPath(); ctx.moveTo(a[0], a[1]); ctx.lineTo(b[0], b[1]); ctx.stroke();
-a = P(x1, v, z0 + .1); b = P(x1 + .35, v, 0); ctx.beginPath(); ctx.moveTo(a[0], a[1]); ctx.lineTo(b[0], b[1]); ctx.stroke();
+function footprint(c, grow, y) { var h = c[2] / 2 + grow; return [P(c[0] - h, y, c[1] - h), P(c[0] + h, y, c[1] - h), P(c[0] + h, y, c[1] + h), P(c[0] - h, y, c[1] + h)]; }
+function chip(i, t, dropY, isStatic) {
+var c = CH[i], h = c[2] / 2, prod = i === 3, hot = sel === i || hover === i;
+var z0 = .08 + lift[i] + dropY + (isStatic ? 0 : Math.sin(t / 900 + i) * .03), z1 = z0 + c[3];
+var off = .25 + z0 * .3, sa_ = Math.max(.05, .24 - z0 * .05);
+[.05, .2, .36].forEach(function (e, k) {
+var q = [P(c[0] - h - e + off, 0, c[1] - h - e + off * .6), P(c[0] + h + e + off, 0, c[1] - h - e + off * .6), P(c[0] + h + e + off, 0, c[1] + h + e + off * .6), P(c[0] - h - e + off, 0, c[1] + h + e + off * .6)];
+poly(q, 'rgba(2,10,24,' + (sa_ / (k + 1.2)) + ')');
+});
+if (hot && !prod) { // selection ring on the board
+var pul = isStatic ? .7 : .55 + Math.sin(t / 300) * .3;
+poly(footprint(c, .55, .01), null, 'rgba(243,217,139,' + pul + ')', 1.6);
 }
-poly([P(x1, y0, z0), P(x1, y1, z0), P(x1, y1, z1), P(x1, y0, z1)], prod ? '#8E6A22' : '#0A2747');
-poly([P(x0, y1, z0), P(x1, y1, z0), P(x1, y1, z1), P(x0, y1, z1)], prod ? '#B8892B' : '#0E345B');
-var tp = [P(x0, y0, z1), P(x1, y0, z1), P(x1, y1, z1), P(x0, y1, z1)];
-var g = ctx.createLinearGradient(tp[0][0], tp[0][1], tp[2][0], tp[2][1]);
-if (prod) { g.addColorStop(0, '#F3D98B'); g.addColorStop(.55, '#D4A83F'); g.addColorStop(1, '#B8892B'); }
-else { g.addColorStop(0, hot ? '#1F5A93' : '#164475'); g.addColorStop(1, '#0D3360'); }
-poly(tp, g, hot ? '#F3D98B' : 'rgba(212,168,63,.7)', hot ? 2 : 1.2);
-var m = .32;
-poly([P(x0 + h * m * 2, y0 + h * m * 2, z1), P(x1 - h * m * 2, y0 + h * m * 2, z1), P(x1 - h * m * 2, y1 - h * m * 2, z1), P(x0 + h * m * 2, y1 - h * m * 2, z1)],
-prod ? 'rgba(6,26,51,.82)' : 'rgba(212,168,63,.16)', prod ? null : 'rgba(243,217,139,.55)', 1);
-if (prod) { // glowing core
-var cc = P(c[0], c[1], z1), gl = ctx.createRadialGradient(cc[0], cc[1], 0, cc[0], cc[1], S * 1.1);
-gl.addColorStop(0, 'rgba(255,236,180,' + (.55 + (SP.reduced ? 0 : Math.sin(t / 700) * .15)) + ')'); gl.addColorStop(1, 'rgba(255,236,180,0)');
-ctx.fillStyle = gl; ctx.beginPath(); ctx.arc(cc[0], cc[1], S * 1.1, 0, 6.3); ctx.fill();
+var rgb = prod ? [205, 152, 52] : [16, 58, 102];
+var res = box(c[0], c[1], h, h, z0, z1, rgb, function (q) {
+var g = ctx.createLinearGradient(q[0][0], q[0][1], q[2][0], q[2][1]);
+if (prod) { g.addColorStop(0, '#F8E2A2'); g.addColorStop(.5, '#D9AE48'); g.addColorStop(1, '#B4852A'); }
+else { g.addColorStop(0, hot ? '#2667A6' : '#1B4E84'); g.addColorStop(1, '#0D3360'); }
+return g;
+}, prod ? 'rgba(120,84,20,.6)' : 'rgba(212,168,63,.35)');
+ctx.strokeStyle = prod ? 'rgba(255,226,150,.85)' : 'rgba(243,217,139,.75)'; ctx.lineWidth = 1.2;
+res.vis.forEach(function (f) {
+for (var k = 1; k < 7; k++) {
+var u = -h + 2 * h * k / 7, a, b;
+if (f[0]) { a = P(c[0] + f[0] * h, z0 + .1, c[1] + u); b = P(c[0] + f[0] * (h + .38), 0, c[1] + u); }
+else { a = P(c[0] + u, z0 + .1, c[1] + f[2] * h); b = P(c[0] + u, 0, c[1] + f[2] * (h + .38)); }
+ctx.beginPath(); ctx.moveTo(a[0], a[1]); ctx.lineTo(b[0], b[1]); ctx.stroke();
 }
-var lp = P(c[0], c[1], z1 + (prod ? .95 : .75));
-ctx.font = '600 ' + Math.round(Math.max(12, S * (prod ? .62 : .5))) + 'px Rubik, system-ui, sans-serif';
-ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
-var tw = ctx.measureText(TXT[i][0]).width + 22, th = Math.max(24, S * (prod ? 1.05 : .9));
+});
+poly(res.top, null, hot ? '#F3D98B' : (prod ? 'rgba(255,240,200,.9)' : 'rgba(212,168,63,.7)'), hot ? 2 : 1.2);
+var m = h * .36, die = [P(c[0] - m, z1, c[1] - m), P(c[0] + m, z1, c[1] - m), P(c[0] + m, z1, c[1] + m), P(c[0] - m, z1, c[1] + m)];
+poly(die, prod ? 'rgba(6,26,51,.85)' : 'rgba(212,168,63,.16)', prod ? 'rgba(255,236,190,.6)' : 'rgba(243,217,139,.55)', 1);
+ctx.strokeStyle = prod ? 'rgba(90,60,12,.55)' : 'rgba(243,217,139,.35)'; ctx.lineWidth = 1;
+[[-m, 0, -h * .92, 0], [m, 0, h * .92, 0], [0, -m, 0, -h * .92], [0, m, 0, h * .92]].forEach(function (l) {
+var a = P(c[0] + l[0], z1, c[1] + l[1]), b = P(c[0] + l[2], z1, c[1] + l[3]); ctx.beginPath(); ctx.moveTo(a[0], a[1]); ctx.lineTo(b[0], b[1]); ctx.stroke();
+});
+var cc = P(c[0], z1, c[1]);
+if (prod) {
+ctx.globalCompositeOperation = 'lighter';
+var R = S * 1.3 * cc[3], gl = ctx.createRadialGradient(cc[0], cc[1], 0, cc[0], cc[1], R);
+gl.addColorStop(0, 'rgba(255,230,170,' + (isStatic ? .5 : .45 + Math.sin(t / 700) * .15) + ')'); gl.addColorStop(1, 'rgba(255,230,170,0)');
+ctx.fillStyle = gl; ctx.beginPath(); ctx.arc(cc[0], cc[1], R, 0, 6.3); ctx.fill();
+ctx.globalCompositeOperation = 'source-over';
+}
+CH[i].hit = res.top; CH[i].z1 = z1; CH[i].cc = cc;
+}
+function label(i) {
+var c = CH[i], prod = i === 3, hot = sel === i || hover === i, lp = P(c[0], c.z1 + (prod ? 1.05 : .8), c[1]);
+var fs = Math.round(Math.max(12, S * (prod ? .62 : .5) * lp[3]));
+ctx.font = '600 ' + fs + 'px Rubik, system-ui, sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+var tw = ctx.measureText(TXT[i][0]).width + 22, th = fs + 12;
 ctx.beginPath(); if (ctx.roundRect) ctx.roundRect(lp[0] - tw / 2, lp[1] - th / 2, tw, th, th / 2); else ctx.rect(lp[0] - tw / 2, lp[1] - th / 2, tw, th);
-ctx.fillStyle = hot || prod ? 'rgba(212,168,63,.95)' : 'rgba(6,26,51,.82)'; ctx.fill();
-ctx.strokeStyle = 'rgba(243,217,139,.7)'; ctx.lineWidth = 1; ctx.stroke();
+ctx.fillStyle = hot || prod ? 'rgba(212,168,63,.96)' : 'rgba(6,26,51,.86)'; ctx.fill();
+ctx.strokeStyle = 'rgba(243,217,139,.75)'; ctx.lineWidth = 1; ctx.stroke();
 ctx.fillStyle = hot || prod ? '#061A33' : '#F3D98B'; ctx.fillText(TXT[i][0], lp[0], lp[1] + 1);
-CH[i].hit = [P(c[0], c[1], z1 / 2), Math.max(h * S * 1.15, 28)];
+CH[i].lab = [lp[0] - tw / 2, lp[1] - th / 2, tw, th];
 }
-function draw(t, dt, isStatic) {
+function beam(t, dt, isStatic) {
+var c = CH[3]; if (!c.cc) return;
+var base = c.cc, topP = P(c[0], c.z1 + 4.2, c[1]), w = S * 1.2 * base[3];
+ctx.globalCompositeOperation = 'lighter';
+var g = ctx.createLinearGradient(base[0], base[1], topP[0], topP[1]);
+var a = isStatic ? .16 : .13 + Math.sin(t / 900) * .05;
+g.addColorStop(0, 'rgba(255,230,170,' + a * 1.8 + ')'); g.addColorStop(1, 'rgba(255,230,170,0)');
+ctx.fillStyle = g; ctx.beginPath(); ctx.moveTo(base[0] - w / 2, base[1]); ctx.lineTo(topP[0] - w * .2, topP[1]); ctx.lineTo(topP[0] + w * .2, topP[1]); ctx.lineTo(base[0] + w / 2, base[1]); ctx.closePath(); ctx.fill();
+if (!isStatic) {
+sparks.forEach(function (s) {
+s.y += s.v * dt / 1000; if (s.y > 4) { s.y = 0; s.a = rnd() * 6.28; s.r = rnd() * 1.2; }
+var q = P(c[0] + Math.cos(s.a) * s.r, c.z1 + s.y, c[1] + Math.sin(s.a) * s.r), al = (1 - s.y / 4) * .85, rr = 3.2 * s.s * q[3];
+var gg = ctx.createRadialGradient(q[0], q[1], 0, q[0], q[1], rr);
+gg.addColorStop(0, 'rgba(255,240,205,' + al + ')'); gg.addColorStop(1, 'rgba(255,240,205,0)');
+ctx.fillStyle = gg; ctx.beginPath(); ctx.arc(q[0], q[1], rr, 0, 6.3); ctx.fill();
+});
+motes.forEach(function (m) {
+var q = P(m.x, m.y + Math.sin(t / 1600 + m.ph) * .25, m.z), al = .22 + Math.sin(t / 900 + m.ph) * .12;
+ctx.fillStyle = 'rgba(243,217,139,' + al + ')'; ctx.beginPath(); ctx.arc(q[0], q[1], 1.4 * q[3], 0, 6.3); ctx.fill();
+});
+}
+ctx.globalCompositeOperation = 'source-over';
+}
+var ease = function (x) { x = Math.min(1, Math.max(0, x)); return 1 - Math.pow(1 - x, 3); };
+var easeBack = function (x) { x = Math.min(1, Math.max(0, x)); var c1 = 1.4, c3 = c1 + 1; return 1 + c3 * Math.pow(x - 1, 3) + c1 * Math.pow(x - 1, 2); };
+function frame(t, dt, isStatic) {
 if (!W) size(); if (!W) return;
-if (!t0) t0 = t;
-var grow = isStatic ? 1 : Math.min(1, (t - t0) / 1600);
-grow = 1 - Math.pow(1 - grow, 3);
+if (!t0) { t0 = t; idleAt = t; }
+var el = t - t0;
+var intro = isStatic ? 0 : 1 - ease(el / 2400);
+if (!drag && !isStatic) { dragYaw += vel; vel *= .92; if (t - idleAt > 3500) dragYaw *= .985; }
+dragYaw = Math.max(-75, Math.min(75, dragYaw));
+var py = 0, pp = 0;
+if (!isStatic && SP.finePointer && SP.pointer.active) { py = SP.pointer.nx * 7; pp = SP.pointer.ny * 3.5; }
+var sway = isStatic ? 0 : Math.sin(t / 5200) * 3.5;
+var ty = 45 + intro * 42 + dragYaw + sway + py, tp = 30 + intro * 12 + pp + scrollK * 9;
+yaw += (ty - yaw) * (isStatic ? 1 : Math.min(1, dt / 140)); pitch += (tp - pitch) * (isStatic ? 1 : Math.min(1, dt / 140));
+cam();
 for (var i = 0; i < 4; i++) { var target = (sel === i ? .45 : 0) + (hover === i ? .12 : 0) + (i === 3 ? .2 : 0); lift[i] += (target - lift[i]) * (isStatic ? 1 : Math.min(1, dt / 120)); }
 ctx.setTransform(dpr, 0, 0, dpr, 0, 0); ctx.clearRect(0, 0, W, H);
-slab(); traces(grow, t);
-[0, 2, 1, 3].forEach(function (k) { chip(k, t); });
+board(t);
+var grow = isStatic ? 1 : ease((el - 900) / 1300);
+if (grow > 0) traces3d(grow, t, isStatic);
+var order = [0, 1, 2, 3].sort(function (a, b) { return P(CH[a][0], 0, CH[a][1])[2] - P(CH[b][0], 0, CH[b][1])[2]; });
+order.forEach(function (k) { var dy = isStatic ? 0 : (1 - easeBack((el - 150 - k * 160) / 950)) * 6; chip(k, t, Math.max(0, dy), isStatic); });
+beam(t, dt || 16, isStatic);
+order.forEach(label);
+drawBg(t, isStatic);
+lastT = t;
 }
-function choose(k, from) {
+function redraw() { frame(performance.now(), 0, SP.reduced); }
+function choose(k) {
 sel = k; keys.forEach(function (b, i) { b.setAttribute('aria-pressed', i === k ? 'true' : 'false'); });
 tip.querySelector('.aph-tip-k').textContent = TXT[k][0]; tip.querySelector('.aph-tip-v').textContent = TXT[k][1];
 tip.classList.remove('is-swap'); void tip.offsetWidth; tip.classList.add('is-swap');
-if (SP.reduced) loop && loop.start && draw(performance.now(), 0, true);
+if (SP.reduced) redraw();
 }
 keys.forEach(function (b, i) { b.addEventListener('click', function () { choose(i); }); });
+function inPoly(x, y, q) { var c = false; for (var i = 0, j = q.length - 1; i < q.length; j = i++) { if (((q[i][1] > y) !== (q[j][1] > y)) && (x < (q[j][0] - q[i][0]) * (y - q[i][1]) / (q[j][1] - q[i][1]) + q[i][0])) c = !c; } return c; }
 function pick(e) {
-var r = cv.getBoundingClientRect(), x = e.clientX - r.left, y = e.clientY - r.top, best = -1, bd = 1e9;
-CH.forEach(function (c, i) { if (!c.hit) return; var d = Math.hypot(x - c.hit[0][0], y - c.hit[0][1]); if (d < c.hit[1] && d < bd) { bd = d; best = i; } });
-return best;
+var r = cv.getBoundingClientRect(), x = e.clientX - r.left, y = e.clientY - r.top;
+for (var i = 3; i >= 0; i--) { var c = CH[i]; if ((c.hit && inPoly(x, y, c.hit)) || (c.lab && x >= c.lab[0] && x <= c.lab[0] + c.lab[2] && y >= c.lab[1] && y <= c.lab[1] + c.lab[3])) return i; }
+return -1;
 }
-cv.style.pointerEvents = 'auto';
-SP.on(cv, 'pointermove', SP.rafThrottle(function (e) { if (e.pointerType !== 'mouse') return; hover = pick(e); cv.style.cursor = hover >= 0 ? 'pointer' : ''; }));
-SP.on(cv, 'pointerleave', function () { hover = -1; });
-cv.addEventListener('click', function (e) { var k = pick(e); if (k >= 0) choose(k); });
-var loop = SP.loop(draw, { el: cv });
-var ro = window.ResizeObserver ? new ResizeObserver(function () { size(); draw(performance.now(), 16, SP.reduced); }) : null;
-if (ro) ro.observe(cv); else SP.on(window, 'resize', function () { size(); });
-if (SP.onMotionChange) SP.onMotionChange(function () { draw(performance.now(), 0, SP.reduced); });
-if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { draw(performance.now(), 0, SP.reduced); });
+cv.addEventListener('pointerdown', function (e) { drag = { x: e.clientX, y: e.clientY, moved: 0 }; vel = 0; try { cv.setPointerCapture(e.pointerId); } catch (er) {} cv.classList.add('is-drag'); });
+cv.addEventListener('pointermove', function (e) {
+if (drag) {
+var dx = e.clientX - drag.x; drag.moved += Math.abs(dx) + Math.abs(e.clientY - drag.y); drag.x = e.clientX; drag.y = e.clientY;
+dragYaw += dx * .38; vel = dx * .38; idleAt = performance.now(); if (SP.reduced) redraw(); return;
+}
+if (e.pointerType === 'mouse') { var h = pick(e); if (h !== hover) { hover = h; cv.style.cursor = h >= 0 ? 'pointer' : ''; if (SP.reduced) redraw(); } }
+});
+function end(e) {
+if (!drag) return; var moved = drag.moved; drag = null; cv.classList.remove('is-drag'); idleAt = performance.now();
+if (moved < 7) { var k = pick(e); if (k >= 0) choose(k); }
+}
+cv.addEventListener('pointerup', end); cv.addEventListener('pointercancel', function () { drag = null; cv.classList.remove('is-drag'); });
+cv.addEventListener('pointerleave', function () { if (!drag) hover = -1; });
+SP.on(window, 'scroll', SP.rafThrottle(function () { var r = root.getBoundingClientRect(); scrollK = Math.max(0, Math.min(1, -r.top / (r.height || 1))); }));
+var loop = SP.loop(frame, { el: root });
+var ro = window.ResizeObserver ? new ResizeObserver(function () { size(); redraw(); }) : null;
+if (ro) { ro.observe(cv); ro.observe(root); } else SP.on(window, 'resize', function () { size(); redraw(); });
+if (SP.onMotionChange) SP.onMotionChange(function () { redraw(); });
+if (document.fonts && document.fonts.ready) document.fonts.ready.then(redraw);
 })();
 (function () {
 var art = document.querySelector('.apw-art');
@@ -1897,6 +2067,11 @@ btns.forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-
 btns.forEach(function (b) {
 b.addEventListener('click', function () { touched = true; timers.forEach(clearTimeout); set(b.getAttribute('data-mode')); });
 });
+var svg = art.querySelector('.apw-svg');
+function sync(on) { if (!svg || !svg.pauseAnimations) return; if (on && !SP.reduced) svg.unpauseAnimations(); else svg.pauseAnimations(); }
+if (svg && svg.pauseAnimations) svg.pauseAnimations();
+SP.onVisible(art, { enter: function () { sync(true); }, leave: function () { sync(false); } });
+if (SP.onMotionChange) SP.onMotionChange(function (r) { sync(!r); });
 SP.onVisible(art, { once: true, threshold: .45, enter: function () {
 if (SP.reduced || touched) return;
 set('waterfall');
@@ -1939,6 +2114,25 @@ show(cur + 1);
 if (mq.matches) { var top = root.querySelector('.aps-ui').getBoundingClientRect().top; if (top < 0) SP.scrollTo(root.querySelector('.aps-ui')); }
 });
 show(0);
+})();
+(function () {
+var orb = document.querySelector('.apt-orbit');
+if (!orb || !window.SP) return;
+var mq = matchMedia('(max-width: 760px)'), tx = 0, ty = 0, off = 0, vel = 0, drag = null;
+function apply() { orb.style.setProperty('--tx', tx.toFixed(2) + 'deg'); orb.style.setProperty('--ty', ty.toFixed(2) + 'deg'); orb.style.setProperty('--off', off.toFixed(2) + 'deg'); }
+SP.loop(function (t, dt, isStatic) {
+if (mq.matches) return;
+var gx = 0, gy = 0;
+if (!isStatic && SP.finePointer && SP.pointer.active) { var r = orb.getBoundingClientRect(); gx = SP.clamp((SP.pointer.y - (r.top + r.height / 2)) / r.height, -1, 1) * -6; gy = SP.clamp((SP.pointer.x - (r.left + r.width / 2)) / r.width, -1, 1) * 9; }
+var k = isStatic ? 1 : Math.min(1, dt / 160);
+tx += (gx - tx) * k; ty += (gy - ty) * k;
+if (!drag && !isStatic) { off += vel; vel *= .93; }
+apply();
+}, { el: orb });
+orb.addEventListener('pointerdown', function (e) { if (mq.matches) return; drag = { x: e.clientX }; vel = 0; orb.classList.add('is-drag'); try { orb.setPointerCapture(e.pointerId); } catch (er) {} });
+orb.addEventListener('pointermove', function (e) { if (!drag) return; var dx = e.clientX - drag.x; drag.x = e.clientX; off += dx * .45; vel = dx * .45; if (SP.reduced) apply(); });
+function end() { drag = null; orb.classList.remove('is-drag'); }
+orb.addEventListener('pointerup', end); orb.addEventListener('pointercancel', end);
 })();
 (function () {
 var root = document.getElementById('models');
