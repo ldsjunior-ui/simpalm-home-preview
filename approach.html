@@ -1,0 +1,2099 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Software Development Approach | Simpalm</title>
+<meta name="description" content="The Simpalm Way: deep discovery and planning up front, then Agile sprints. Six steps from idea to launch and support, with fixed cost, T&amp;M or dedicated teams.">
+
+<!-- PREVIEW ONLY: this page is a design preview. REMOVE the robots line below at launch so search engines can index the page. -->
+<meta name="robots" content="noindex,nofollow">
+<link rel="canonical" href="approach.html">
+
+<meta name="theme-color" content="#0E345B">
+<meta name="color-scheme" content="light">
+
+<!-- Open Graph. The image is relative on purpose for the preview; use an absolute https URL at launch. -->
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Simpalm">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://www.simpalm.com/approach">
+<meta property="og:title" content="Software Development Approach | Simpalm">
+<meta property="og:description" content="The Simpalm Way: deep discovery and planning up front, then Agile sprints. Six steps from idea to launch and support, with fixed cost, T&amp;M or dedicated teams.">
+<meta property="og:image" content="assets/img/approach-og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Process, People and Price chips feeding one Product chip, in gold circuitry">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Software Development Approach | Simpalm">
+<meta name="twitter:description" content="The Simpalm Way: deep discovery and planning up front, then Agile sprints. Six steps from idea to launch and support, with fixed cost, T&amp;M or dedicated teams.">
+<meta name="twitter:image" content="assets/img/approach-og.png">
+
+<!-- Favicon: gold chip glyph on navy, inline so there is no extra request. -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230E345B'/%3E%3Crect x='19' y='19' width='26' height='26' rx='4' fill='none' stroke='%23D4A83F' stroke-width='3'/%3E%3Crect x='27' y='27' width='10' height='10' rx='1.5' fill='%23F3D98B'/%3E%3Cpath d='M26 19v-8M32 19v-8M38 19v-8M26 45v8M32 45v8M38 45v8M19 26h-8M19 32h-8M19 38h-8M45 26h8M45 32h8M45 38h8' stroke='%23D4A83F' stroke-width='3' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
+
+<!-- The only external resource: Rubik from Google Fonts. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Preload the one Latin variable woff2 that the stylesheet below points to (v31, immutable URL), so Rubik arrives with the
+     first paint and the swap from the metric-matched fallback is imperceptible. If Google ships a new Rubik version the preload
+     just stops matching (one wasted request), nothing breaks; refresh the URL from the stylesheet if that happens. -->
+<link rel="preload" as="font" type="font/woff2" crossorigin href="https://fonts.gstatic.com/s/rubik/v31/iJWKBXyIfDnIV7nBrXyw023e.woff2">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&amp;display=swap">
+
+<!-- Runs before first paint: marks the page as JS-enabled, mirrors the reduced-motion preference (OS or the saved Pause switch),
+     flags support for registered CSS properties, and arms a failsafe that un-hides reveal
+     content if the base script never starts (class "sp-fail"). -->
+<script>
+(function (d) {
+  var c = d.documentElement.classList;
+  c.add('js');
+  try {
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) c.add('rm');
+    if (window.CSS && CSS.registerProperty) c.add('at-prop');
+  } catch (e) {}
+  try { if (localStorage.getItem('sp-motion') === 'off') c.add('rm'); } catch (e) {} /* the visitor chose "Pause animations" earlier */
+  setTimeout(function () { if (!window.SP) c.add('sp-fail'); }, 3500);
+})(document);
+</script>
+
+<!-- Structured data for the Approach page: Organization and WebSite (same nodes as the home), WebPage, BreadcrumbList
+     (Home > Approach, matching the official site), ItemList of the six steps, Service with the three engagement models.
+     No ratings or reviews markup. Step and model descriptions are sentences from the visible copy. -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://www.simpalm.com/#organization",
+   "name": "Simpalm",
+   "url": "https://www.simpalm.com/",
+   "description": "Simpalm is an award-winning AI and digital product development company that builds mobile apps, web platforms, websites and AI products for mid-sized businesses, nonprofits and startups.",
+   "logo": {
+    "@type": "ImageObject",
+    "@id": "https://www.simpalm.com/#logo",
+    "url": "https://ldsjunior-ui.github.io/simpalm-home-preview/assets/img/slogo-3.png",
+    "width": 172,
+    "height": 63,
+    "caption": "Simpalm"
+   },
+   "image": {
+    "@id": "https://www.simpalm.com/#logo"
+   },
+   "email": "contact@simpalm.com",
+   "telephone": [
+    "+1-301-541-3076",
+    "+1-312-554-5843"
+   ],
+   "contactPoint": [
+    {
+     "@type": "ContactPoint",
+     "contactType": "customer service",
+     "telephone": "+1-301-541-3076",
+     "email": "contact@simpalm.com",
+     "areaServed": "Mid-Atlantic"
+    },
+    {
+     "@type": "ContactPoint",
+     "contactType": "customer service",
+     "telephone": "+1-312-554-5843",
+     "email": "contact@simpalm.com",
+     "areaServed": "Mid-West"
+    }
+   ],
+   "location": [
+    {
+     "@type": "Place",
+     "name": "Simpalm Rockville, Maryland",
+     "hasMap": "https://maps.app.goo.gl/zmDaU1ehWyrYaCNw9",
+     "telephone": "+1-301-541-3076",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "11821 Parklawn Drive, Suite 130",
+      "addressLocality": "Rockville",
+      "addressRegion": "MD",
+      "postalCode": "20852",
+      "addressCountry": "US"
+     }
+    },
+    {
+     "@type": "Place",
+     "name": "Simpalm Chicago, Illinois",
+     "hasMap": "https://maps.app.goo.gl/yNbYoH6aHY3mSTZEA",
+     "telephone": "+1-312-554-5843",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "205 N Michigan Ave Suite 810",
+      "addressLocality": "Chicago",
+      "addressRegion": "IL",
+      "postalCode": "60601",
+      "addressCountry": "US"
+     }
+    },
+    {
+     "@type": "Place",
+     "name": "Simpalm New York, New York",
+     "hasMap": "https://maps.app.goo.gl/z9k9WPJvRttQ3N9fA",
+     "telephone": "+1-301-541-3076",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "535 5th Ave 4th floor",
+      "addressLocality": "New York",
+      "addressRegion": "NY",
+      "postalCode": "10017",
+      "addressCountry": "US"
+     }
+    },
+    {
+     "@type": "Place",
+     "name": "Simpalm Northern Virginia, Tysons",
+     "hasMap": "https://maps.app.goo.gl/8RairsxvFrbczrRa9",
+     "telephone": "+1-301-541-3076",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1775 Tysons Blvd 5th Floor",
+      "addressLocality": "Tysons",
+      "addressRegion": "VA",
+      "postalCode": "22102",
+      "addressCountry": "US"
+     }
+    }
+   ],
+   "address": [
+    {
+     "@type": "PostalAddress",
+     "streetAddress": "11821 Parklawn Drive, Suite 130",
+     "addressLocality": "Rockville",
+     "addressRegion": "MD",
+     "postalCode": "20852",
+     "addressCountry": "US"
+    },
+    {
+     "@type": "PostalAddress",
+     "streetAddress": "205 N Michigan Ave Suite 810",
+     "addressLocality": "Chicago",
+     "addressRegion": "IL",
+     "postalCode": "60601",
+     "addressCountry": "US"
+    },
+    {
+     "@type": "PostalAddress",
+     "streetAddress": "535 5th Ave 4th floor",
+     "addressLocality": "New York",
+     "addressRegion": "NY",
+     "postalCode": "10017",
+     "addressCountry": "US"
+    },
+    {
+     "@type": "PostalAddress",
+     "streetAddress": "1775 Tysons Blvd 5th Floor",
+     "addressLocality": "Tysons",
+     "addressRegion": "VA",
+     "postalCode": "22102",
+     "addressCountry": "US"
+    }
+   ],
+   "sameAs": [
+    "https://www.facebook.com/Simpalm",
+    "https://www.linkedin.com/company/simpalm"
+   ],
+   "knowsAbout": [
+    "Product strategy",
+    "AI development",
+    "Agentic AI development",
+    "AI automation",
+    "AI chatbot development",
+    "Generative AI development",
+    "AI strategy consulting",
+    "Mobile app development",
+    "Web engineering",
+    "Web application development",
+    "UI/UX design",
+    "Website design",
+    "Cloud backend development",
+    "DevOps",
+    "Dedicated development teams"
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://www.simpalm.com/#website",
+   "url": "https://www.simpalm.com/",
+   "name": "Simpalm",
+   "description": "Simpalm is an award-winning AI and digital product development company. 16+ years, 500+ digital products delivered across mobile, web and AI for 12+ industries.",
+   "inLanguage": "en-US",
+   "publisher": {
+    "@id": "https://www.simpalm.com/#organization"
+   }
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://www.simpalm.com/approach#webpage",
+   "url": "https://www.simpalm.com/approach",
+   "name": "Software Development Approach | Simpalm",
+   "inLanguage": "en-US",
+   "description": "The Simpalm Way: deep discovery and planning up front, then Agile sprints. Six steps from idea to launch and support, with fixed cost, time and materials or dedicated teams.",
+   "isPartOf": {
+    "@id": "https://www.simpalm.com/#website"
+   },
+   "about": {
+    "@id": "https://www.simpalm.com/#organization"
+   },
+   "breadcrumb": {
+    "@id": "https://www.simpalm.com/approach#breadcrumb"
+   },
+   "mainEntity": {
+    "@id": "https://www.simpalm.com/approach#steps"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://www.simpalm.com/approach#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://www.simpalm.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Approach"
+    }
+   ]
+  },
+  {
+   "@type": "ItemList",
+   "@id": "https://www.simpalm.com/approach#steps",
+   "name": "The Simpalm software development process",
+   "numberOfItems": 6,
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Discovery & Ideation",
+     "description": "A Product Requirements Document that serves as the Project’s guiding star",
+     "url": "https://www.simpalm.com/approach#aps-p-1"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Planning",
+     "description": "A project plan that passes the smell test of both the client and the Simpalm team.",
+     "url": "https://www.simpalm.com/approach#aps-p-2"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Design",
+     "description": "A final set of designs are added to the requirements document and dictate the final development of the UI/UX",
+     "url": "https://www.simpalm.com/approach#aps-p-3"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "Development",
+     "description": "Robust functionality that completes one or more project milestones.",
+     "url": "https://www.simpalm.com/approach#aps-p-4"
+    },
+    {
+     "@type": "ListItem",
+     "position": 5,
+     "name": "Testing & Launch",
+     "description": "The purpose of testing is to find the small issues that inevitably occur in software before end-users experience them.",
+     "url": "https://www.simpalm.com/approach#aps-p-5"
+    },
+    {
+     "@type": "ListItem",
+     "position": 6,
+     "name": "Support & Enhancements",
+     "description": "Customers see regular app updates and delight in seeing their suggestions appearing rapidly as new functionality",
+     "url": "https://www.simpalm.com/approach#aps-p-6"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://www.simpalm.com/approach#service",
+   "name": "Custom software and app development",
+   "provider": {
+    "@id": "https://www.simpalm.com/#organization"
+   },
+   "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Engagement Models",
+    "itemListElement": [
+     {
+      "@type": "Offer",
+      "name": "Fixed Cost",
+      "description": "If you have a well-defined scope, we can create a fixed-cost estimate for your product."
+     },
+     {
+      "@type": "Offer",
+      "name": "Time And Materials",
+      "description": "Appropriate when the project scope is not clearly defined or when a project requires exploratory research and development."
+     },
+     {
+      "@type": "Offer",
+      "name": "Dedicated Teams",
+      "description": "Dedicated software engineers on retainer basis who work as your extended team, either on-site or remotely."
+     }
+    ]
+   }
+  }
+ ]
+}
+</script>
+
+<link rel="stylesheet" href="assets/css/site-approach.17f2bdc9c8.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="scroll-progress" aria-hidden="true"></div>
+<!-- == sections/01-header.html == -->
+<!-- Header: sticky frosted glass bar, three mega menus, mobile sheet. JS: js/01-header.js. All hrefs are production paths. The logo is an inline transparent copy of assets/img/slogo-3.png (the original has an opaque white matte). -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs><symbol id="nav-i-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></symbol><symbol id="nav-i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol><symbol id="nav-i-design" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l1.4-4.9L16 4.5a2.1 2.1 0 013 3L8.9 18.6z"/><path d="M14 7l3 3"/></symbol><symbol id="nav-i-app" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2.5" width="10" height="19" rx="2.6"/><path d="M10.5 18.5h3"/></symbol><symbol id="nav-i-web" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="15" rx="2.6"/><path d="M3 9.2h18M6.5 6.9h.01M9.2 6.9h.01"/></symbol><symbol id="nav-i-ai" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="7" width="10" height="10" rx="2.2"/><rect x="10.2" y="10.2" width="3.6" height="3.6" rx=".6"/><path d="M9.5 3.5v3.5M14.5 3.5v3.5M9.5 17v3.5M14.5 17v3.5M3.5 9.5H7M3.5 14.5H7M17 9.5h3.5M17 14.5h3.5"/></symbol><symbol id="nav-i-cloud" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18.5a4.5 4.5 0 01-.7-8.95A6 6 0 0118 10.6a3.95 3.95 0 01-.75 7.9z"/></symbol><symbol id="nav-i-staffing" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8.5" r="3.2"/><path d="M3 20.2c.4-3.6 3-5.6 6-5.6s5.6 2 6 5.6"/><path d="M15.6 5.7a3.1 3.1 0 010 5.7M18.4 14.8c1.5.7 2.4 2.3 2.6 4.4"/></symbol><symbol id="nav-i-startups" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14.2 4c3.4.1 5.9 2.6 5.9 5.9-2.4 3.4-5 5.5-8.2 6.6l-4.4-4.4C8.6 8.8 10.7 6.2 14.2 4z"/><circle cx="14.6" cy="9.4" r="1.6"/><path d="M7.5 12.1L4.6 12.8l2.2-3.6 2.6-.2M11.9 16.5l-.7 2.9 3.6-2.2.2-2.6M5.3 18.7c0-1.4.5-2.6 1.6-3.2"/></symbol><symbol id="nav-i-health" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.3s-7.6-4.6-7.6-10.2A4.4 4.4 0 0112 7.3a4.4 4.4 0 017.6 2.8c0 5.6-7.6 10.2-7.6 10.2z"/><path d="M6.8 12.4h2.9l1.4-2.6 2 4.2 1.4-1.6h2.7"/></symbol><symbol id="nav-i-education" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 9.4L12 4.8l9.5 4.6L12 14z"/><path d="M6.5 11.6v4.4c1.4 1.4 3.4 2.3 5.5 2.3s4.1-.9 5.5-2.3v-4.4M21.5 9.4v5.6"/></symbol><symbol id="nav-i-social" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 5h15a2 2 0 012 2v8.2a2 2 0 01-2 2H12l-4.5 3.6v-3.6H4.5a2 2 0 01-2-2V7a2 2 0 012-2z"/><path d="M8 11.1h.01M12 11.1h.01M16 11.1h.01"/></symbol><symbol id="nav-i-nonprofit" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.4s-8-4.9-8-11a4.5 4.5 0 018-2.9 4.5 4.5 0 018 2.9c0 6.1-8 11-8 11z"/></symbol><symbol id="nav-i-fintech" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.7"/><path d="M14.9 9.3c-.5-1-1.6-1.6-2.9-1.6-1.6 0-2.8.8-2.8 2.1 0 3 5.8 1.5 5.8 4.4 0 1.3-1.3 2.3-3 2.3-1.4 0-2.5-.6-3.1-1.7M12 5.9v1.8M12 16.5v1.8"/></symbol><symbol id="nav-i-construction" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 15a7 7 0 0114 0"/><path d="M3 15h18v3.2H3zM12 8V5.4M8.8 9.2L7.3 7M15.2 9.2L16.7 7"/></symbol><symbol id="nav-i-logistics" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6.5h11v10.2h-11zM13.5 9.7h4.1l3.1 3.1v3.9h-7.2"/><circle cx="7" cy="17.6" r="2"/><circle cx="17" cy="17.6" r="2"/></symbol><symbol id="nav-i-government" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5L12 4l9 5.5z"/><path d="M5.5 12v6M10 12v6M14 12v6M18.5 12v6M3.5 20.5h17"/></symbol><symbol id="nav-i-travel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 3.8L3 10.9l6.2 2.4 2.4 6.6z"/><path d="M9.2 13.3L21 3.8"/></symbol><symbol id="nav-i-hr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.6"/><circle cx="9" cy="11" r="2.2"/><path d="M5.8 16.2c.4-1.6 1.7-2.5 3.2-2.5s2.8.9 3.2 2.5M14.6 10h3.9M14.6 13.4h2.9"/></symbol><symbol id="nav-i-about" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20.5V6.2L12 3l8 3.2v14.3"/><path d="M9.5 20.5v-5h5v5M8.6 9.5h.01M12 9.5h.01M15.4 9.5h.01M3 20.5h18"/></symbol><symbol id="nav-i-news" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5.2 4.5h11a2 2 0 012 2v13H6.7A2.7 2.7 0 014 16.8V5.7a1.2 1.2 0 011.2-1.2z"/><path d="M18.2 9.2h2.3v7.6a2.7 2.7 0 01-2.7 2.7M7.5 8.6h7M7.5 12h7M7.5 15.4h4"/></symbol><symbol id="nav-i-testimonials" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5h16v10.2h-7.6L8 19.3v-3.6H4z"/><path d="M9.3 8.8c-.8.4-1.3 1-1.3 1.9h1.5v1.8H7.2M14.9 8.8c-.8.4-1.3 1-1.3 1.9h1.5v1.8h-2.3"/></symbol><symbol id="nav-i-careers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7.5" width="18" height="12" rx="2.2"/><path d="M9 7.5V6a2 2 0 012-2h2a2 2 0 012 2v1.5M3 12.8h18"/></symbol><symbol id="nav-i-blog" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3.5h8l4.5 4.5v12.5H6z"/><path d="M14 3.5V8h4.5M9 12.2h6M9 15.6h6"/></symbol><symbol id="nav-i-awards" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="5.5"/><path d="M8.6 13.5L7 21l5-2.6 5 2.6-1.6-7.5"/><path d="M12 6.6l.9 1.8 2 .3-1.4 1.4.3 2-1.8-1-1.8 1 .3-2-1.4-1.4 2-.3z"/></symbol><symbol id="nav-i-resources" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.6A2.6 2.6 0 016.6 3H20v15.6H6.6A2.6 2.6 0 004 21z"/><path d="M4 5.6V21M8.2 7.6h8"/></symbol><symbol id="nav-i-security" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7.6 3v5.5c0 4.5-3 8.2-7.6 9.5-4.6-1.3-7.6-5-7.6-9.5V6z"/><path d="M8.8 12l2.3 2.3 4.3-4.5"/></symbol></defs></svg>
+<div class="nav-scrim" id="nav-scrim" aria-hidden="true"></div>
+<header class="nav-bar" id="nav-bar">
+<div class="nav-glass" aria-hidden="true"><span class="nav-pulse"></span></div>
+<div class="nav-inner container">
+<a class="nav-logo" href="index.html"><img src="data:image/png;base64,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" width="123" height="45" alt="Simpalm" decoding="async"></a>
+<button class="nav-burger" id="nav-burger" type="button" aria-expanded="false" aria-controls="nav-main" aria-label="Open menu"><span class="nav-burger__box" aria-hidden="true"><i></i><i></i><i></i></span></button>
+<nav class="nav-main" id="nav-main" aria-label="Primary">
+<ul class="nav-list">
+<li class="nav-item nav-item--mega" data-nav="services">
+<button class="nav-link" type="button" id="nav-btn-services" aria-expanded="false" aria-controls="nav-panel-services"><span class="nav-link__t">Services</span><svg class="nav-ico nav-chev" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#nav-i-chev"/></svg></button>
+<div class="nav-panel nav-panel--services" id="nav-panel-services"><div class="nav-panel__in"><div class="nav-panel__grid">
+<div class="nav-panel__body"><div class="nav-groups">
+<section class="nav-group" style="--gi:0"><p class="nav-group__t"><svg class="nav-ico nav-ico--tile" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#nav-i-design"/></svg><span class="nav-group__tt">Design</span></p> <ul class="nav-sublist"><li><a class="nav-sub nav-sub--plain" href="https://www.simpalm.com/services/ui-design"><span class="nav-sub__t">UI/UX Design</span></a></li> <li><a class="nav-sub nav-sub--plain" href="https://www.simpalm.com/services/app-design"><span class="nav-sub__t">App Design</span></a></li></ul></section>
+<section class="nav-group" style="--gi:1"><p class="nav-group__t"><svg class="nav-ico nav-ico--tile" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#nav-i-app"/></svg><span class="nav-group__tt">App Development</span></p> <ul class="nav-sublist"><li><a class="nav-sub nav-sub--plain" href="https://www.simpalm.com/services/mobile-app-development-company-in-usa"><span class="nav-sub__t">Mobile App Development</span></a></li> <li><a class="nav-sub nav-sub--plain" href="https://www.simpalm.com/services/progressive-web-app-development"><span class="nav-sub__t">PWA Development</span></a></li> <li><a class="nav-sub nav-sub--plain" href="https://www.simpalm.com/services/app-maintenance-and-support"><span class="nav-sub__t">App Maintenance and Support</span></a></li> <li><a class="nav-sub nav-sub--plain" href="https://www.simpalm.com/services/mvp-development"><span class="nav-sub__t">MVP Development</span></a></li></ul></section>
+<section class="nav-group" style="--gi:2"><p class="nav-group__t"><svg class="nav-ico nav-ico--tile" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#nav-i-web"/></svg><span class="nav-group__tt">Web Engineering</span></p> <ul class="nav-sublist"><li><a class="nav-sub nav-sub--plain" href="https://www.simpalm.com/web-design-company"><span class="nav-sub__t">Website Design</span></a></li> <li><a class="nav-sub nav-sub--plain" href="https://www.simpalm.com/services/web-app-development-company-usa"><span class="nav-sub__t">Web App Development</span></a></li> <li><a class="nav-sub nav-sub--plain" href="https://www.simpalm.com/services/ecommerce-development"><span class="nav-sub__t">ECommerce Development</span></a></li> <li><a class="nav-sub nav-sub--plain" href="https://www.simpalm.com/services/front-end-development"><span class="nav-sub__t">Frontend Development</span></a></li> <li><a class="nav-sub nav-sub--plain" href="https://www.simpalm.com/services/backend-development"><span class="nav-sub__t">Backend Development</span></a></li></ul></section>
+<section class="nav-group" style="--gi:3"><a class="nav-group__t" href="https://www.simpalm.com/ai-services"><svg class="nav-ico nav-ico--tile" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#nav-i-ai"/></svg><span class="nav-group__tt">AI Services</span></a> <ul class="nav-sublist"><li><a class="nav-sub nav-sub--plain" href="https://www.simpalm.com/ai-services/strategy-consulting"><span class="nav-sub__t">Strategy Consulting</span></a></li> <li><a class="nav-sub nav-sub--plain" href="https://www.simpalm.com/ai-services/chatbot-development"><span class="nav-sub__t">Chatbot Development</span></a></li> <li><a class="nav-sub nav-sub--plain" href="https://www.simpalm.com/ai-services/automation-agency"><span class="nav-sub__t">Automation Agency</span></a></li> <li><a class="nav-sub nav-sub--plain" href="https://www.simpalm.com/ai-services/genai-development"><span class="nav-sub__t">GenAi Development</span></a></li></ul></section>
+<section class="nav-group" style="--gi:4"><p class="nav-group__t"><svg class="nav-ico nav-ico--tile" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#nav-i-cloud"/></svg><span class="nav-group__tt">Cloud</span></p> <ul class="nav-sublist"><li><a class="nav-sub nav-sub--plain" href="https://www.simpalm.com/services/cloud-backend-server"><span class="nav-sub__t">Cloud Backend</span></a></li> <li><a class="nav-sub nav-sub--plain" href="https://www.simpalm.com/devops-consulting-services"><span class="nav-sub__t">DevOps</span></a></li></ul></section>
+<section class="nav-group" style="--gi:5"><p class="nav-group__t"><svg class="nav-ico nav-ico--tile" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#nav-i-staffing"/></svg><span class="nav-group__tt">Staffing</span></p> <ul class="nav-sublist"><li><a class="nav-sub nav-sub--plain" href="https://www.simpalm.com/it-staffing-and-recruiting"><span class="nav-sub__t">IT Staffing</span></a></li> <li><a class="nav-sub nav-sub--plain" href="https://www.simpalm.com/hire-developers"><span class="nav-sub__t">Hire Remote Developers</span></a></li> <li><a class="nav-sub nav-sub--plain" href="https://www.simpalm.com/virtual-assistant-services"><span class="nav-sub__t">Remote VA</span></a></li></ul></section>
+</div><a class="nav-all" href="https://www.simpalm.com/services">Explore all Services</a></div>
+<div class="nav-feature on-dark"><svg class="nav-art" viewBox="0 0 120 120" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="40" y="52" width="40" height="40" rx="6" class="nav-art__chip"/><rect x="53" y="65" width="14" height="14" rx="2" class="nav-art__core"/><path pathLength="1" d="M48 52V36l-8-8V8"/><path pathLength="1" d="M60 52V4"/><path pathLength="1" d="M72 52V36l8-8V8"/><path pathLength="1" d="M40 62H24l-8-8H4"/><path pathLength="1" d="M80 62h16l8-8h12"/><path pathLength="1" d="M48 92v10l-6 6v8"/><path pathLength="1" d="M72 92v10l6 6v8"/></g><g fill="currentColor"><circle cx="40" cy="8" r="2.2"/><circle cx="60" cy="4" r="2.2"/><circle cx="80" cy="8" r="2.2"/><circle cx="4" cy="54" r="2.2"/><circle cx="116" cy="54" r="2.2"/></g></svg><p class="nav-feature__eyebrow">Mobile, Web &amp; AI Engineering</p> <p class="nav-feature__title">Turn ideas into intelligent digital products that move the business forward.</p> <ul class="nav-feature__stats"><li><b>16+</b> <span>Years in Business</span></li> <li><b>500+</b> <span>Digital Products Delivered</span></li></ul> <a class="btn btn--gold btn--arrow nav-feature__cta" href="#contact">Request Quote</a></div>
+</div></div></div></li>
+<li class="nav-item nav-item--mega" data-nav="industries">
+<button class="nav-link" type="button" id="nav-btn-industries" aria-expanded="false" aria-controls="nav-panel-industries"><span class="nav-link__t">Industries</span><svg class="nav-ico nav-chev" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#nav-i-chev"/></svg></button>
+<div class="nav-panel nav-panel--industries" id="nav-panel-industries"><div class="nav-panel__in"><div class="nav-panel__grid">
+<div class="nav-panel__body"><ul class="nav-sublist nav-sublist--grid">
+<li><a class="nav-sub nav-sub--tile" href="https://www.simpalm.com/industry/startup-app-web-developers"><svg class="nav-ico nav-ico--tile" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#nav-i-startups"/></svg><span class="nav-sub__t">Startups</span></a></li>
+<li><a class="nav-sub nav-sub--tile" href="https://www.simpalm.com/industry/healthcare-app-development-company"><svg class="nav-ico nav-ico--tile" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#nav-i-health"/></svg><span class="nav-sub__t">Health / Fitness</span></a></li>
+<li><a class="nav-sub nav-sub--tile" href="https://www.simpalm.com/industry/edtech-app-development-company"><svg class="nav-ico nav-ico--tile" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#nav-i-education"/></svg><span class="nav-sub__t">Education</span></a></li>
+<li><a class="nav-sub nav-sub--tile" href="https://www.simpalm.com/services/social-media-app-development"><svg class="nav-ico nav-ico--tile" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#nav-i-social"/></svg><span class="nav-sub__t">Social</span></a></li>
+<li><a class="nav-sub nav-sub--tile" href="https://www.simpalm.com/industry/non-profit-app-development"><svg class="nav-ico nav-ico--tile" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#nav-i-nonprofit"/></svg><span class="nav-sub__t">Nonprofit</span></a></li>
+<li><a class="nav-sub nav-sub--tile" href="https://www.simpalm.com/industry/fintech-app-development-company"><svg class="nav-ico nav-ico--tile" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#nav-i-fintech"/></svg><span class="nav-sub__t">Fintech</span></a></li>
+<li><a class="nav-sub nav-sub--tile" href="https://www.simpalm.com/industry/construction-software-development"><svg class="nav-ico nav-ico--tile" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#nav-i-construction"/></svg><span class="nav-sub__t">Construction</span></a></li>
+<li><a class="nav-sub nav-sub--tile" href="https://www.simpalm.com/industry/logistics-and-transportation-app-development"><svg class="nav-ico nav-ico--tile" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#nav-i-logistics"/></svg><span class="nav-sub__t">Logistics</span></a></li>
+<li><a class="nav-sub nav-sub--tile" href="https://www.simpalm.com/industry/government-it"><svg class="nav-ico nav-ico--tile" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#nav-i-government"/></svg><span class="nav-sub__t">Government</span></a></li>
+<li><a class="nav-sub nav-sub--tile" href="https://www.simpalm.com/industry/travel-and-hospitality-app-development"><svg class="nav-ico nav-ico--tile" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#nav-i-travel"/></svg><span class="nav-sub__t">Travel/Hospitality</span></a></li>
+<li><a class="nav-sub nav-sub--tile" href="https://www.simpalm.com/industry/hr-software-development"><svg class="nav-ico nav-ico--tile" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#nav-i-hr"/></svg><span class="nav-sub__t">HR Software</span></a></li>
+</ul><a class="nav-all" href="https://www.simpalm.com/industry">Explore all Industries</a></div>
+<div class="nav-feature on-dark"><svg class="nav-art" viewBox="0 0 120 120" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="40" y="52" width="40" height="40" rx="6" class="nav-art__chip"/><rect x="53" y="65" width="14" height="14" rx="2" class="nav-art__core"/><path pathLength="1" d="M48 52V36l-8-8V8"/><path pathLength="1" d="M60 52V4"/><path pathLength="1" d="M72 52V36l8-8V8"/><path pathLength="1" d="M40 62H24l-8-8H4"/><path pathLength="1" d="M80 62h16l8-8h12"/><path pathLength="1" d="M48 92v10l-6 6v8"/><path pathLength="1" d="M72 92v10l6 6v8"/></g><g fill="currentColor"><circle cx="40" cy="8" r="2.2"/><circle cx="60" cy="4" r="2.2"/><circle cx="80" cy="8" r="2.2"/><circle cx="4" cy="54" r="2.2"/><circle cx="116" cy="54" r="2.2"/></g></svg><p class="nav-feature__eyebrow">12+ Industries Served</p> <p class="nav-feature__title">Businesses, nonprofits and startups across healthcare, ecommerce, entertainment, productivity and more.</p> <a class="btn btn--gold btn--arrow nav-feature__cta" href="#contact">Request Quote</a></div>
+</div></div></div></li>
+<li class="nav-item"><a class="nav-link nav-link--plain" href="approach.html" aria-current="page"><span class="nav-link__t">Approach</span></a></li>
+<li class="nav-item"><a class="nav-link nav-link--plain" href="https://www.simpalm.com/applications"><span class="nav-link__t">Our work</span></a></li>
+<li class="nav-item nav-item--mega nav-item--company" data-nav="company">
+<button class="nav-link" type="button" id="nav-btn-company" aria-expanded="false" aria-controls="nav-panel-company"><span class="nav-link__t">Company</span><svg class="nav-ico nav-chev" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#nav-i-chev"/></svg></button>
+<div class="nav-panel nav-panel--company" id="nav-panel-company"><div class="nav-panel__in"><div class="nav-panel__grid">
+<div class="nav-panel__body"><ul class="nav-sublist nav-sublist--grid">
+<li><a class="nav-sub nav-sub--tile" href="https://www.simpalm.com/about-us"><svg class="nav-ico nav-ico--tile" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#nav-i-about"/></svg><span class="nav-sub__t">About Simpalm</span></a></li>
+<li><a class="nav-sub nav-sub--tile" href="https://www.simpalm.com/news"><svg class="nav-ico nav-ico--tile" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#nav-i-news"/></svg><span class="nav-sub__t">Our News</span></a></li>
+<li><a class="nav-sub nav-sub--tile" href="https://www.simpalm.com/about-us/client-testimonials"><svg class="nav-ico nav-ico--tile" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#nav-i-testimonials"/></svg><span class="nav-sub__t">Client Testimonials</span></a></li>
+<li><a class="nav-sub nav-sub--tile" href="https://www.simpalm.com/careers"><svg class="nav-ico nav-ico--tile" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#nav-i-careers"/></svg><span class="nav-sub__t">Careers</span></a></li>
+<li><a class="nav-sub nav-sub--tile" href="https://www.simpalm.com/blogs"><svg class="nav-ico nav-ico--tile" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#nav-i-blog"/></svg><span class="nav-sub__t">Our Blog</span></a></li>
+<li><a class="nav-sub nav-sub--tile" href="https://www.simpalm.com/about-us/awards-and-recognition-certificate"><svg class="nav-ico nav-ico--tile" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#nav-i-awards"/></svg><span class="nav-sub__t">Awards</span></a></li>
+<li><a class="nav-sub nav-sub--tile" href="https://www.simpalm.com/resources"><svg class="nav-ico nav-ico--tile" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#nav-i-resources"/></svg><span class="nav-sub__t">Resources</span></a></li>
+<li><a class="nav-sub nav-sub--tile" href="https://www.simpalm.com/information-security-policy"><svg class="nav-ico nav-ico--tile" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#nav-i-security"/></svg><span class="nav-sub__t">Information Security Policy</span></a></li>
+</ul></div>
+<div class="nav-feature on-dark"><svg class="nav-art" viewBox="0 0 120 120" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="40" y="52" width="40" height="40" rx="6" class="nav-art__chip"/><rect x="53" y="65" width="14" height="14" rx="2" class="nav-art__core"/><path pathLength="1" d="M48 52V36l-8-8V8"/><path pathLength="1" d="M60 52V4"/><path pathLength="1" d="M72 52V36l8-8V8"/><path pathLength="1" d="M40 62H24l-8-8H4"/><path pathLength="1" d="M80 62h16l8-8h12"/><path pathLength="1" d="M48 92v10l-6 6v8"/><path pathLength="1" d="M72 92v10l6 6v8"/></g><g fill="currentColor"><circle cx="40" cy="8" r="2.2"/><circle cx="60" cy="4" r="2.2"/><circle cx="80" cy="8" r="2.2"/><circle cx="4" cy="54" r="2.2"/><circle cx="116" cy="54" r="2.2"/></g></svg><p class="nav-feature__eyebrow">Simpalm</p> <p class="nav-feature__title">Award-Winning AI &amp; Digital Product Development Company</p> <ul class="nav-feature__stats"><li><b>500+</b> <span>Happy Clients</span></li> <li><b>98+</b> <span>Client Retention</span></li></ul> <a class="btn btn--gold btn--arrow nav-feature__cta" href="#contact">Request Quote</a></div>
+</div></div></div></li>
+<li class="nav-item nav-item--cta"><a class="btn btn--gold nav-cta" href="https://www.simpalm.com/contact-us">Contact Us</a></li>
+</ul>
+<p class="nav-meta"><span>Mid-Atlantic <a href="tel:+13015413076">(301) 541-3076</a></span> <span>Mid-West <a href="tel:+13125545843">(312) 554-5843</a></span> <a href="mailto:contact@simpalm.com">contact@simpalm.com</a></p>
+</nav></div></header>
+
+<!-- == sections/05-main-open.html == -->
+<main id="main" tabindex="-1">
+
+<!-- == pages/approach/sections/10-aphero.html == -->
+<!-- ============================ APPROACH HERO ============================
+     Breadcrumb (Home > Approach, same as the official site), the equation eyebrow, H1, the intro paragraph (answer-first copy).
+     Art: an isometric gold circuit board drawn on canvas. Process, People and Price chips feed one Product chip; pulses travel the
+     traces. The four legend buttons drive it (keyboard, touch), the canvas is decorative. Namespace: .aph-* -->
+<section class="aph on-dark" id="ap-hero" aria-labelledby="aph-title">
+  <div class="aph-bg" aria-hidden="true"><div class="aph-blueprint"></div><div class="noise"></div></div>
+  <div class="container aph-wrap">
+    <div class="aph-copy">
+      <nav class="aph-crumbs" aria-label="Breadcrumb">
+        <ol>
+          <li><a href="index.html" data-home-link>Home</a></li>
+          <li><span aria-current="page">Approach</span></li>
+        </ol>
+      </nav>
+      <p class="aph-eq"><span>Process</span> <i aria-hidden="true">+</i> <span>People</span> <i aria-hidden="true">+</i> <span>Price</span> <i aria-hidden="true">=</i> <b>Product</b></p>
+      <h1 class="h-display aph-title" id="aph-title" data-split>The Simpalm Way: <span class="gold-text">Reengineering Agile</span> Software Development</h1>
+      <p class="aph-lead">We at Simpalm live by the Agile development methodology. We’re also responsible business people who care, first and foremost, about providing our customers stellar products at a fair price within the projects’ time constraints. Project scoping to accurately determine duration, cost, and milestones, requires deep exploration before the development and design phases can begin.</p>
+      <div class="btn-row aph-cta">
+        <a class="btn btn--gold btn--arrow" href="#contact" data-magnetic>Get in touch</a>
+        <a class="btn btn--ghost-dark" href="#steps">See the six steps</a>
+      </div>
+      <ul class="aph-facts" aria-label="This page at a glance">
+        <li><b>6</b> steps, from discovery to support</li>
+        <li><b>3</b> engagement models</li>
+        <li><b>11</b> collaboration tools</li>
+      </ul>
+    </div>
+
+    <figure class="aph-art" aria-labelledby="aph-art-cap">
+      <div class="aph-stage">
+        <canvas class="aph-cv" id="aph-cv" aria-hidden="true"></canvas>
+      </div>
+      <div class="aph-tip" id="aph-tip" role="status" aria-live="polite"><b class="aph-tip-k">Product</b> <span class="aph-tip-v">Fully-formed project designs, accurate time and cost estimates, and sensible sprint plans.</span></div>
+      <figcaption class="sr-only" id="aph-art-cap">Process, People and Price, drawn as three chips on a gold circuit board, all feeding one Product chip.</figcaption>
+      <div class="aph-legend" role="group" aria-label="Explore the equation">
+        <button type="button" class="aph-key" data-k="0" aria-pressed="false"><span class="aph-dot" aria-hidden="true"></span>Process</button>
+        <button type="button" class="aph-key" data-k="1" aria-pressed="false"><span class="aph-dot" aria-hidden="true"></span>People</button>
+        <button type="button" class="aph-key" data-k="2" aria-pressed="false"><span class="aph-dot" aria-hidden="true"></span>Price</button>
+        <button type="button" class="aph-key aph-key--prod" data-k="3" aria-pressed="true"><span class="aph-dot" aria-hidden="true"></span>Product</button>
+      </div>
+    </figure>
+  </div>
+</section>
+
+<!-- == pages/approach/sections/20-apwhy.html == -->
+<!-- ============================ WHY: up front, then sprints ============================
+     Copy: the reference's 2nd and 3rd paragraphs, verbatim (two typo fixes flagged in the report). The H2 is a sentence from that copy.
+     Art: one SVG diagram with the six steps that morphs between three readings (Waterfall, Agile, The Simpalm Way); each caption is a
+     line of the reference copy. Buttons are aria-pressed toggles; without JS the Simpalm Way layout is shown. Namespace: .apw-* -->
+<section class="section section--white apw cv" id="why" aria-labelledby="apw-title" style="--cis:760px">
+  <div class="container apw-grid">
+    <div class="apw-copy">
+      <div class="sec-head">
+        <span class="eyebrow">Waterfall or Agile?</span>
+        <h2 class="h2" id="apw-title" data-split>Results are <span class="ink-gold">what matters.</span></h2>
+      </div>
+      <p class="apw-p reveal">The Discovery &amp; Ideation and Planning steps outlined below are decidedly un-Agile. These initial steps are the deep dives required to gain a holistic enough understanding of a project to build a rock-solid, realistic plan.</p>
+      <p class="apw-p reveal" data-delay="1">Methodology purists might label our up-front process,  Waterfall. We at Simpalm don’t care about labels. Results are what matters. Simpalm’s process outlined below yields fully-formed project designs, accurate time and cost estimates, and sensible sprint plans.</p>
+    </div>
+
+    <figure class="apw-art reveal" data-reveal="scale" data-mode="hybrid">
+      <div class="apw-switch" role="group" aria-label="Compare the three ways of working">
+        <button type="button" class="apw-btn" data-mode="waterfall" aria-pressed="false">Waterfall</button>
+        <button type="button" class="apw-btn" data-mode="agile" aria-pressed="false">Agile</button>
+        <button type="button" class="apw-btn" data-mode="hybrid" aria-pressed="true">The Simpalm Way</button>
+      </div>
+      <div class="apw-board">
+        <svg class="apw-svg" viewBox="0 0 560 340" role="img" aria-labelledby="apw-svg-t">
+          <title id="apw-svg-t">The six steps: Discovery and Ideation, Planning, Design, Development, Testing and Launch, Support and Enhancements</title>
+          <defs>
+            <linearGradient id="apw-g" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#F3D98B"/><stop offset=".5" stop-color="#D4A83F"/><stop offset="1" stop-color="#B8892B"/></linearGradient>
+                      </defs>
+          <!-- the up-front zone and the sprint loop, shown per mode -->
+          <g class="apw-zone apw-zone--front"><rect x="14" y="20" width="236" height="300" rx="22"/><text x="34" y="50">Up front · deep dives</text></g>
+          <g class="apw-zone apw-zone--loop"><rect x="262" y="20" width="284" height="300" rx="22"/><text x="282" y="50">Milestone-driven sprints</text></g>
+          <!-- connectors per mode (only the active set is visible) -->
+          <path class="apw-wire apw-wire--waterfall" d="M158 55 H168 V78 M234 99 H244 V122 M310 143 H320 V166 M386 187 H396 V210 M462 231 H472 V254"/>
+          <ellipse class="apw-ring apw-ring--agile" cx="280" cy="186" rx="190" ry="118"/>
+          <path class="apw-wire apw-wire--hybrid" d="M132 112 V148 M132 188 V236 M198 257 C232 257 236 200 248 194"/>
+          <ellipse class="apw-ring apw-ring--hybrid" cx="410" cy="190" rx="92" ry="106"/>
+          <!-- six step nodes; every mode moves them with transform only -->
+          <g class="apw-node n0" style="--i:0"><rect x="-66" y="-19" width="132" height="38" rx="19"/><text y="5">Discovery</text></g>
+          <g class="apw-node n1" style="--i:1"><rect x="-66" y="-19" width="132" height="38" rx="19"/><text y="5">Planning</text></g>
+          <g class="apw-node n2" style="--i:2"><rect x="-66" y="-19" width="132" height="38" rx="19"/><text y="5">Design</text></g>
+          <g class="apw-node n3" style="--i:3"><rect x="-66" y="-19" width="132" height="38" rx="19"/><text y="5">Development</text></g>
+          <g class="apw-node n4" style="--i:4"><rect x="-66" y="-19" width="132" height="38" rx="19"/><text y="5">Testing &amp; Launch</text></g>
+          <g class="apw-node n5" style="--i:5"><rect x="-66" y="-19" width="132" height="38" rx="19"/><text y="5">Support</text></g>
+        </svg>
+      </div>
+      <figcaption class="apw-cap" aria-live="polite">
+        <span class="apw-cap-t" data-for="waterfall">“Methodology purists might label our up-front process,  Waterfall.”</span>
+        <span class="apw-cap-t" data-for="agile">“We at Simpalm live by the Agile development methodology.”</span>
+        <span class="apw-cap-t" data-for="hybrid">Deep dives first, then sprints: fully-formed project designs, accurate time and cost estimates, and sensible sprint plans.</span>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- == pages/approach/sections/30-apsteps.html == -->
+<!-- ============================ THE SIX STEPS ============================
+     Copy: verbatim Goals / Process / Result for each step (typo fixes flagged in the report). The old GIFs are replaced by six
+     animated line-art scenes (inline SVG, CSS keyframes, run only on the active panel and only on screen).
+     Interaction: a tablist (rail on desktop, scroll row on phones) with arrow-key support, prev/next buttons. No JS: every panel
+     is shown stacked, so crawlers and readers get all six steps. Namespace: .aps-* -->
+<section class="section section--cream aps cv" id="steps" aria-labelledby="aps-title" style="--cis:980px">
+  <div class="noise noise--light" aria-hidden="true"></div>
+  <div class="container">
+    <div class="sec-head">
+      <span class="eyebrow">Six steps</span>
+      <h2 class="h2" id="aps-title" data-split>From discovery to support, <span class="ink-gold">one guiding star.</span></h2>
+      <p class="lead">A Product Requirements Document that serves as the Project’s guiding star, then milestone-driven sprints that the client reviews at the end of each one.</p>
+    </div>
+
+    <div class="aps-ui">
+      <div class="aps-rail" role="tablist" aria-label="Development steps" aria-orientation="vertical">
+        <span class="aps-rail-line" aria-hidden="true"><i></i></span>
+        <button class="aps-tab" role="tab" id="aps-tab-1" aria-controls="aps-p-1" aria-selected="true" tabindex="0"><span class="aps-n">01</span> <span class="aps-tn">Discovery &amp; Ideation</span> <span class="aps-ph">Up front</span></button>
+        <button class="aps-tab" role="tab" id="aps-tab-2" aria-controls="aps-p-2" aria-selected="false" tabindex="-1"><span class="aps-n">02</span> <span class="aps-tn">Planning</span> <span class="aps-ph">Up front</span></button>
+        <button class="aps-tab" role="tab" id="aps-tab-3" aria-controls="aps-p-3" aria-selected="false" tabindex="-1"><span class="aps-n">03</span> <span class="aps-tn">Design</span> <span class="aps-ph">Iterative</span></button>
+        <button class="aps-tab" role="tab" id="aps-tab-4" aria-controls="aps-p-4" aria-selected="false" tabindex="-1"><span class="aps-n">04</span> <span class="aps-tn">Development</span> <span class="aps-ph">Sprints</span></button>
+        <button class="aps-tab" role="tab" id="aps-tab-5" aria-controls="aps-p-5" aria-selected="false" tabindex="-1"><span class="aps-n">05</span> <span class="aps-tn">Testing &amp; Launch</span> <span class="aps-ph">Sprints</span></button>
+        <button class="aps-tab" role="tab" id="aps-tab-6" aria-controls="aps-p-6" aria-selected="false" tabindex="-1"><span class="aps-n">06</span> <span class="aps-tn">Support &amp; Enhancements</span> <span class="aps-ph">Sprints</span></button>
+      </div>
+
+      <div class="aps-panels">
+
+        <article class="aps-panel is-active" role="tabpanel" id="aps-p-1" aria-labelledby="aps-tab-1" tabindex="0">
+          <div class="aps-art aps-art--1" aria-hidden="true">
+            <svg viewBox="0 0 420 220"><g class="aps-board"><rect x="20" y="18" width="250" height="168" rx="14"/></g>
+              <g class="aps-notes"><rect class="aps-note" style="--d:0" x="40" y="40" width="58" height="44" rx="6"/><rect class="aps-note" style="--d:1" x="110" y="40" width="58" height="44" rx="6"/><rect class="aps-note" style="--d:2" x="180" y="40" width="58" height="44" rx="6"/><rect class="aps-note aps-note--b" style="--d:3" x="40" y="100" width="58" height="44" rx="6"/><rect class="aps-note aps-note--b" style="--d:4" x="110" y="100" width="58" height="44" rx="6"/></g>
+              <path class="aps-sketch" d="M186 110h60v58h-60z M196 124h40 M196 138h28 M196 152h34"/>
+              <g class="aps-persona"><circle cx="318" cy="64" r="18"/><path d="M290 112c4-18 16-26 28-26s24 8 28 26"/><circle cx="372" cy="84" r="12"/><path d="M354 118c3-12 10-17 18-17s15 5 18 17"/></g>
+              <g class="aps-prd"><rect x="300" y="134" width="96" height="66" rx="8"/><text x="348" y="160">PRD</text><path d="M316 174h64 M316 186h44"/></g>
+              <path class="aps-star" d="M348 120l3 7 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg>
+          </div>
+          <h3 class="aps-h">Discovery &amp; Ideation.</h3>
+          <div class="aps-cols">
+            <div class="aps-goals"><h4>Goals</h4><ul>
+              <li>Understand the underlying concept of the app</li>
+              <li>Understand user personas and how this app benefits each of them</li>
+              <li>Discuss the app functionality to identify holes, and determine the must-have versus nice-to-have functionality</li>
+              <li>Draw rough pictures of screens and workflow</li>
+              <li>Develop metrics to measure app success</li>
+              <li>Identify Risks</li></ul></div>
+            <div class="aps-side">
+              <div class="aps-proc"><h4>Process</h4> <p>Typically occurs as a series of collaborative whiteboard sessions with a client</p></div>
+              <div class="aps-res"><h4>Result</h4> <p>A Product Requirements Document that serves as the Project’s guiding star</p></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="aps-panel" role="tabpanel" id="aps-p-2" aria-labelledby="aps-tab-2" tabindex="0">
+          <div class="aps-art aps-art--2" aria-hidden="true">
+            <svg viewBox="0 0 420 220"><g class="aps-grid"><path d="M60 30v160 M140 30v160 M220 30v160 M300 30v160 M380 30v160"/></g>
+              <g class="aps-bars"><rect class="aps-bar" style="--d:0" x="60" width="110" y="44" height="20" rx="10"/><rect class="aps-bar" style="--d:1" x="120" width="130" y="80" height="20" rx="10"/><rect class="aps-bar" style="--d:2" x="190" width="120" y="116" height="20" rx="10"/><rect class="aps-bar" style="--d:3" x="270" width="100" y="152" height="20" rx="10"/></g>
+              <g class="aps-ms"><path style="--d:0" d="M170 54l7-7 7 7-7 7z"/><path style="--d:1" d="M250 90l7-7 7 7-7 7z"/><path style="--d:2" d="M310 126l7-7 7 7-7 7z"/><path style="--d:3" d="M370 162l7-7 7 7-7 7z"/></g>
+              <rect class="aps-box" x="36" y="22" width="356" height="176" rx="12"/><text class="aps-boxt" x="48" y="214">time-box</text></svg>
+          </div>
+          <h3 class="aps-h">Planning.</h3>
+          <div class="aps-cols">
+            <div class="aps-goals"><h4>Goals</h4><ul>
+              <li>Establish milestones, interpreted as pieces of application functionality, that comprise the entire feature set of the app</li>
+              <li>Provide a rough time estimate for completion of each milestone</li>
+              <li>Using budget and date constraints as time-boxes, assess the achievability of the milestones. Tweak the plan as necessary</li></ul></div>
+            <div class="aps-side">
+              <div class="aps-proc"><h4>Process</h4> <p>Simpalm business analysts, project managers, and developers use the completed Product Requirements document to break out discrete chunks of functionality.</p></div>
+              <div class="aps-res"><h4>Result</h4> <p>A project plan that passes the smell test of both the client and the Simpalm team.</p></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="aps-panel" role="tabpanel" id="aps-p-3" aria-labelledby="aps-tab-3" tabindex="0">
+          <div class="aps-art aps-art--3" aria-hidden="true">
+            <svg viewBox="0 0 420 220"><g class="aps-wire"><rect x="40" y="24" width="150" height="176" rx="14"/><rect x="56" y="44" width="118" height="54" rx="6"/><path d="M56 114h118 M56 128h86 M56 142h100"/><rect x="56" y="160" width="60" height="22" rx="11"/></g>
+              <path class="aps-morph-arrow" d="M204 112h26 M222 104l8 8-8 8"/>
+              <g class="aps-ui-card"><rect class="aps-ui-frame" x="244" y="24" width="150" height="176" rx="14"/><rect class="aps-ui-hero" x="260" y="44" width="118" height="54" rx="8"/><circle class="aps-ui-dot" cx="282" cy="71" r="10"/><path class="aps-ui-line" d="M260 114h118 M260 128h86 M260 142h100"/><rect class="aps-ui-btn" x="260" y="160" width="60" height="22" rx="11"/></g>
+              <g class="aps-swatch"><circle cx="380" cy="208" r="5"/><circle cx="366" cy="208" r="5"/><circle cx="352" cy="208" r="5"/></g></svg>
+          </div>
+          <h3 class="aps-h">Design.</h3>
+          <div class="aps-cols">
+            <div class="aps-goals"><h4>Goals</h4><ul>
+              <li>Build a complete set of wireframes using tools like Balsamiq or Sketch from the rough, initial sketches</li>
+              <li>Provide enough look and feel for a customer to refine, rearrange, or revamp</li>
+              <li>Create a polished design using tools like Figma or Invision</li>
+              <li>Obtain general agreement that a working design is complete</li></ul></div>
+            <div class="aps-side">
+              <div class="aps-proc"><h4>Process</h4> <p>Using initial sketches as a guide, Simpalm Designers produce the first cut of wireframes. The client reviews the wireframes, makes changes, and awaits revisions. This iterative process continues until the customer is satisfied. The designer then uses the wireframes to produce a polished design reflecting the color scheme, style, and user experience. Again, the final design process is an iterative back and forth with the client.</p></div>
+              <div class="aps-res"><h4>Result</h4> <p>A final set of designs are added to the requirements document and dictate the final development of the UI/UX</p></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="aps-panel" role="tabpanel" id="aps-p-4" aria-labelledby="aps-tab-4" tabindex="0">
+          <div class="aps-art aps-art--4" aria-hidden="true">
+            <svg viewBox="0 0 420 220"><g class="aps-loop"><circle cx="110" cy="110" r="70"/><path class="aps-loop-run" d="M110 40a70 70 0 1 1-1 0"/><text x="110" y="104">Sprint</text><text class="aps-small" x="110" y="124">review · next</text></g>
+              <g class="aps-pipe"><path d="M210 110h180"/><g class="aps-st" style="--d:0"><circle cx="228" cy="110" r="16"/><text x="228" y="146">commit</text></g><g class="aps-st" style="--d:1"><circle cx="300" cy="110" r="16"/><text x="300" y="146">test</text></g><g class="aps-st" style="--d:2"><circle cx="372" cy="110" r="16"/><text x="372" y="146">deploy</text></g>
+              <path class="aps-tick" style="--d:0" d="M221 110l5 5 9-10"/><path class="aps-tick" style="--d:1" d="M293 110l5 5 9-10"/><path class="aps-tick" style="--d:2" d="M365 110l5 5 9-10"/><text class="aps-ci" x="300" y="66">CI / CD</text></g></svg>
+          </div>
+          <h3 class="aps-h">Development.</h3>
+          <div class="aps-cols">
+            <div class="aps-goals"><h4>Goals</h4><ul>
+              <li>Deliver demonstrable and useful functionality at the end of each iteration</li>
+              <li>Accompany working features with meaningful unit tests that verify the code addresses the requirements</li>
+              <li>Peer review code before committing it into a source code repository</li>
+              <li>Evaluate code for security vulnerabilities and clarity</li></ul></div>
+            <div class="aps-side">
+              <div class="aps-proc"><h4>Process</h4> <p>The Simpalm development team works closely with the Simpalm project team to craft milestone-driven, short sprints. The in-place Continuous Integration/Continuous Deployment system ensures that committed code is deployed, and tests automatically execute. The development team identifies and addresses all test breakages until the tests succeed. Before the start of the next sprint, the customer reviews the work. The client may modify the direction of the next sprint time without affecting the overall schedule.</p></div>
+              <div class="aps-res"><h4>Result</h4> <p>Robust functionality that completes one or more project milestones.</p></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="aps-panel" role="tabpanel" id="aps-p-5" aria-labelledby="aps-tab-5" tabindex="0">
+          <div class="aps-art aps-art--5" aria-hidden="true">
+            <svg viewBox="0 0 420 220"><g class="aps-phone"><rect x="56" y="14" width="112" height="196" rx="20"/><rect class="aps-scr" x="66" y="34" width="92" height="156" rx="8"/><path d="M98 24h28"/></g>
+              <g class="aps-build"><rect x="72" y="46" width="80" height="22" rx="11"/><text x="112" y="61">test build</text></g>
+              <g class="aps-checks"><g style="--d:0"><rect x="200" y="36" width="20" height="20" rx="5"/><path class="aps-ck" d="M204 46l4 4 8-9"/><text x="232" y="51">Required behavior</text></g><g style="--d:1"><rect x="200" y="76" width="20" height="20" rx="5"/><path class="aps-ck" d="M204 86l4 4 8-9"/><text x="232" y="91">Intuitive navigation</text></g><g style="--d:2"><rect x="200" y="116" width="20" height="20" rx="5"/><path class="aps-ck" d="M204 126l4 4 8-9"/><text x="232" y="131">Minimum clicks</text></g><g style="--d:3"><rect x="200" y="156" width="20" height="20" rx="5"/><path class="aps-ck" d="M204 166l4 4 8-9"/><text x="232" y="171">End to end</text></g></g>
+              <g class="aps-taps"><circle cx="112" cy="120" r="10"/><circle cx="112" cy="120" r="22"/></g></svg>
+          </div>
+          <h3 class="aps-h">Testing &amp; Launch.</h3>
+          <div class="aps-cols">
+            <div class="aps-goals"><h4>Goals</h4><ul>
+              <li>Validation that completed functionality addresses the required behavior</li>
+              <li>Ensure that navigation between screens is intuitive</li>
+              <li>Verify that actions complete with the minimum number of clicks</li>
+              <li>Verify the system hangs together from end to end</li></ul></div>
+            <div class="aps-side">
+              <div class="aps-proc"><h4>Process</h4> <p>Simpalm delivers a test build at the end of each sprint outside the app stores. Customers install these test builds. The Simpalm-published release notes outline the features in the build and, therefore, what needs testing.</p></div>
+              <div class="aps-res"><h4>Result</h4> <p>Humans are imperfect, even the superb team at Simpalm. The purpose of testing is to find the small issues that inevitably occur in software before end-users experience them. With robust end-to-end testing, end-users will have a delightful experience with the completed app.</p></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="aps-panel" role="tabpanel" id="aps-p-6" aria-labelledby="aps-tab-6" tabindex="0">
+          <div class="aps-art aps-art--6" aria-hidden="true">
+            <svg viewBox="0 0 420 220"><g class="aps-lane"><rect x="20" y="22" width="120" height="176" rx="12"/><text x="80" y="44">Backlog</text></g>
+              <g class="aps-cards"><rect style="--d:0" x="34" y="58" width="92" height="26" rx="7"/><rect style="--d:1" x="34" y="92" width="92" height="26" rx="7"/><rect style="--d:2" x="34" y="126" width="92" height="26" rx="7"/><rect style="--d:3" x="34" y="160" width="92" height="26" rx="7"/></g>
+              <path class="aps-cad" d="M164 150h232"/>
+              <g class="aps-rel"><g style="--d:0"><circle cx="196" cy="150" r="9"/><text x="196" y="128">v1.1</text></g><g style="--d:1"><circle cx="262" cy="150" r="9"/><text x="262" y="128">v1.2</text></g><g style="--d:2"><circle cx="328" cy="150" r="9"/><text x="328" y="128">v1.3</text></g><g style="--d:3"><circle cx="388" cy="150" r="9"/><text x="388" y="128">v2.0</text></g></g>
+              <path class="aps-fly" d="M126 71 C 160 71 172 100 192 140"/><text class="aps-cadt" x="280" y="186">regular cadence of releases</text></svg>
+          </div>
+          <h3 class="aps-h">Support &amp; Enhancements.</h3>
+          <div class="aps-cols">
+            <div class="aps-goals"><h4>Goals</h4><ul>
+              <li>Curate a backlog with maintenance items and requested features</li>
+              <li>Schedule periodic deliveries of new features and a regular cadence of releases for maintenance items</li>
+              <li>Maintain a small team of generalists capable of addressing all app needs from the front-end to the back-end</li></ul></div>
+            <div class="aps-side">
+              <div class="aps-proc"><h4>Process</h4> <p>The milestone-driven development process is identical in maintenance/support mode; the Simpalm team plans sprints, executes them, and evaluates them with an eye to quality and functionality. Each new piece of code undergoes the same testing and scrutiny for security and robustness as the initial development code</p></div>
+              <div class="aps-res"><h4>Result</h4> <p>Customers see regular app updates and delight in seeing their suggestions appearing rapidly as new functionality</p></div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+    <div class="aps-nav">
+      <button type="button" class="aps-prev btn btn--ghost" aria-label="Previous step">Previous</button>
+      <span class="aps-count" aria-live="polite"><b>01</b> / 06</span>
+      <button type="button" class="aps-next btn btn--gold btn--arrow" aria-label="Next step">Next step</button>
+    </div>
+  </div>
+</section>
+
+<!-- == pages/approach/sections/40-aptools.html == -->
+<!-- ============================ COLLABORATION TOOLS ============================
+     Copy: verbatim (the reference sentence is cut off after "first-class"; completed as "first-class products." and flagged).
+     Art: the eleven tools from the reference as glass chips on a slow elliptical orbit around a Simpalm / client core (CSS trig,
+     @property angle; pauses on hover/focus, static ring without @property, plain grid on phones and with reduced motion).
+     Tool names are written as text chips (no third-party logos are copied). Category tags are plain descriptions of each tool.
+     Namespace: .apt-* -->
+<section class="section section--dark apt cv spotlight" id="tools" aria-labelledby="apt-title" style="--cis:820px">
+  <div class="grid-bg" aria-hidden="true"></div>
+  <div class="container apt-grid">
+    <div class="apt-copy">
+      <div class="sec-head">
+        <span class="eyebrow">How we work together</span>
+        <h2 class="h2" id="apt-title" data-split>Collaboration <span class="gold-text">Tools.</span></h2>
+        <p class="lead">We use a host of industry-leading collaboration tools to fuel our unique process. Many of these tools facilitate the free-flowing back-and-forth with our valued customers that results in first-class products.</p>
+      </div>
+      <ul class="apt-legend" aria-label="Tool categories">
+        <li><i class="apt-c apt-c--plan" aria-hidden="true"></i>Plan &amp; track</li>
+        <li><i class="apt-c apt-c--code" aria-hidden="true"></i>Code</li>
+        <li><i class="apt-c apt-c--design" aria-hidden="true"></i>Design</li>
+        <li><i class="apt-c apt-c--talk" aria-hidden="true"></i>Meet</li>
+        <li><i class="apt-c apt-c--share" aria-hidden="true"></i>Share files</li>
+      </ul>
+    </div>
+
+    <div class="apt-orbit" aria-label="Collaboration tools" role="group">
+      <div class="apt-ring" aria-hidden="true"><span></span><span></span></div>
+      <div class="apt-core" aria-hidden="true">
+        <svg viewBox="0 0 64 64" width="56" height="56"><rect x="17" y="17" width="30" height="30" rx="5" fill="none" stroke="currentColor" stroke-width="2.4"/><rect x="26" y="26" width="12" height="12" rx="2" fill="currentColor"/><path d="M24 17v-8M32 17v-8M40 17v-8M24 47v8M32 47v8M40 47v8M17 24h-8M17 32h-8M17 40h-8M47 24h8M47 32h8M47 40h8" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+        <b>Simpalm</b> <span>⇄ you</span>
+      </div>
+      <ul class="apt-list">
+        <li class="apt-chip" style="--i:0"><i class="apt-c apt-c--plan" aria-hidden="true"></i><b>Jira</b> <span>Plan &amp; track</span></li>
+        <li class="apt-chip" style="--i:1"><i class="apt-c apt-c--code" aria-hidden="true"></i><b>GitHub</b> <span>Code</span></li>
+        <li class="apt-chip" style="--i:2"><i class="apt-c apt-c--design" aria-hidden="true"></i><b>Figma</b> <span>Design</span></li>
+        <li class="apt-chip" style="--i:3"><i class="apt-c apt-c--talk" aria-hidden="true"></i><b>Zoom</b> <span>Meet</span></li>
+        <li class="apt-chip" style="--i:4"><i class="apt-c apt-c--share" aria-hidden="true"></i><b>Google Drive</b> <span>Share files</span></li>
+        <li class="apt-chip" style="--i:5"><i class="apt-c apt-c--plan" aria-hidden="true"></i><b>Basecamp</b> <span>Plan &amp; track</span></li>
+        <li class="apt-chip" style="--i:6"><i class="apt-c apt-c--code" aria-hidden="true"></i><b>Bitbucket</b> <span>Code</span></li>
+        <li class="apt-chip" style="--i:7"><i class="apt-c apt-c--design" aria-hidden="true"></i><b>InVision</b> <span>Design</span></li>
+        <li class="apt-chip" style="--i:8"><i class="apt-c apt-c--talk" aria-hidden="true"></i><b>Skype</b> <span>Meet</span></li>
+        <li class="apt-chip" style="--i:9"><i class="apt-c apt-c--share" aria-hidden="true"></i><b>Dropbox</b> <span>Share files</span></li>
+        <li class="apt-chip" style="--i:10"><i class="apt-c apt-c--plan" aria-hidden="true"></i><b>Time Doctor</b> <span>Time tracking</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- == pages/approach/sections/50-apmodels.html == -->
+<!-- ============================ ENGAGEMENT MODELS ============================
+     Copy: verbatim (typo fixes "Engagements" and "fixed- cost" flagged). The three finder options paraphrase the condition each
+     card's own copy names (well-defined scope, exploratory R&D, engineers on retainer); picking one highlights that card.
+     Namespace: .apm-* -->
+<section class="section section--white apm cv" id="models" aria-labelledby="apm-title" style="--cis:720px">
+  <div class="container">
+    <div class="apm-head">
+      <div class="sec-head">
+        <span class="eyebrow">Process + People + Price</span>
+        <h2 class="h2" id="apm-title" data-split>Engagement <span class="ink-gold">Models.</span></h2>
+      </div>
+      <div class="apm-find reveal" role="group" aria-labelledby="apm-find-t">
+        <p class="apm-find-t" id="apm-find-t">What does your project look like?</p>
+        <div class="apm-opts">
+          <button type="button" class="apm-opt" data-pick="fixed" aria-pressed="false">My scope is well-defined</button>
+          <button type="button" class="apm-opt" data-pick="tm" aria-pressed="false">It needs exploratory R&amp;D</button>
+          <button type="button" class="apm-opt" data-pick="team" aria-pressed="false">I want to extend my team</button>
+        </div>
+      </div>
+    </div>
+
+    <ul class="apm-cards" data-stagger="80">
+      <li class="apm-card card beam reveal" data-model="fixed" data-tilt data-tilt-max="5">
+        <div class="apm-ico" aria-hidden="true"><svg viewBox="0 0 48 48" width="48" height="48"><rect x="8" y="12" width="32" height="26" rx="6"/><path d="M16 12V9a8 8 0 0 1 16 0v3"/><path class="apm-ico-a" d="M24 22v8M20 26h8"/></svg></div>
+        <span class="apm-tag">Well-defined scope</span>
+        <h3 class="h3">Fixed Cost</h3>
+        <p>This is one of our unique selling propositions. If you have a well-defined scope, we can create a fixed-cost estimate for your product. Fixed-cost pricing is advantageous in managing project costs.</p>
+      </li>
+      <li class="apm-card card beam reveal" data-model="tm" data-tilt data-tilt-max="5">
+        <div class="apm-ico" aria-hidden="true"><svg viewBox="0 0 48 48" width="48" height="48"><path d="M14 8h20M14 40h20M16 8c0 10 16 12 16 16s-16 6-16 16M32 8c0 10-16 12-16 16s16 6 16 16"/><path class="apm-ico-a" d="M20 36h8"/></svg></div>
+        <span class="apm-tag">Exploratory research</span>
+        <h3 class="h3">Time And Materials</h3>
+        <p>A Time and Materials model is appropriate when the project scope is not clearly defined or when a project requires exploratory research and development.</p>
+      </li>
+      <li class="apm-card card beam reveal" data-model="team" data-tilt data-tilt-max="5">
+        <div class="apm-ico" aria-hidden="true"><svg viewBox="0 0 48 48" width="48" height="48"><circle cx="17" cy="17" r="6"/><circle cx="33" cy="17" r="6"/><path d="M6 38c1-7 6-11 11-11s10 4 11 11M22 38c1-7 6-11 11-11s10 4 11 11"/><path class="apm-ico-a" d="M24 6v6M21 9h6"/></svg></div>
+        <span class="apm-tag">On retainer · on-site or remote</span>
+        <h3 class="h3">Dedicated Teams</h3>
+        <p>Several of our clients require dedicated software engineers on retainer basis. We provide best in class resources who will work as your extended team, either on-site or remotely to augment your pre-existing teams.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- == sections/96-contact.html == -->
+<!-- CONTACT · owner 96 · ids: contact (the section), contact-title, contact-form, contact-live · classes: contact-*
+     The form is a client-side demo: method="dialog" outside a dialog is a no-op, so even without JS nothing is sent anywhere. -->
+<section class="section contact" id="contact" aria-labelledby="contact-title">
+  <div class="contact-bg" aria-hidden="true"><span class="grid-bg grid-bg--ink"></span><span class="contact-glow"></span></div>
+
+  <div class="container contact-wrap">
+
+    <div class="contact-head">
+      <span class="eyebrow">Contact Us</span>
+      <h2 class="h2" id="contact-title" data-split>Get a free <span class="ink-gold">consultation</span> today</h2>
+      <h3 class="contact-nda">(We sign your NDA)</h3>
+    </div>
+
+    <div class="contact-call">
+      <p class="contact-div"><span>Call Us</span></p>
+      <ul class="contact-phones" data-stagger="80">
+        <li class="reveal">
+          <a class="contact-phone" href="tel:+13015413076" data-tilt data-tilt-max="5" aria-label="Call Mid-Atlantic Region (301) 541-3076">
+            <span class="contact-phone-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span>
+            <span class="contact-phone-k">Mid-Atlantic Region</span>
+            <b class="contact-phone-n">(301) 541-3076</b>
+          </a>
+        </li>
+        <li class="reveal">
+          <a class="contact-phone" href="tel:+13125545843" data-tilt data-tilt-max="5" aria-label="Call Mid-West Region (312) 554-5843">
+            <span class="contact-phone-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span>
+            <span class="contact-phone-k">Mid-West Region</span>
+            <b class="contact-phone-n">(312) 554-5843</b>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <figure class="contact-art reveal" data-reveal="up">
+      <div class="contact-art-media" data-parallax="8">
+        <img src="assets/img/image-20.webp" alt="City Skyline" width="830" height="689" loading="lazy" decoding="async">
+      </div>
+      <span class="contact-art-scan" aria-hidden="true"></span>
+      <span class="contact-art-corners" aria-hidden="true"></span>
+      <figcaption class="contact-art-hud">
+        <span>Rockville MD</span> <span>Chicago IL</span> <span>New York NY</span> <span>Tysons VA</span>
+      </figcaption>
+    </figure>
+
+    <div class="contact-card beam reveal" data-reveal="left">
+      <form class="contact-form" id="contact-form" action="#" method="dialog" aria-describedby="contact-demo">
+        <p class="contact-form-t">Tell us about your project</p>
+
+        <div class="contact-row">
+          <div class="contact-field">
+            <label class="contact-label" for="contact-name">Name <span class="contact-req" aria-hidden="true">*</span></label>
+            <div class="contact-control">
+              <svg class="contact-fico" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="3.6"/><path d="M4.5 20a7.5 7.5 0 0 1 15 0"/></svg>
+              <input id="contact-name" name="name" type="text" autocomplete="name" required minlength="2" maxlength="80" placeholder="Your name" aria-describedby="contact-name-err">
+            </div>
+            <p class="contact-err" id="contact-name-err" role="alert"></p>
+          </div>
+          <div class="contact-field">
+            <label class="contact-label" for="contact-email">Email <span class="contact-req" aria-hidden="true">*</span></label>
+            <div class="contact-control">
+              <svg class="contact-fico" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7l8.5 6 8.5-6"/></svg>
+              <input id="contact-email" name="email" type="email" autocomplete="email" inputmode="email" required maxlength="120" placeholder="you@company.com" aria-describedby="contact-email-err">
+            </div>
+            <p class="contact-err" id="contact-email-err" role="alert"></p>
+          </div>
+        </div>
+
+        <div class="contact-field">
+          <label class="contact-label" for="contact-phone">Phone <span class="contact-opt">(optional)</span></label>
+          <div class="contact-control">
+            <svg class="contact-fico" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
+            <input id="contact-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" maxlength="30" placeholder="Phone number" aria-describedby="contact-phone-err">
+          </div>
+          <p class="contact-err" id="contact-phone-err" role="alert"></p>
+        </div>
+
+        <div class="contact-field contact-field--grow">
+          <label class="contact-label" for="contact-message">Message <span class="contact-req" aria-hidden="true">*</span></label>
+          <div class="contact-control contact-control--area">
+            <svg class="contact-fico" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3h11A2.5 2.5 0 0 1 20 5.5v8a2.5 2.5 0 0 1-2.5 2.5H11l-4.5 4v-4h0A2.5 2.5 0 0 1 4 13.5z"/></svg>
+            <textarea id="contact-message" name="message" required minlength="10" maxlength="1200" rows="4" placeholder="Tell us about your idea" aria-describedby="contact-message-err"></textarea>
+          </div>
+          <p class="contact-err" id="contact-message-err" role="alert"></p>
+        </div>
+
+        <button class="btn btn--gold btn--arrow btn--block contact-submit" type="submit">Get a free consultation</button>
+        <p class="contact-demo" id="contact-demo">Demo form: nothing is sent from this preview.</p>
+      </form>
+
+      <div class="contact-done" id="contact-done" tabindex="-1" hidden>
+        <svg class="contact-done-ico" viewBox="0 0 64 64" width="64" height="64" fill="none" aria-hidden="true"><circle class="contact-done-ring" cx="32" cy="32" r="29" pathLength="1"/><path class="contact-done-tick" d="M20 33l8 8 16-17" pathLength="1"/></svg>
+        <p class="contact-done-t">Thank you<span id="contact-done-name"></span>.</p>
+        <p class="contact-done-p">This is a demo form, so nothing was sent. To reach Simpalm, call (301) 541-3076 or write to <a href="mailto:contact@simpalm.com">contact@simpalm.com</a>.</p>
+        <button class="btn btn--ghost" type="button" id="contact-reset">Back to the form</button>
+      </div>
+      <p class="sr-only" id="contact-live" role="status" aria-live="polite"></p>
+    </div>
+
+  </div>
+</section>
+
+<!-- == sections/97-main-close.html == -->
+</main>
+
+<!-- == sections/98-footer.html == -->
+<!-- Footer: navy, gold circuit divider, brand block, three link columns, four office cards, bottom bar. JS: js/98-footer.js -->
+<footer class="foot section section--dark cv spotlight" id="foot" aria-labelledby="foot-title" style="--cis:820px">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs><symbol id="foot-i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0113 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4"/></symbol><symbol id="foot-i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3.5h3.5l1.7 4.6-2.2 1.4a11 11 0 005.5 5.5l1.4-2.2 4.6 1.7V18a2.5 2.5 0 01-2.7 2.5A15.5 15.5 0 013 6.2 2.5 2.5 0 015 3.5z"/></symbol><symbol id="foot-i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.6"/><path d="M3.5 7.5l8.5 6 8.5-6"/></symbol><symbol id="foot-i-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></symbol><symbol id="foot-i-ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></symbol><symbol id="foot-i-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></symbol><symbol id="foot-i-fb" viewBox="0 0 24 24"><path fill="currentColor" d="M13.6 21v-8.1h2.7l.5-3.2h-3.2V7.7c0-.9.4-1.6 1.7-1.6h1.6V3.3S15.6 3 14.4 3c-2.6 0-4.3 1.6-4.3 4.4v2.3H7.3v3.2h2.8V21z"/></symbol><symbol id="foot-i-in" viewBox="0 0 24 24"><path fill="currentColor" d="M5 3.4a2.5 2.5 0 110 5 2.5 2.5 0 010-5zM3.2 9.8h3.6V21H3.2zM9.4 9.8h3.5v1.5h.1c.5-.9 1.7-1.8 3.5-1.8 3.7 0 4.4 2.4 4.4 5.6V21h-3.6v-5.2c0-1.3 0-2.9-1.8-2.9s-2 1.4-2 2.8V21H9.4z"/></symbol></defs></svg>
+<div class="foot-divider" aria-hidden="true"><svg viewBox="0 0 1440 56" preserveAspectRatio="xMidYMid slice" focusable="false"><defs><linearGradient id="foot-g" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1440" y2="0"><stop offset="0" stop-color="#D4A83F" stop-opacity="0"/><stop offset=".16" stop-color="#D4A83F"/><stop offset=".5" stop-color="#F3D98B"/><stop offset=".84" stop-color="#D4A83F"/><stop offset="1" stop-color="#D4A83F" stop-opacity="0"/></linearGradient></defs><g fill="none" stroke="url(#foot-g)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M0 30H556l20-20H864l20 20H1440"/><path class="foot-div__b" d="M0 46H300l14-14H468M1440 46H1140l-14-14H972" stroke-opacity=".55"/><path d="M648 10v-4M672 10v-4M696 10v-4M720 10v-4M744 10v-4M768 10v-4M792 10v-4" stroke-opacity=".5"/></g><g class="foot-div__pulse" fill="none" stroke="#FFF7D6" stroke-width="2.2" stroke-linecap="round"><path class="foot-div__p1" pathLength="1000" d="M0 30H556l20-20H864l20 20H1440"/></g><g fill="#061A33" stroke="#D4A83F" stroke-width="1.5"><circle cx="468" cy="32" r="3.2"/><circle cx="972" cy="32" r="3.2"/><circle cx="576" cy="10" r="3.2"/><circle cx="864" cy="10" r="3.2"/></g><g fill="#F3D98B"><circle cx="720" cy="10" r="2.6"/></g></svg></div>
+<div class="grid-bg foot-grid" aria-hidden="true"></div><div class="noise" aria-hidden="true"></div>
+<div class="container foot-wrap">
+<h2 class="sr-only" id="foot-title">Simpalm links, offices and contact</h2>
+<div class="foot-top">
+<div class="foot-brand">
+<a class="foot-logo" href="https://www.simpalm.com/"><img src="data:image/png;base64,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" width="123" height="45" alt="Simpalm" loading="lazy" decoding="async"></a>
+<p class="foot-tagline">Award-Winning AI&nbsp;&amp; Digital Product Development Company</p>
+<ul class="foot-kpis" aria-label="Simpalm at a glance"><li><b>16+</b> Years in Business</li> <li><b>500+</b> Digital Products Delivered</li> <li><b>12+</b> Industries Served</li></ul>
+<div class="btn-row foot-actions"><a class="btn btn--gold btn--arrow" href="#contact">Request Quote</a> <a class="foot-mail" href="mailto:contact@simpalm.com"><svg class="foot-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#foot-i-mail"/></svg><span>contact@simpalm.com</span></a></div>
+</div>
+<nav class="foot-cols" aria-label="Footer">
+<details class="foot-col" open><summary class="foot-col__sum"><h3 class="foot-col__t">Mobile Expertise</h3><svg class="foot-ico foot-col__chev" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#foot-i-chev"/></svg></summary> <ul class="foot-links"><li><a href="https://www.simpalm.com/services/app-design">App Design</a></li> <li><a href="https://www.simpalm.com/services/iphone-app-development-company">iPhone App Development</a></li> <li><a href="https://www.simpalm.com/services/top-android-developers">Android App Development</a></li> <li><a href="https://www.simpalm.com/services/cross-platform-app-development">Cross Platform App Development</a></li> <li><a href="https://www.simpalm.com/services/react-native-app-developer">React Native App Development</a></li> <li><a href="https://www.simpalm.com/services/mvp-development">MVP Development</a></li> <li><a href="https://www.simpalm.com/services/app-maintenance-and-support">App Maintenance and Support</a></li> <li><a href="https://www.simpalm.com/app-development-dc-md-va">App Development in DC/ MD/ VA</a></li> <li><a href="https://www.simpalm.com/illinois-chicago-mobile-app-development-company">App Development in Chicago</a></li> <li><a href="https://www.simpalm.com/app-development-company-in-new-york">App Development in New York</a></li></ul></details>
+<details class="foot-col" open><summary class="foot-col__sum"><h3 class="foot-col__t">Web Expertise</h3><svg class="foot-ico foot-col__chev" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#foot-i-chev"/></svg></summary> <ul class="foot-links"><li><a href="https://www.simpalm.com/services/web-app-development-company-usa">Web Application Development</a></li> <li><a href="https://www.simpalm.com/services/progressive-web-app-development">Progressive Web App Development</a></li> <li><a href="https://www.simpalm.com/services/ecommerce-development">Ecommerce Web Development</a></li> <li><a href="https://www.simpalm.com/services/front-end-development">Front-End Development Services</a></li> <li><a href="https://www.simpalm.com/services/full-stack-development">Full Stack Development</a></li> <li><a href="https://www.simpalm.com/services/reactjs-development">React Development Services</a></li> <li><a href="https://www.simpalm.com/services/hire-php-developers">PHP Development Services</a></li> <li><a href="https://www.simpalm.com/web-design-company/dc">Web Design in DC</a></li> <li><a href="https://www.simpalm.com/web-design-company/chicago">Web Design in Chicago</a></li> <li><a href="https://www.simpalm.com/web-design-company/maryland">Web Design in Maryland</a></li> <li><a href="https://www.simpalm.com/services/wordpress-development-agency">WordPress Development Services</a></li></ul></details>
+<details class="foot-col" open><summary class="foot-col__sum"><h3 class="foot-col__t">Software Development</h3><svg class="foot-ico foot-col__chev" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#foot-i-chev"/></svg></summary> <ul class="foot-links"><li><a href="https://www.simpalm.com/software-development-companies">Custom Software</a></li> <li><a href="https://www.simpalm.com/devops-consulting-services/aws">AWS Devops</a></li> <li><a href="https://www.simpalm.com/devops-consulting-services/azure">Azure Devops</a></li> <li><a href="https://www.simpalm.com/hire-developers">Hire Developers</a></li> <li><a href="https://www.simpalm.com/it-staffing-and-recruiting">IT Staffing</a></li> <li><a href="https://www.simpalm.com/software-development-companies/qa-and-testing">QA and Testing</a></li> <li><a href="https://www.simpalm.com/software-development-companies/outsourcing">Outsourcing</a></li></ul></details>
+</nav></div>
+<h3 class="sr-only">Address</h3>
+<ul class="foot-offices" aria-label="Simpalm offices">
+<li class="foot-office glass--dark" data-tilt data-tilt-max="3.5" data-tilt-glare="off"><span class="foot-office__pin"><svg class="foot-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#foot-i-pin"/></svg></span><h3 class="foot-office__t"><a href="https://maps.app.goo.gl/zmDaU1ehWyrYaCNw9" target="_blank" rel="noopener" aria-label="Maryland office on Google Maps (opens in a new tab)">Maryland<svg class="foot-ico foot-office__ext" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#foot-i-ext"/></svg></a></h3> <address class="foot-office__addr"><span>11821 Parklawn Drive, Suite 130</span> <span>Rockville, MD 20852</span></address> <a class="foot-office__tel" href="tel:+13015413076"><svg class="foot-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#foot-i-phone"/></svg><span><small>Phone:</small> 301-541-3076</span></a></li>
+<li class="foot-office glass--dark" data-tilt data-tilt-max="3.5" data-tilt-glare="off"><span class="foot-office__pin"><svg class="foot-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#foot-i-pin"/></svg></span><h3 class="foot-office__t"><a href="https://maps.app.goo.gl/yNbYoH6aHY3mSTZEA" target="_blank" rel="noopener" aria-label="Chicago office on Google Maps (opens in a new tab)">Chicago<svg class="foot-ico foot-office__ext" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#foot-i-ext"/></svg></a></h3> <address class="foot-office__addr"><span>205 N Michigan Ave Suite 810</span> <span>Chicago, IL 60601</span></address> <a class="foot-office__tel" href="tel:+13125545843"><svg class="foot-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#foot-i-phone"/></svg><span><small>Phone:</small> 312-554-5843</span></a></li>
+<li class="foot-office glass--dark" data-tilt data-tilt-max="3.5" data-tilt-glare="off"><span class="foot-office__pin"><svg class="foot-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#foot-i-pin"/></svg></span><h3 class="foot-office__t"><a href="https://maps.app.goo.gl/z9k9WPJvRttQ3N9fA" target="_blank" rel="noopener" aria-label="New York office on Google Maps (opens in a new tab)">New York<svg class="foot-ico foot-office__ext" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#foot-i-ext"/></svg></a></h3> <address class="foot-office__addr"><span>535 5th Ave 4th floor</span> <span>New York, NY 10017</span></address> <a class="foot-office__tel" href="tel:+13015413076"><svg class="foot-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#foot-i-phone"/></svg><span><small>Phone:</small> 301-541-3076</span></a></li>
+<li class="foot-office glass--dark" data-tilt data-tilt-max="3.5" data-tilt-glare="off"><span class="foot-office__pin"><svg class="foot-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#foot-i-pin"/></svg></span><h3 class="foot-office__t"><a href="https://maps.app.goo.gl/8RairsxvFrbczrRa9" target="_blank" rel="noopener" aria-label="Northern Virginia office on Google Maps (opens in a new tab)">Northern Virginia<svg class="foot-ico foot-office__ext" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#foot-i-ext"/></svg></a></h3> <address class="foot-office__addr"><span>1775 Tysons Blvd 5th Floor</span> <span>Tysons, VA 22102</span></address> <a class="foot-office__tel" href="tel:+13015413076"><svg class="foot-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#foot-i-phone"/></svg><span><small>Phone:</small> 301-541-3076</span></a></li>
+</ul>
+<div class="foot-bottom">
+<p class="foot-copy"><span>Copyright 2026 Simpalm</span> <span>All Rights Reserved</span></p>
+<div class="foot-bottom__r">
+<a class="foot-mail foot-mail--sm" href="mailto:contact@simpalm.com"><svg class="foot-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#foot-i-mail"/></svg><span>contact@simpalm.com</span></a>
+<ul class="foot-social" aria-label="Simpalm on social media"><li><a href="https://www.facebook.com/Simpalm" target="_blank" rel="nofollow noopener" aria-label="Simpalm on Facebook (opens in a new tab)"><svg class="foot-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#foot-i-fb"/></svg></a></li><li><a href="https://www.linkedin.com/company/simpalm" target="_blank" rel="nofollow noopener" aria-label="Simpalm on LinkedIn (opens in a new tab)"><svg class="foot-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#foot-i-in"/></svg></a></li></ul>
+<a class="foot-top-btn" href="#main" aria-label="Back to top"><svg class="foot-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#foot-i-up"/></svg></a>
+</div></div>
+</div></footer>
+
+<script>
+(function () {
+'use strict';
+if (window.SP) return;
+var win = window, doc = document, root = doc.documentElement, noop = function () {};
+function lerp(a, b, t) { return a + (b - a) * t; }
+function clamp(v, lo, hi) { return v < lo ? lo : v > hi ? hi : v; }
+function map(v, a, b, c, d, cl) { var t = (v - a) / (b - a || 1); if (cl) t = clamp(t, 0, 1); return c + (d - c) * t; }
+function num(v, d) { var n = parseFloat(v); return isNaN(n) ? d : n; }
+function qsa(sel, scope) { return Array.prototype.slice.call((scope || doc).querySelectorAll(sel)); }
+function attempt(fn) { try { return fn(); } catch (e) { if (win.console) console.error('[SP]', e); } }
+function raf(fn) { return requestAnimationFrame(fn); }
+function mark(el, key) { var m = el.__sp || (el.__sp = {}); if (m[key]) return false; m[key] = 1; return true; }
+function mq(q) { try { return win.matchMedia(q); } catch (e) { return { matches: false }; } }
+function onChange(m, fn) { if (m.addEventListener) m.addEventListener('change', fn); }
+function easer(step) {
+var id = 0;
+function f() { id = 0; if (step()) id = raf(f); }
+return function () { if (!id) id = raf(f); };
+}
+var mqReduce = mq('(prefers-reduced-motion: reduce)'), mqFine = mq('(hover: hover) and (pointer: fine)'), mqCoarse = mq('(pointer: coarse)');
+var motionCbs = [];
+var SP = { lerp: lerp, clamp: clamp, map: map };
+var paused = false, toggleBtn = null;
+try { paused = win.localStorage.getItem('sp-motion') === 'off'; } catch (e) {}
+var applied = !!mqReduce.matches || paused, pend = false;
+Object.defineProperty(SP, 'reduced', {
+get: function () {
+var v = !!mqReduce.matches || paused;
+if (v !== applied && !pend) {
+pend = true;
+(win.Promise ? Promise.resolve() : { then: function (f) { setTimeout(f, 0); } }).then(function () { pend = false; syncMotion(); });
+}
+return v;
+},
+enumerable: true
+});
+Object.defineProperty(SP, 'motionPaused', { get: function () { return paused; }, enumerable: true });
+Object.defineProperty(SP, 'finePointer', { get: function () { return !!mqFine.matches; }, enumerable: true });
+Object.defineProperty(SP, 'coarse', { get: function () { return !!mqCoarse.matches; }, enumerable: true });
+function syncMotion() {
+applied = !!mqReduce.matches || paused;
+root.classList.toggle('rm', applied);
+if (toggleBtn) { toggleBtn.setAttribute('aria-pressed', paused ? 'true' : 'false'); toggleBtn.hidden = !!mqReduce.matches; }
+motionCbs.slice().forEach(function (fn) { attempt(function () { fn(SP.reduced); }); });
+if (!SP.reduced) attempt(function () { SP.init(); });
+}
+onChange(mqReduce, syncMotion);
+SP.pauseMotion = function (on) {
+on = on !== false;
+if (on === paused) return;
+paused = on;
+try { if (on) win.localStorage.setItem('sp-motion', 'off'); else win.localStorage.removeItem('sp-motion'); } catch (e) {}
+syncMotion();
+};
+SP.onMotionChange = function (fn) {
+motionCbs.push(fn);
+return function () { var i = motionCbs.indexOf(fn); if (i > -1) motionCbs.splice(i, 1); };
+};
+SP.on = function (el, evt, fn, opts) {
+if (!el || !el.addEventListener) return noop;
+var o = opts === undefined ? (/^(touch|wheel|scroll|pointer|resize)/.test(evt) ? { passive: true } : false) : opts;
+el.addEventListener(evt, fn, o);
+return function () { el.removeEventListener(evt, fn, o); };
+};
+SP.rafThrottle = function (fn) {
+var id = 0, args, ctx;
+function w() { args = arguments; ctx = this; if (!id) id = raf(function () { id = 0; fn.apply(ctx, args); }); }
+w.cancel = function () { if (id) cancelAnimationFrame(id); id = 0; };
+return w;
+};
+SP.onVisible = function (el, o) {
+o = o || {};
+if (!el) return noop;
+if (!('IntersectionObserver' in win)) { if (o.enter) attempt(function () { o.enter(el); }); return noop; }
+var state = null;
+var io = new IntersectionObserver(function (entries) {
+entries.forEach(function (e) {
+var v = e.isIntersecting;
+if (v === state) return;
+state = v;
+attempt(function () { var cb = v ? o.enter : o.leave; if (cb) cb(el, e); });
+if (v && o.once) io.disconnect();
+});
+}, { threshold: o.threshold == null ? 0.15 : o.threshold, rootMargin: o.rootMargin || '0px' });
+io.observe(el);
+return function () { io.disconnect(); };
+};
+var loops = [];
+doc.addEventListener('visibilitychange', function () { loops.forEach(function (l) { l._u(); }); });
+SP.loop = function (fn, o) {
+o = o || {};
+var el = o.el, interval = 1000 / (o.fps || (SP.coarse ? 30 : 60)) - 1.5;
+var started = o.autostart !== false, vis = !el, id = 0, last = 0, drawn = false;
+var off = el ? SP.onVisible(el, {
+threshold: 0, rootMargin: o.rootMargin || '60px',
+enter: function () { vis = true; drawn = false; api._u(); },
+leave: function () { vis = false; api._u(); }
+}) : noop;
+var offMotion = SP.onMotionChange(function () { drawn = false; api._u(); });
+function frame(now) {
+id = 0;
+if (!(started && vis && !doc.hidden && !SP.reduced)) return;
+id = raf(frame);
+var dt = now - last;
+if (dt < interval) return;
+last = now;
+attempt(function () { fn(now, Math.min(dt, 100), false); });
+}
+var api = {
+_u: function () {
+var go = started && vis && !doc.hidden;
+if (go && SP.reduced) { if (!drawn) { drawn = true; attempt(function () { fn(performance.now(), 0, true); }); } return; }
+if (go && !id) { last = performance.now(); id = raf(frame); }
+else if (!go && id) { cancelAnimationFrame(id); id = 0; }
+},
+start: function () { started = true; api._u(); },
+stop: function () { started = false; api._u(); },
+destroy: function () { started = false; api._u(); off(); offMotion(); var i = loops.indexOf(api); if (i > -1) loops.splice(i, 1); }
+};
+loops.push(api);
+api._u();
+return api;
+};
+var vw = win.innerWidth || 1, vh = win.innerHeight || 1;
+var pointer = SP.pointer = { x: vw / 2, y: vh / 2, nx: 0, ny: 0, active: false };
+SP.on(win, 'pointermove', function (e) {
+if (e.pointerType === 'touch') return;
+pointer.x = e.clientX; pointer.y = e.clientY;
+pointer.nx = clamp(e.clientX / vw * 2 - 1, -1, 1);
+pointer.ny = clamp(e.clientY / vh * 2 - 1, -1, 1);
+pointer.active = true;
+});
+SP.on(root, 'pointerleave', function () { pointer.active = false; });
+SP.on(win, 'resize', function () { vw = win.innerWidth || 1; vh = win.innerHeight || 1; });
+var revealIO = null;
+function revealNow(el) {
+if (el.classList.contains('is-in')) return;
+el.classList.add('is-in');
+if (el.classList.contains('sp-split')) {
+setTimeout(function () { el.classList.add('is-done'); }, Math.min(el.__sp.words, 16) * 55 + 1200);
+}
+if (revealIO) revealIO.unobserve(el);
+}
+function splitEl(el) {
+if (!mark(el, 'split')) return;
+var walker = doc.createTreeWalker(el, NodeFilter.SHOW_TEXT, null), nodes = [], n, i = 0;
+while ((n = walker.nextNode())) { if (n.nodeValue.trim()) nodes.push(n); }
+nodes.forEach(function (tn) {
+var frag = doc.createDocumentFragment(), p = tn.parentNode;
+tn.nodeValue.split(/(\s+)/).forEach(function (part) {
+if (!part) return;
+if (/^\s+$/.test(part)) { frag.appendChild(doc.createTextNode(part)); return; }
+var w = doc.createElement('span'), inner = doc.createElement('span');
+w.className = 'sp-w'; inner.className = 'sp-wi'; inner.textContent = part;
+inner.style.setProperty('--i', i++);
+w.appendChild(inner); frag.appendChild(w);
+});
+if (p.classList && p.classList.contains('gold-text')) p.classList.add('sp-has-split');
+p.replaceChild(frag, tn);
+});
+el.__sp.words = i;
+el.classList.add('sp-split');
+}
+function initReveal(scope) {
+var els = qsa('.reveal,[data-reveal],.trace,[data-split]', scope).filter(function (el) { return mark(el, 'reveal'); });
+if (!els.length) return;
+if (SP.reduced || !('IntersectionObserver' in win)) {
+els.forEach(function (el) { el.classList.add('is-in', 'is-done'); });
+return;
+}
+els.forEach(function (el) { if (el.hasAttribute('data-split')) attempt(function () { splitEl(el); }); });
+revealIO = revealIO || new IntersectionObserver(function (entries) {
+entries.forEach(function (e) {
+if (e.isIntersecting || e.boundingClientRect.top < 0) revealNow(e.target);
+});
+}, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
+els.forEach(function (el) { revealIO.observe(el); });
+}
+function counterFmt(el) {
+var m = el.__sp || (el.__sp = {});
+if (m.fmt) return m.fmt;
+var dec = num(el.getAttribute('data-decimals'), 0), pre = el.getAttribute('data-prefix') || '', suf = el.getAttribute('data-suffix') || '';
+var nf;
+try { nf = new Intl.NumberFormat('en-US', { minimumFractionDigits: dec, maximumFractionDigits: dec, useGrouping: el.getAttribute('data-sep') !== 'off' }); } catch (e) { nf = { format: function (v) { return v.toFixed(dec); } }; }
+return (m.fmt = function (v) { return pre + nf.format(v) + suf; });
+}
+SP.countTo = function (el) {
+var target = parseFloat(el.getAttribute('data-count'));
+if (isNaN(target)) return noop;
+var fmt = counterFmt(el), from = 0, dur = num(el.getAttribute('data-duration'), 1600), t0 = 0, id = 0;
+function done() { el.textContent = fmt(target); el.style.minWidth = ''; }
+if (SP.reduced) { done(); return noop; }
+function step(now) {
+t0 = t0 || now;
+var p = clamp((now - t0) / dur, 0, 1);
+el.textContent = fmt(from + (target - from) * (p === 1 ? 1 : 1 - Math.pow(2, -10 * p)));
+if (p < 1) id = raf(step); else done();
+}
+id = raf(step);
+return function () { cancelAnimationFrame(id); done(); };
+};
+var cntPrep = null, cntGo = null;
+function prepCounters(els) {
+var todo = els.filter(function (el) { return !el.__sp.cprep; });
+var w = todo.map(function (el) { return el.offsetWidth; });
+todo.forEach(function (el, i) {
+el.__sp.cprep = 1;
+if (w[i]) el.style.minWidth = w[i] + 'px';
+el.textContent = counterFmt(el)(0);
+});
+}
+function initCounters(scope) {
+if (SP.reduced || !('IntersectionObserver' in win)) return;
+cntPrep = cntPrep || new IntersectionObserver(function (entries) {
+var hit = entries.filter(function (e) { return e.isIntersecting; }).map(function (e) { return e.target; });
+hit.forEach(function (el) { cntPrep.unobserve(el); });
+if (hit.length) attempt(function () { prepCounters(hit); });
+}, { rootMargin: '300px 0px' });
+cntGo = cntGo || new IntersectionObserver(function (entries) {
+entries.forEach(function (e) {
+if (!e.isIntersecting) return;
+var el = e.target;
+cntGo.unobserve(el); cntPrep.unobserve(el);
+attempt(function () { prepCounters([el]); SP.countTo(el); });
+});
+}, { threshold: 0.4 });
+qsa('[data-count]', scope).forEach(function (el) {
+if (!mark(el, 'count')) return;
+cntPrep.observe(el); cntGo.observe(el);
+});
+}
+function human(e) { return e.pointerType === 'mouse' || e.pointerType === 'pen'; }
+function initTilt(scope) {
+if (!SP.finePointer || SP.reduced) return;
+qsa('[data-tilt]', scope).forEach(function (el) {
+if (!mark(el, 'tilt')) return;
+var max = clamp(num(el.getAttribute('data-tilt-max'), num(el.getAttribute('data-tilt'), 8)), 0, 12);
+var st = el.style;
+if (el.getAttribute('data-tilt-glare') !== 'off') {
+var g = doc.createElement('span'); g.className = 'tilt-glare'; g.setAttribute('aria-hidden', 'true'); el.appendChild(g);
+}
+var s = { cx: 0, cy: 0, tx: 0, ty: 0, hover: false, rect: null, rt: 0 };
+function apply() {
+st.setProperty('--ry', (s.cx * max).toFixed(2) + 'deg');
+st.setProperty('--rx', (-s.cy * max).toFixed(2) + 'deg');
+st.setProperty('--mx', ((s.cx + 1) * 50).toFixed(1) + '%');
+st.setProperty('--my', ((s.cy + 1) * 50).toFixed(1) + '%');
+st.setProperty('--px', s.cx.toFixed(3));
+st.setProperty('--py', s.cy.toFixed(3));
+}
+var kick = easer(function () {
+s.cx = lerp(s.cx, s.tx, 0.14); s.cy = lerp(s.cy, s.ty, 0.14);
+var busy = s.hover || Math.abs(s.cx - s.tx) > 0.002 || Math.abs(s.cy - s.ty) > 0.002;
+if (!busy) { s.cx = s.cy = 0; el.classList.remove('is-tilting'); }
+apply();
+return busy;
+});
+SP.on(el, 'pointerenter', function (e) {
+if (!human(e)) return;
+s.hover = true; s.rect = el.getBoundingClientRect(); s.rt = performance.now();
+el.classList.add('is-tilting'); kick();
+});
+SP.on(el, 'pointermove', function (e) {
+if (!human(e) || !s.hover) return;
+var now = performance.now();
+if (now - s.rt > 250) { s.rect = el.getBoundingClientRect(); s.rt = now; }
+s.tx = clamp((e.clientX - s.rect.left) / s.rect.width * 2 - 1, -1, 1);
+s.ty = clamp((e.clientY - s.rect.top) / s.rect.height * 2 - 1, -1, 1);
+kick();
+});
+SP.on(el, 'pointerleave', function () { s.hover = false; s.tx = s.ty = 0; kick(); });
+});
+}
+var mags = [], magBound = false;
+function initMagnetic(scope) {
+if (!SP.finePointer || SP.reduced) return;
+qsa('[data-magnetic]', scope).forEach(function (el) {
+if (!mark(el, 'mag')) return;
+var m = { el: el, str: clamp(num(el.getAttribute('data-magnetic'), 0.3), 0, 0.6), rad: 70, tx: 0, ty: 0, cx: 0, cy: 0, vis: false };
+m.kick = easer(function () {
+m.cx = lerp(m.cx, m.tx, 0.18); m.cy = lerp(m.cy, m.ty, 0.18);
+var busy = Math.abs(m.cx - m.tx) > 0.05 || Math.abs(m.cy - m.ty) > 0.05;
+if (!busy) { m.cx = m.tx; m.cy = m.ty; }
+el.style.setProperty('--tx', m.cx.toFixed(2) + 'px'); el.style.setProperty('--ty', m.cy.toFixed(2) + 'px');
+return busy;
+});
+SP.onVisible(el, { threshold: 0, rootMargin: '80px', enter: function () { m.vis = true; }, leave: function () { m.vis = false; m.tx = m.ty = 0; m.kick(); } });
+mags.push(m);
+});
+if (!mags.length || magBound) return;
+magBound = true;
+SP.on(win, 'pointermove', SP.rafThrottle(function () {
+if (!pointer.active) return;
+mags.forEach(function (m) {
+if (!m.vis) return;
+var r = m.el.getBoundingClientRect(), pad = m.rad;
+if (pointer.x > r.left - pad && pointer.x < r.right + pad && pointer.y > r.top - pad && pointer.y < r.bottom + pad) {
+m.tx = clamp((pointer.x - (r.left + r.width / 2 - m.cx)) * m.str, -16, 16);
+m.ty = clamp((pointer.y - (r.top + r.height / 2 - m.cy)) * m.str, -16, 16);
+} else { m.tx = m.ty = 0; }
+m.kick();
+});
+}));
+}
+function initSpotlight(scope) {
+if (!SP.finePointer || SP.reduced) return;
+qsa('.spotlight', scope).forEach(function (el) {
+if (!mark(el, 'spot')) return;
+var move = SP.rafThrottle(function (e) {
+var r = el.getBoundingClientRect();
+el.style.setProperty('--sx', (e.clientX - r.left).toFixed(0) + 'px');
+el.style.setProperty('--sy', (e.clientY - r.top).toFixed(0) + 'px');
+el.style.setProperty('--spot', '1');
+});
+SP.on(el, 'pointermove', function (e) { if (human(e)) move(e); });
+SP.on(el, 'pointerleave', function () { move.cancel(); el.style.removeProperty('--spot'); });
+});
+}
+function initAria(scope) {
+qsa('.marquee[aria-label]', scope).forEach(function (m) { if (!m.getAttribute('role')) m.setAttribute('role', 'group'); });
+}
+function initMarquee(scope) {
+if (SP.reduced) return;
+qsa('.marquee', scope).forEach(function (m) {
+if (!mark(m, 'mq')) return;
+var track = m.querySelector('.marquee__track'), group = track && track.querySelector('.marquee__group');
+if (!group) return;
+var speed = num(m.getAttribute('data-speed'), 45), lastW = 0;
+function build() {
+qsa('[data-clone]', track).forEach(function (c) { track.removeChild(c); });
+var gw = group.getBoundingClientRect().width, cw = m.clientWidth;
+if (!gw || !cw) return;
+lastW = cw;
+var half = Math.max(1, Math.ceil(cw / gw));
+for (var i = 0; i < half * 2 - 1; i++) {
+var c = group.cloneNode(true);
+c.setAttribute('data-clone', ''); c.setAttribute('aria-hidden', 'true'); c.inert = true;
+qsa('[id]', c).forEach(function (x) { x.removeAttribute('id'); });
+qsa('a,button,[tabindex]', c).forEach(function (x) { x.setAttribute('tabindex', '-1'); });
+track.appendChild(c);
+}
+m.style.setProperty('--mq-dur', (gw * half / speed).toFixed(1) + 's');
+m.classList.add('is-ready');
+}
+build();
+SP.onVisible(m, { threshold: 0, enter: function () { m.classList.remove('is-paused'); }, leave: function () { m.classList.add('is-paused'); } });
+SP.on(win, 'resize', SP.rafThrottle(function () { if (m.clientWidth !== lastW) build(); }));
+if (doc.fonts && doc.fonts.ready) doc.fonts.ready.then(build);
+});
+}
+var prog = null, par = [];
+var onScroll = SP.rafThrottle(function () {
+var h = root.scrollHeight - win.innerHeight;
+if (prog) prog.style.setProperty('--p', (h > 0 ? clamp(win.pageYOffset / h, 0, 1) : 0).toFixed(4));
+par.forEach(function (p) {
+if (!p.vis) return;
+var r = p.el.getBoundingClientRect();
+var t = clamp(((r.top + r.height / 2) - win.innerHeight / 2) / (win.innerHeight / 2 + r.height / 2), -1, 1);
+p.el.style.setProperty('--par', (-t * p.amp).toFixed(1) + 'px');
+});
+});
+function initParallax(scope) {
+if (SP.reduced || SP.coarse) return;
+qsa('[data-parallax]', scope).forEach(function (el) {
+if (!mark(el, 'par')) return;
+var p = { el: el, amp: clamp(num(el.getAttribute('data-parallax'), 12), -24, 24), vis: false };
+SP.onVisible(el, { threshold: 0, rootMargin: '120px', enter: function () { p.vis = true; onScroll(); }, leave: function () { p.vis = false; } });
+par.push(p);
+});
+}
+function initBeams(scope) {
+qsa('.beam', scope).forEach(function (el) {
+if (!mark(el, 'beam')) return;
+var arc = null, ro = null;
+function fit() { if (arc) arc.style.setProperty('--bd', (Math.ceil(Math.hypot(el.offsetWidth, el.offsetHeight)) + 4) + 'px'); }
+function show() {
+el.classList.add('is-vis');
+if (!arc && !SP.reduced) {
+arc = doc.createElement('span'); arc.className = 'beam__arc'; arc.setAttribute('aria-hidden', 'true');
+el.appendChild(arc); el.classList.add('has-arc');
+}
+if (arc) {
+fit();
+if (win.ResizeObserver && !ro) { ro = new ResizeObserver(SP.rafThrottle(fit)); ro.observe(el); }
+}
+}
+SP.onVisible(el, {
+threshold: 0, rootMargin: '80px', enter: show,
+leave: function () { el.classList.remove('is-vis'); if (ro) { ro.disconnect(); ro = null; } }
+});
+SP.onMotionChange(function (r) { if (!r && el.classList.contains('is-vis')) show(); });
+});
+}
+function initTraces(scope) {
+qsa('.trace', scope).forEach(function (el) {
+if (!mark(el, 'trace') || el.querySelector('.trace__p')) return;
+var p = doc.createElement('i'); p.className = 'trace__p'; p.setAttribute('aria-hidden', 'true');
+el.appendChild(p);
+});
+}
+var gateIO = null, gateOwn = win.WeakSet ? new WeakSet() : null;
+function isScripted(a) {
+return !(win.CSSAnimation && a instanceof win.CSSAnimation) && !(win.CSSTransition && a instanceof win.CSSTransition);
+}
+function gateScripted(el) {
+if (!gateOwn || !el.getAnimations) return;
+attempt(function () {
+el.getAnimations({ subtree: true }).forEach(function (a) {
+if (!isScripted(a)) return;
+var t = a.effect && a.effect.target, off = !!(t && t.closest && t.closest('.is-offscreen'));
+if (off && a.playState === 'running') { a.pause(); gateOwn.add(a); }
+else if (!off && gateOwn.has(a)) { gateOwn.delete(a); if (a.playState === 'paused') a.play(); }
+});
+});
+}
+function initGate(scope) {
+if (!('IntersectionObserver' in win)) return;
+gateIO = gateIO || new IntersectionObserver(function (entries) {
+entries.forEach(function (e) {
+var el = e.target, r = e.boundingClientRect;
+var off = !e.isIntersecting && (el.__sp.gateSec || (r.width > 0 && r.height > 0));
+if (el.classList.contains('is-offscreen') === off) return;
+el.classList.toggle('is-offscreen', off);
+gateScripted(el);
+});
+}, { rootMargin: '120px 0px', threshold: 0 });
+var seen = [];
+function add(el, sec) {
+if (!el || el.nodeType !== 1 || seen.indexOf(el) > -1) return;
+var tag = el.tagName;
+if (tag === 'SCRIPT' || tag === 'STYLE' || !mark(el, 'gate')) return;
+el.__sp.gateSec = !!sec;
+if (!sec) {
+var cs = win.getComputedStyle(el), p = cs.position;
+if (cs.display === 'contents' || cs.display === 'none' || p === 'absolute' || p === 'fixed') return;
+}
+seen.push(el); gateIO.observe(el);
+}
+qsa('main > section, body > footer', scope).forEach(function (s) {
+add(s, true);
+Array.prototype.forEach.call(s.children, function (c) {
+add(c, false);
+if (c.classList.contains('container')) Array.prototype.forEach.call(c.children, function (cc) { add(cc, false); });
+});
+});
+}
+var trip = null;
+function tripEnd() {
+if (!trip) return;
+var t = trip; trip = null;
+cancelAnimationFrame(t.id);
+t.off.forEach(function (fn) { fn(); });
+t.cvs.forEach(function (c) { c.classList.remove('sp-unskip'); });
+}
+function jumpTo(y) {
+try { win.scrollTo({ top: y, left: 0, behavior: 'instant' }); } catch (e) { win.scrollTo(0, y); }
+}
+SP.scrollTo = function (target, o) {
+if (typeof target === 'string') target = doc.getElementById(target.replace(/^#/, ''));
+if (!target) return;
+tripEnd();
+if (!target.hasAttribute('tabindex')) target.setAttribute('tabindex', '-1');
+attempt(function () { target.focus({ preventScroll: true }); });
+var instant = SP.reduced || !!(o && o.instant);
+var cvs = qsa('.cv').filter(function (c) { return !c.contains(target) && (c.compareDocumentPosition(target) & 4); });
+cvs.forEach(function (c) { c.classList.add('sp-unskip'); });
+function line() {
+return (parseFloat(win.getComputedStyle(root).scrollPaddingTop) || 0) + (parseFloat(win.getComputedStyle(target).scrollMarginTop) || 0);
+}
+function goal() {
+var max = Math.max(0, root.scrollHeight - win.innerHeight);
+return clamp(win.pageYOffset + target.getBoundingClientRect().top - line(), 0, max);
+}
+var y0 = win.pageYOffset, g0 = goal();
+var dur = instant ? 0 : clamp(380 + Math.abs(g0 - y0) * 0.22, 420, 1100);
+var t0 = 0, settled = 0, tEnd = 0;
+var t = trip = { id: 0, cvs: cvs, off: [] };
+['wheel', 'touchstart', 'pointerdown', 'keydown'].forEach(function (ev) {
+t.off.push(SP.on(win, ev, function () { if (trip === t) tripEnd(); }, { passive: true }));
+});
+function frame(now) {
+if (trip !== t) return;
+t0 = t0 || now;
+var p = dur ? clamp((now - t0) / dur, 0, 1) : 1, g = goal();
+if (p < 1) {
+jumpTo(y0 + (g - y0) * (1 - Math.pow(1 - p, 3)));
+} else {
+tEnd = tEnd || now;
+jumpTo(g);
+settled = (Math.abs(target.getBoundingClientRect().top - line()) < 1.5 || Math.abs(win.pageYOffset - g) < 1) ? settled + 1 : 0;
+if (settled >= 4 || now - tEnd > 1200) { tripEnd(); return; }
+}
+t.id = raf(frame);
+}
+t.id = raf(frame);
+};
+doc.addEventListener('click', function (e) {
+var a = e.target && e.target.closest && e.target.closest('a[href^="#"]');
+if (!a || e.defaultPrevented || e.button || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+var h = a.getAttribute('href');
+if (!h || h.length < 2) return; /* href="#" placeholders do nothing */
+var t = attempt(function () { return doc.getElementById(decodeURIComponent(h.slice(1))); });
+if (!t) return;
+e.preventDefault();
+SP.scrollTo(t);
+attempt(function () { history.pushState(null, '', h); });
+});
+function hashJump() {
+var h = win.location.hash;
+if (!h || h.length < 2) return;
+var t = attempt(function () { return doc.getElementById(decodeURIComponent(h.slice(1))); });
+if (t) SP.scrollTo(t, { instant: true });
+}
+SP.on(win, 'hashchange', hashJump);
+SP.on(win, 'load', function () { setTimeout(hashJump, 0); });
+SP.lazyVideo = function (v) {
+if (!v || !mark(v, 'video')) return noop;
+var main = v.getAttribute('data-src'), srcs = qsa('source[data-src]', v);
+v.muted = true; v.setAttribute('muted', ''); v.playsInline = true; v.setAttribute('playsinline', '');
+v.preload = 'none'; v.removeAttribute('autoplay');
+var saveData = !!(navigator.connection && navigator.connection.saveData);
+var loaded = false, failed = false, visible = false;
+function still() { return SP.reduced || saveData; }
+function play() {
+if (!loaded || failed || !visible || doc.hidden || still()) return;
+var p = v.play(); if (p && p.catch) p.catch(noop);
+}
+function load() {
+if (loaded || failed || still()) return;
+loaded = true; v.classList.add('is-loading');
+if (main) v.src = main;
+srcs.forEach(function (s) { s.src = s.getAttribute('data-src'); });
+v.preload = 'auto'; v.load();
+}
+v.addEventListener('error', function () { /* capture: also catches <source> errors */
+failed = true; v.classList.remove('is-loading', 'is-ready', 'is-playing'); v.classList.add('is-error');
+v.removeAttribute('src'); srcs.forEach(function (s) { s.removeAttribute('src'); });
+}, true);
+v.addEventListener('loadeddata', function () { v.classList.remove('is-loading'); v.classList.add('is-ready'); });
+v.addEventListener('canplay', play);
+v.addEventListener('playing', function () { v.classList.add('is-playing'); });
+v.addEventListener('pause', function () { v.classList.remove('is-playing'); });
+function apply() {
+if (still()) { v.pause(); v.classList.add('is-static'); v.classList.remove('is-playing'); }
+else { v.classList.remove('is-static'); if (visible) { load(); play(); } }
+}
+var off = SP.onVisible(v, { threshold: 0, rootMargin: '300px 0px', enter: function () { visible = true; load(); play(); }, leave: function () { visible = false; v.pause(); } });
+var offMotion = SP.onMotionChange(apply);
+function onVis() { if (doc.hidden) v.pause(); else play(); }
+doc.addEventListener('visibilitychange', onVis);
+apply();
+return function () { off(); offMotion(); doc.removeEventListener('visibilitychange', onVis); v.pause(); };
+};
+function initMotionToggle() {
+if (toggleBtn || !doc.body) return;
+var slot = doc.querySelector('[data-sp-motion-slot]') || doc.querySelector('.foot-bottom__r');
+var b = doc.createElement('button');
+b.type = 'button'; b.className = 'sp-motion' + (slot ? '' : ' sp-motion--fixed');
+b.innerHTML = '<svg class="sp-motion__pause" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><rect x="3" y="2" width="3.5" height="12" rx="1"/><rect x="9.5" y="2" width="3.5" height="12" rx="1"/></svg>' +
+'<svg class="sp-motion__play" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M4 2.2v11.6a.8.8 0 0 0 1.2.7l9-5.8a.8.8 0 0 0 0-1.4l-9-5.8A.8.8 0 0 0 4 2.2z"/></svg>' +
+'<span>Pause animations</span>';
+b.setAttribute('aria-pressed', paused ? 'true' : 'false');
+b.hidden = !!mqReduce.matches;
+b.addEventListener('click', function () { SP.pauseMotion(!paused); });
+if (slot) slot.insertBefore(b, slot.firstChild); else doc.body.appendChild(b);
+toggleBtn = b;
+}
+SP.init = function (scope) {
+scope = scope || doc;
+root.classList.add('js');
+root.classList.toggle('rm', SP.reduced);
+prog = prog || doc.querySelector('.scroll-progress');
+[initAria, initGate, initReveal, initTraces, initCounters, initTilt, initMagnetic, initSpotlight, initMarquee, initParallax, initBeams].forEach(function (fn) {
+attempt(function () { fn(scope); });
+});
+qsa('video[data-src], video[data-lazy]', scope).forEach(function (v) { attempt(function () { SP.lazyVideo(v); }); });
+onScroll();
+};
+SP.ready = function (fn) { if (doc.readyState === 'loading') doc.addEventListener('DOMContentLoaded', fn); else fn(); };
+SP.isOffscreen = function (el) { return !!(el && el.closest && el.closest('.is-offscreen')); };
+SP.on(win, 'scroll', onScroll);
+SP.on(win, 'resize', onScroll);
+window.SP = SP;
+SP.ready(function () { SP.init(); attempt(initMotionToggle); });
+})();
+(function () {
+'use strict';
+var bar = document.getElementById('nav-bar');
+if (!bar) return;
+var doc = document, html = doc.documentElement;
+var burger = doc.getElementById('nav-burger');
+var main = doc.getElementById('nav-main');
+var items = Array.prototype.slice.call(bar.querySelectorAll('.nav-item--mega'));
+var mqDesk = window.matchMedia ? window.matchMedia('(min-width: 1100px)') : { matches: true };
+var mqReduce = window.matchMedia ? window.matchMedia('(prefers-reduced-motion: reduce)') : { matches: false };
+var HOVER_IN = 90, HOVER_OUT = 200;
+var pinned = null;      // item opened by click or keyboard (survives mouse leave)
+var timer = 0, outTimer = 0;
+var sheetOpen = false;
+var inerted = [];
+function isDesk() { return !!mqDesk.matches; }
+function reduced() { return !!(window.SP ? window.SP.reduced : mqReduce.matches); }
+function btnOf(item) { return item.querySelector(':scope > .nav-link'); }
+function panelOf(item) { return item.querySelector(':scope > .nav-panel'); }
+function openItem() { for (var i = 0; i < items.length; i++) if (items[i].classList.contains('is-open')) return items[i]; return null; }
+function syncMegaClass() {
+html.classList.toggle('nav-mega-open', isDesk() && !!openItem());
+}
+function setOpen(item, open) {
+var b = btnOf(item);
+item.classList.toggle('is-open', open);
+if (b) b.setAttribute('aria-expanded', open ? 'true' : 'false');
+syncMegaClass();
+if (open) show();
+}
+function closeAll(except) {
+items.forEach(function (it) { if (it !== except && it.classList.contains('is-open')) setOpen(it, false); });
+if (!except) pinned = null;
+syncMegaClass();
+}
+items.forEach(function (item) {
+var b = btnOf(item), p = panelOf(item);
+if (!b || !p) return;
+item.addEventListener('pointerenter', function (e) {
+if (!isDesk() || e.pointerType !== 'mouse') return;
+clearTimeout(outTimer);
+if (item.classList.contains('is-open')) return;
+clearTimeout(timer);
+timer = setTimeout(function () { pinned = null; closeAll(item); setOpen(item, true); }, openItem() ? 0 : HOVER_IN);
+});
+item.addEventListener('pointerleave', function (e) {
+if (!isDesk() || e.pointerType !== 'mouse') return;
+clearTimeout(timer);
+if (pinned === item) return;
+clearTimeout(outTimer);
+outTimer = setTimeout(function () { if (pinned !== item) setOpen(item, false); }, HOVER_OUT);
+});
+b.addEventListener('click', function () {
+clearTimeout(timer); clearTimeout(outTimer);
+var open = item.classList.contains('is-open');
+if (isDesk()) {
+if (open && pinned !== item) { pinned = item; return; }          // opened by hover, click pins it
+if (open) { setOpen(item, false); pinned = null; return; }
+closeAll(item); pinned = item; setOpen(item, true);
+} else {
+closeAll(open ? null : item);
+setOpen(item, !open);
+}
+});
+b.addEventListener('keydown', function (e) {
+if (!isDesk()) return;
+if (e.key === 'ArrowDown') {
+e.preventDefault();
+if (!item.classList.contains('is-open')) { closeAll(item); pinned = item; setOpen(item, true); }
+focusIn(p, 0);
+}
+});
+item.addEventListener('focusout', function (e) {
+if (!isDesk()) return;
+var to = e.relatedTarget;
+if (to && item.contains(to)) return;
+if (!to) return;                       // window blur: keep state
+setOpen(item, false); if (pinned === item) pinned = null;
+});
+});
+function links(scope) {
+return Array.prototype.slice.call(scope.querySelectorAll('a[href]')).filter(function (a) { return a.offsetParent !== null || a.getClientRects().length; });
+}
+function focusIn(panel, idx) {
+var l = links(panel); if (!l.length) return;
+var el = l[Math.max(0, Math.min(idx, l.length - 1))];
+try { el.focus({ preventScroll: true }); } catch (e) { el.focus(); }
+}
+bar.addEventListener('keydown', function (e) {
+var k = e.key;
+if (k === 'Escape') { onEscape(e); return; }
+if (k === 'Tab' && sheetOpen) { trapTab(e); return; }
+if (!isDesk()) return;
+var t = e.target;
+var panel = t.closest && t.closest('.nav-panel');
+if (panel) {
+var l = links(panel), i = l.indexOf(t);
+if (i < 0) return;
+var item = panel.parentNode;
+if (k === 'ArrowDown' || k === 'ArrowRight') { e.preventDefault(); l[(i + 1) % l.length].focus(); }
+else if (k === 'ArrowUp' || k === 'ArrowLeft') {
+e.preventDefault();
+if (i === 0) { var b = btnOf(item); if (b) b.focus(); } else l[i - 1].focus();
+}
+else if (k === 'Home') { e.preventDefault(); l[0].focus(); }
+else if (k === 'End') { e.preventDefault(); l[l.length - 1].focus(); }
+return;
+}
+if ((k === 'ArrowRight' || k === 'ArrowLeft') && t.classList && t.classList.contains('nav-link')) {
+var tops = Array.prototype.slice.call(bar.querySelectorAll('.nav-list > .nav-item > .nav-link, .nav-list > .nav-item > .nav-cta'));
+var j = tops.indexOf(t); if (j < 0) return;
+e.preventDefault();
+var n = tops[(j + (k === 'ArrowRight' ? 1 : tops.length - 1)) % tops.length];
+n.focus();
+var it = n.closest('.nav-item');
+if (openItem() && it && it.classList.contains('nav-item--mega')) { closeAll(it); pinned = it; setOpen(it, true); }
+else if (openItem()) closeAll();
+}
+});
+function onEscape(e) {
+if (sheetOpen) { e.preventDefault(); closeSheet(true); return; }
+var open = openItem();
+if (open) {
+e.preventDefault();
+var inside = open.contains(doc.activeElement);
+setOpen(open, false); pinned = null;
+if (inside) { var b = btnOf(open); if (b) b.focus(); }
+}
+}
+doc.addEventListener('pointerdown', function (e) {
+if (!openItem() || !isDesk()) return;
+if (bar.contains(e.target)) return;
+closeAll();
+});
+bar.addEventListener('click', function (e) {
+var a = e.target.closest && e.target.closest('a[href]');
+if (!a || !main.contains(a)) return;
+if (sheetOpen) closeSheet(false);
+closeAll();
+});
+function scrollbarW() { return window.innerWidth - html.clientWidth; }
+function setInert(on) {
+if (on) {
+inerted = [];
+Array.prototype.slice.call(doc.body.children).forEach(function (el) {
+if (el === bar || el.tagName === 'SCRIPT' || el.tagName === 'STYLE' || el.tagName === 'svg' || el.tagName === 'LINK') return;
+if (el.hasAttribute('inert')) return;
+el.setAttribute('inert', ''); inerted.push(el);
+});
+} else {
+inerted.forEach(function (el) { el.removeAttribute('inert'); });
+inerted = [];
+}
+}
+function openSheet() {
+if (sheetOpen || isDesk() || !burger) return;
+sheetOpen = true;
+closeAll();
+show();
+var sw = scrollbarW();
+if (sw > 0) html.style.paddingRight = sw + 'px';
+html.classList.add('nav-lock');
+bar.classList.add('nav-open');
+burger.setAttribute('aria-expanded', 'true');
+burger.setAttribute('aria-label', 'Close menu');
+setInert(true);
+var first = main.querySelector('.nav-list > .nav-item > .nav-link');
+if (first) { try { first.focus({ preventScroll: true }); } catch (e) { first.focus(); } }
+}
+function closeSheet(returnFocus) {
+if (!sheetOpen) return;
+sheetOpen = false;
+bar.classList.remove('nav-open');
+html.classList.remove('nav-lock');
+html.style.paddingRight = '';
+burger.setAttribute('aria-expanded', 'false');
+burger.setAttribute('aria-label', 'Open menu');
+setInert(false);
+closeAll();
+if (returnFocus) { try { burger.focus({ preventScroll: true }); } catch (e) { burger.focus(); } }
+}
+if (burger) burger.addEventListener('click', function () { sheetOpen ? closeSheet(true) : openSheet(); });
+function focusables() {
+var sel = 'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])';
+return Array.prototype.slice.call(bar.querySelectorAll(sel)).filter(function (el) {
+if (el.closest('[inert]')) return false;
+var cs = window.getComputedStyle(el);
+return cs.visibility !== 'hidden' && cs.display !== 'none' && (el.offsetWidth || el.offsetHeight || el.getClientRects().length);
+});
+}
+function trapTab(e) {
+var f = focusables(); if (!f.length) return;
+var first = f[0], last = f[f.length - 1], a = doc.activeElement;
+if (e.shiftKey && (a === first || !bar.contains(a))) { e.preventDefault(); last.focus(); }
+else if (!e.shiftKey && (a === last || !bar.contains(a))) { e.preventDefault(); first.focus(); }
+}
+function onBreakpoint() {
+if (isDesk()) {
+if (sheetOpen) closeSheet(false);
+html.style.paddingRight = '';
+}
+closeAll();
+syncMegaClass();
+}
+if (mqDesk.addEventListener) mqDesk.addEventListener('change', onBreakpoint);
+else if (mqDesk.addListener) mqDesk.addListener(onBreakpoint);
+var lastY = window.pageYOffset || 0, hidden = false, compact = false, ticking = false, acc = 0;
+function show() { if (hidden) { hidden = false; bar.classList.remove('is-hidden'); } acc = 0; }
+function hide() { if (!hidden) { hidden = true; bar.classList.add('is-hidden'); } acc = 0; }
+function update() {
+ticking = false;
+var y = window.pageYOffset || 0, dy = y - lastY;
+lastY = y;
+var c = y > 24;
+if (c !== compact) { compact = c; bar.classList.toggle('is-compact', c); }
+if (y < 0 || (y === 0 && dy === 0)) { show(); return; }
+var focusInside = false;
+try { focusInside = !!bar.querySelector(':focus-visible'); } catch (err) {}
+if (sheetOpen || openItem() || reduced() || focusInside) { show(); return; }
+if (y <= 140) { show(); return; }
+if ((dy > 0 && acc < 0) || (dy < 0 && acc > 0)) acc = 0;
+acc += dy;
+if (acc > 12) hide();
+else if (acc < -8) show();
+}
+function onScroll() { if (!ticking) { ticking = true; window.requestAnimationFrame(update); } }
+window.addEventListener('scroll', onScroll, { passive: true });
+bar.addEventListener('focusin', function () { var v = false; try { v = !!bar.querySelector(':focus-visible'); } catch (err) {} if (v) show(); });
+update();
+window.addEventListener('hashchange', function () { if ((window.pageYOffset || 0) < 20) show(); });
+})();
+(function () {
+var root = document.getElementById('ap-hero');
+if (!root || !window.SP) return;
+var cv = document.getElementById('aph-cv'), tip = document.getElementById('aph-tip');
+var keys = [].slice.call(root.querySelectorAll('.aph-key'));
+if (!cv || !cv.getContext) return;
+var ctx = cv.getContext('2d');
+var TXT = [
+['Process', 'Discovery & Ideation, Planning, Design, Development, Testing & Launch, Support & Enhancements.'],
+['People', 'Simpalm business analysts, project managers, developers and designers, in collaborative sessions with the client.'],
+['Price', 'Fixed Cost, Time And Materials or Dedicated Teams: stellar products at a fair price.'],
+['Product', 'Fully-formed project designs, accurate time and cost estimates, and sensible sprint plans.']
+];
+var CH = [[3, 3.1, 2.3, .55], [3.1, 8.9, 2.3, .55], [8.9, 3, 2.3, .55], [8.6, 8.6, 3.5, .8]];
+var BUS = [
+{ k: 0, pts: [[4.2, 3.1], [6.2, 3.1], [6.2, 6.4], [7.6, 6.4], [7.6, 6.9]] },
+{ k: 1, pts: [[4.3, 8.9], [6.9, 8.9]] },
+{ k: 2, pts: [[8.9, 4.2], [8.9, 6.9]] }
+];
+var sel = 3, hover = -1, W = 0, H = 0, dpr = 1, S = 20, OX = 0, OY = 0, lift = [0, 0, 0, .25], t0 = 0;
+var C30 = Math.cos(Math.PI / 6), S30 = .5;
+function P(x, y, z) { return [OX + (x - y) * C30 * S, OY + (x + y) * S30 * S - (z || 0) * S]; }
+function size() {
+var r = cv.getBoundingClientRect(); dpr = Math.min(2, window.devicePixelRatio || 1);
+W = r.width; H = r.height; if (!W || !H) return;
+cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr);
+S = Math.min(W / 21.4, H / 13.6); OX = W / 2; OY = H * .5 - 6 * S + .9 * S;
+}
+function poly(pts, fill, stroke, lw) {
+ctx.beginPath(); pts.forEach(function (p, i) { i ? ctx.lineTo(p[0], p[1]) : ctx.moveTo(p[0], p[1]); }); ctx.closePath();
+if (fill) { ctx.fillStyle = fill; ctx.fill(); }
+if (stroke) { ctx.strokeStyle = stroke; ctx.lineWidth = lw || 1; ctx.stroke(); }
+}
+function slab() {
+var a = P(0, 0, 0), b = P(12, 0, 0), c = P(12, 12, 0), d = P(0, 12, 0), T = .55;
+var b2 = P(12, 0, -T), c2 = P(12, 12, -T), d2 = P(0, 12, -T);
+poly([b, c, c2, b2], '#0B2C52'); poly([d, c, c2, d2], '#081F3D');
+var g = ctx.createLinearGradient(a[0], a[1], c[0], c[1]); g.addColorStop(0, '#123E6E'); g.addColorStop(1, '#0C2E57');
+poly([a, b, c, d], g, 'rgba(212,168,63,.55)', 1.2);
+ctx.strokeStyle = 'rgba(212,168,63,.85)'; ctx.lineWidth = 1.4; ctx.beginPath(); ctx.moveTo(b2[0], b2[1]); ctx.lineTo(c2[0], c2[1]); ctx.lineTo(d2[0], d2[1]); ctx.stroke();
+ctx.fillStyle = 'rgba(243,217,139,.22)';
+for (var i = 1; i < 12; i++) for (var j = 1; j < 12; j++) { var q = P(i, j, 0); ctx.fillRect(q[0] - .8, q[1] - .8, 1.6, 1.6); }
+}
+function busLines(b) {
+var out = [-.28, 0, .28].map(function (o) {
+return b.pts.map(function (p, i) {
+var q = b.pts[Math.min(i + 1, b.pts.length - 1)], r = b.pts[Math.max(i - 1, 0)];
+var dx = (q[0] - r[0]), dy = (q[1] - r[1]); var L = Math.hypot(dx, dy) || 1;
+return [p[0] - dy / L * o, p[1] + dx / L * o];
+});
+});
+return out;
+}
+var LINES = BUS.map(function (b) { return { k: b.k, ls: busLines(b) }; });
+function lenOf(pts) { var L = 0; for (var i = 1; i < pts.length; i++) L += Math.hypot(pts[i][0] - pts[i - 1][0], pts[i][1] - pts[i - 1][1]); return L; }
+function at(pts, f) {
+var L = lenOf(pts) * f;
+for (var i = 1; i < pts.length; i++) {
+var s = Math.hypot(pts[i][0] - pts[i - 1][0], pts[i][1] - pts[i - 1][1]);
+if (L <= s) { var k = L / s; return [pts[i - 1][0] + (pts[i][0] - pts[i - 1][0]) * k, pts[i - 1][1] + (pts[i][1] - pts[i - 1][1]) * k]; }
+L -= s;
+}
+return pts[pts.length - 1];
+}
+function traces(grow, t) {
+LINES.forEach(function (b) {
+var on = sel === b.k || sel === 3 || hover === b.k;
+b.ls.forEach(function (pts, li) {
+var n = Math.max(2, Math.ceil(grow * 40)), seg = [];
+for (var i = 0; i <= n; i++) seg.push(P.apply(null, at(pts, grow * i / n).concat(0)));
+ctx.beginPath(); seg.forEach(function (p, i) { i ? ctx.lineTo(p[0], p[1]) : ctx.moveTo(p[0], p[1]); });
+ctx.strokeStyle = on ? 'rgba(243,217,139,.95)' : 'rgba(212,168,63,.45)'; ctx.lineWidth = on ? 1.8 : 1.3; ctx.stroke();
+var e = seg[0]; ctx.beginPath(); ctx.arc(e[0], e[1], 2.4, 0, 6.3); ctx.fillStyle = '#D4A83F'; ctx.fill();
+if (grow >= 1) { // pulses
+for (var p = 0; p < 2; p++) {
+var f = ((t / 2600) + li * .21 + p * .5 + b.k * .13) % 1, c = P.apply(null, at(pts, f).concat(0));
+var g = ctx.createRadialGradient(c[0], c[1], 0, c[0], c[1], on ? 9 : 6);
+g.addColorStop(0, on ? 'rgba(255,240,200,.95)' : 'rgba(243,217,139,.6)'); g.addColorStop(1, 'rgba(243,217,139,0)');
+ctx.fillStyle = g; ctx.beginPath(); ctx.arc(c[0], c[1], on ? 9 : 6, 0, 6.3); ctx.fill();
+}
+}
+});
+});
+}
+function chip(i, t) {
+var c = CH[i], h = c[2] / 2, x0 = c[0] - h, y0 = c[1] - h, x1 = c[0] + h, y1 = c[1] + h;
+var z0 = .08 + lift[i] + (SP.reduced ? 0 : Math.sin(t / 900 + i) * .03), z1 = z0 + c[3], prod = i === 3, hot = sel === i || hover === i;
+poly([P(x0 + .2, y0 + .3, 0), P(x1 + .3, y0 + .3, 0), P(x1 + .3, y1 + .3, 0), P(x0 + .2, y1 + .3, 0)], 'rgba(0,0,0,.28)');
+ctx.strokeStyle = 'rgba(243,217,139,.75)'; ctx.lineWidth = 1.2;
+for (var k = 1; k < 6; k++) {
+var u = x0 + (x1 - x0) * k / 6, v = y0 + (y1 - y0) * k / 6, a, b;
+a = P(u, y1, z0 + .1); b = P(u, y1 + .35, 0); ctx.beginPath(); ctx.moveTo(a[0], a[1]); ctx.lineTo(b[0], b[1]); ctx.stroke();
+a = P(x1, v, z0 + .1); b = P(x1 + .35, v, 0); ctx.beginPath(); ctx.moveTo(a[0], a[1]); ctx.lineTo(b[0], b[1]); ctx.stroke();
+}
+poly([P(x1, y0, z0), P(x1, y1, z0), P(x1, y1, z1), P(x1, y0, z1)], prod ? '#8E6A22' : '#0A2747');
+poly([P(x0, y1, z0), P(x1, y1, z0), P(x1, y1, z1), P(x0, y1, z1)], prod ? '#B8892B' : '#0E345B');
+var tp = [P(x0, y0, z1), P(x1, y0, z1), P(x1, y1, z1), P(x0, y1, z1)];
+var g = ctx.createLinearGradient(tp[0][0], tp[0][1], tp[2][0], tp[2][1]);
+if (prod) { g.addColorStop(0, '#F3D98B'); g.addColorStop(.55, '#D4A83F'); g.addColorStop(1, '#B8892B'); }
+else { g.addColorStop(0, hot ? '#1F5A93' : '#164475'); g.addColorStop(1, '#0D3360'); }
+poly(tp, g, hot ? '#F3D98B' : 'rgba(212,168,63,.7)', hot ? 2 : 1.2);
+var m = .32;
+poly([P(x0 + h * m * 2, y0 + h * m * 2, z1), P(x1 - h * m * 2, y0 + h * m * 2, z1), P(x1 - h * m * 2, y1 - h * m * 2, z1), P(x0 + h * m * 2, y1 - h * m * 2, z1)],
+prod ? 'rgba(6,26,51,.82)' : 'rgba(212,168,63,.16)', prod ? null : 'rgba(243,217,139,.55)', 1);
+if (prod) { // glowing core
+var cc = P(c[0], c[1], z1), gl = ctx.createRadialGradient(cc[0], cc[1], 0, cc[0], cc[1], S * 1.1);
+gl.addColorStop(0, 'rgba(255,236,180,' + (.55 + (SP.reduced ? 0 : Math.sin(t / 700) * .15)) + ')'); gl.addColorStop(1, 'rgba(255,236,180,0)');
+ctx.fillStyle = gl; ctx.beginPath(); ctx.arc(cc[0], cc[1], S * 1.1, 0, 6.3); ctx.fill();
+}
+var lp = P(c[0], c[1], z1 + (prod ? .95 : .75));
+ctx.font = '600 ' + Math.round(Math.max(12, S * (prod ? .62 : .5))) + 'px Rubik, system-ui, sans-serif';
+ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+var tw = ctx.measureText(TXT[i][0]).width + 22, th = Math.max(24, S * (prod ? 1.05 : .9));
+ctx.beginPath(); if (ctx.roundRect) ctx.roundRect(lp[0] - tw / 2, lp[1] - th / 2, tw, th, th / 2); else ctx.rect(lp[0] - tw / 2, lp[1] - th / 2, tw, th);
+ctx.fillStyle = hot || prod ? 'rgba(212,168,63,.95)' : 'rgba(6,26,51,.82)'; ctx.fill();
+ctx.strokeStyle = 'rgba(243,217,139,.7)'; ctx.lineWidth = 1; ctx.stroke();
+ctx.fillStyle = hot || prod ? '#061A33' : '#F3D98B'; ctx.fillText(TXT[i][0], lp[0], lp[1] + 1);
+CH[i].hit = [P(c[0], c[1], z1 / 2), Math.max(h * S * 1.15, 28)];
+}
+function draw(t, dt, isStatic) {
+if (!W) size(); if (!W) return;
+if (!t0) t0 = t;
+var grow = isStatic ? 1 : Math.min(1, (t - t0) / 1600);
+grow = 1 - Math.pow(1 - grow, 3);
+for (var i = 0; i < 4; i++) { var target = (sel === i ? .45 : 0) + (hover === i ? .12 : 0) + (i === 3 ? .2 : 0); lift[i] += (target - lift[i]) * (isStatic ? 1 : Math.min(1, dt / 120)); }
+ctx.setTransform(dpr, 0, 0, dpr, 0, 0); ctx.clearRect(0, 0, W, H);
+slab(); traces(grow, t);
+[0, 2, 1, 3].forEach(function (k) { chip(k, t); });
+}
+function choose(k, from) {
+sel = k; keys.forEach(function (b, i) { b.setAttribute('aria-pressed', i === k ? 'true' : 'false'); });
+tip.querySelector('.aph-tip-k').textContent = TXT[k][0]; tip.querySelector('.aph-tip-v').textContent = TXT[k][1];
+tip.classList.remove('is-swap'); void tip.offsetWidth; tip.classList.add('is-swap');
+if (SP.reduced) loop && loop.start && draw(performance.now(), 0, true);
+}
+keys.forEach(function (b, i) { b.addEventListener('click', function () { choose(i); }); });
+function pick(e) {
+var r = cv.getBoundingClientRect(), x = e.clientX - r.left, y = e.clientY - r.top, best = -1, bd = 1e9;
+CH.forEach(function (c, i) { if (!c.hit) return; var d = Math.hypot(x - c.hit[0][0], y - c.hit[0][1]); if (d < c.hit[1] && d < bd) { bd = d; best = i; } });
+return best;
+}
+cv.style.pointerEvents = 'auto';
+SP.on(cv, 'pointermove', SP.rafThrottle(function (e) { if (e.pointerType !== 'mouse') return; hover = pick(e); cv.style.cursor = hover >= 0 ? 'pointer' : ''; }));
+SP.on(cv, 'pointerleave', function () { hover = -1; });
+cv.addEventListener('click', function (e) { var k = pick(e); if (k >= 0) choose(k); });
+var loop = SP.loop(draw, { el: cv });
+var ro = window.ResizeObserver ? new ResizeObserver(function () { size(); draw(performance.now(), 16, SP.reduced); }) : null;
+if (ro) ro.observe(cv); else SP.on(window, 'resize', function () { size(); });
+if (SP.onMotionChange) SP.onMotionChange(function () { draw(performance.now(), 0, SP.reduced); });
+if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { draw(performance.now(), 0, SP.reduced); });
+})();
+(function () {
+var art = document.querySelector('.apw-art');
+if (!art || !window.SP) return;
+var btns = [].slice.call(art.querySelectorAll('.apw-btn')), touched = false, timers = [];
+function set(m) {
+art.setAttribute('data-mode', m);
+btns.forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-mode') === m ? 'true' : 'false'); });
+}
+btns.forEach(function (b) {
+b.addEventListener('click', function () { touched = true; timers.forEach(clearTimeout); set(b.getAttribute('data-mode')); });
+});
+SP.onVisible(art, { once: true, threshold: .45, enter: function () {
+if (SP.reduced || touched) return;
+set('waterfall');
+timers.push(setTimeout(function () { if (!touched) set('agile'); }, 2100));
+timers.push(setTimeout(function () { if (!touched) set('hybrid'); }, 4300));
+} });
+})();
+(function () {
+var root = document.getElementById('steps');
+if (!root || !window.SP) return;
+var tabs = [].slice.call(root.querySelectorAll('.aps-tab')), panels = [].slice.call(root.querySelectorAll('.aps-panel'));
+var line = root.querySelector('.aps-rail-line i'), cnt = root.querySelector('.aps-count b');
+var prev = root.querySelector('.aps-prev'), next = root.querySelector('.aps-next'), rail = root.querySelector('.aps-rail');
+var cur = 0, mq = matchMedia('(max-width: 760px)');
+function show(i, focus) {
+cur = (i + tabs.length) % tabs.length;
+tabs.forEach(function (t, k) { var on = k === cur; t.setAttribute('aria-selected', on ? 'true' : 'false'); t.tabIndex = on ? 0 : -1; });
+panels.forEach(function (p, k) { p.classList.toggle('is-active', k === cur); });
+if (line) line.style.setProperty('--p', ((cur + 1) / tabs.length).toFixed(4));
+if (cnt) cnt.textContent = ('0' + (cur + 1)).slice(-2);
+prev.disabled = cur === 0; next.textContent = cur === tabs.length - 1 ? 'Back to step 1' : 'Next step';
+if (focus) tabs[cur].focus();
+if (mq.matches && rail) { // keep the active chip in view on phones without moving the page
+var t = tabs[cur], r = rail.getBoundingClientRect(), b = t.getBoundingClientRect();
+if (b.left < r.left || b.right > r.right) rail.scrollBy({ left: b.left - r.left - 16, behavior: SP.reduced ? 'auto' : 'smooth' });
+}
+}
+tabs.forEach(function (t, k) {
+t.addEventListener('click', function () { show(k); });
+t.addEventListener('keydown', function (e) {
+var d = { ArrowDown: 1, ArrowRight: 1, ArrowUp: -1, ArrowLeft: -1 }[e.key];
+if (d) { e.preventDefault(); show(k + d, true); }
+else if (e.key === 'Home') { e.preventDefault(); show(0, true); }
+else if (e.key === 'End') { e.preventDefault(); show(tabs.length - 1, true); }
+});
+});
+prev.addEventListener('click', function () { show(cur - 1); });
+next.addEventListener('click', function () {
+show(cur + 1);
+if (mq.matches) { var top = root.querySelector('.aps-ui').getBoundingClientRect().top; if (top < 0) SP.scrollTo(root.querySelector('.aps-ui')); }
+});
+show(0);
+})();
+(function () {
+var root = document.getElementById('models');
+if (!root) return;
+var opts = [].slice.call(root.querySelectorAll('.apm-opt')), list = root.querySelector('.apm-cards');
+var cards = [].slice.call(root.querySelectorAll('.apm-card'));
+opts.forEach(function (o) {
+o.addEventListener('click', function () {
+var on = o.getAttribute('aria-pressed') !== 'true', k = o.getAttribute('data-pick');
+opts.forEach(function (x) { x.setAttribute('aria-pressed', x === o && on ? 'true' : 'false'); });
+list.classList.toggle('has-pick', on);
+cards.forEach(function (c) { c.classList.toggle('is-pick', on && c.getAttribute('data-model') === k); });
+});
+});
+})();
+(function () {
+'use strict';
+var root = document.getElementById('contact');
+if (!root) return;
+var form = document.getElementById('contact-form');
+var done = document.getElementById('contact-done');
+var live = document.getElementById('contact-live');
+var nameOut = document.getElementById('contact-done-name');
+var reset = document.getElementById('contact-reset');
+if (window.SP) {
+var art = root.querySelector('.contact-art');
+if (art) SP.onVisible(art, {
+threshold: 0.1,
+enter: function () { if (!SP.reduced) root.classList.add('contact-live'); },
+leave: function () { root.classList.remove('contact-live'); }
+});
+}
+if (!form) return;
+form.setAttribute('novalidate', '');
+var fields = {
+name: form.elements.name,
+email: form.elements.email,
+phone: form.elements.phone,
+message: form.elements.message
+};
+var rules = {
+name: function (v) {
+v = v.trim();
+if (!v) return 'Please enter your name.';
+if (v.length < 2) return 'Your name needs at least 2 characters.';
+return '';
+},
+email: function (v) {
+v = v.trim();
+if (!v) return 'Please enter your email address.';
+if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v)) return 'Enter a valid email address, like name@company.com.';
+return '';
+},
+phone: function (v) {
+v = v.trim();
+if (!v) return '';
+if (!/^[+()\d][\d\s().+\-]*$/.test(v) || v.replace(/\D/g, '').length < 7 || v.replace(/\D/g, '').length > 15) return 'Enter a valid phone number, or leave it empty.';
+return '';
+},
+message: function (v) {
+v = v.trim();
+if (!v) return 'Please tell us a little about your project.';
+if (v.length < 10) return 'A few more words please, at least 10 characters.';
+return '';
+}
+};
+function errEl(key) { return document.getElementById('contact-' + key + '-err'); }
+function check(key, show) {
+var el = fields[key];
+if (!el) return true;
+var msg = rules[key](el.value);
+if (show) {
+var out = errEl(key);
+if (msg) { el.setAttribute('aria-invalid', 'true'); } else { el.removeAttribute('aria-invalid'); }
+if (out && out.textContent !== msg) out.textContent = msg;
+}
+return !msg;
+}
+Object.keys(fields).forEach(function (key) {
+var el = fields[key];
+if (!el) return;
+var touched = false;
+el.addEventListener('blur', function () { touched = true; check(key, true); });
+el.addEventListener('input', function () { if (touched || el.getAttribute('aria-invalid') === 'true') check(key, true); });
+});
+form.addEventListener('submit', function (e) {
+e.preventDefault(); /* demo: never navigates, never sends */
+var first = null;
+Object.keys(fields).forEach(function (key) {
+if (!check(key, true) && !first) first = fields[key];
+});
+if (first) { first.focus(); return; }
+var who = fields.name.value.trim().split(/\s+/)[0];
+if (nameOut) nameOut.textContent = who ? ', ' + who : '';
+form.hidden = true;
+done.hidden = false;
+if (live) live.textContent = 'Thank you' + (who ? ', ' + who : '') + '. This is a demo form, so nothing was sent.';
+done.focus({ preventScroll: true });
+var card = root.querySelector('.contact-card');
+if (card && card.getBoundingClientRect().top < 0 && card.scrollIntoView) card.scrollIntoView({ block: 'center', behavior: (window.SP && SP.reduced) ? 'auto' : 'smooth' });
+});
+if (reset) reset.addEventListener('click', function () {
+form.reset();
+Object.keys(fields).forEach(function (key) {
+var el = fields[key]; if (!el) return;
+el.removeAttribute('aria-invalid');
+var out = errEl(key); if (out) out.textContent = '';
+});
+done.hidden = true;
+form.hidden = false;
+if (live) live.textContent = '';
+if (fields.name) fields.name.focus();
+});
+})();
+(function () {
+'use strict';
+var foot = document.getElementById('foot');
+if (!foot) return;
+var mq = window.matchMedia ? window.matchMedia('(max-width: 699.98px)') : { matches: false };
+var cols = Array.prototype.slice.call(foot.querySelectorAll('.foot-col'));
+function sync() {
+var phone = !!mq.matches;
+cols.forEach(function (d) {
+var s = d.querySelector('.foot-col__sum');
+if (phone) {
+if (d.getAttribute('data-sync') !== 'phone') { d.removeAttribute('open'); d.setAttribute('data-sync', 'phone'); }
+if (s) s.removeAttribute('tabindex');
+} else {
+d.setAttribute('open', ''); d.setAttribute('data-sync', 'wide');
+if (s) s.setAttribute('tabindex', '-1');       // headings are static text on wider screens
+}
+});
+}
+cols.forEach(function (d) {
+var s = d.querySelector('.foot-col__sum');
+if (!s) return;
+s.addEventListener('click', function (e) { if (!mq.matches) e.preventDefault(); });
+s.addEventListener('keydown', function (e) { if (!mq.matches && (e.key === 'Enter' || e.key === ' ')) e.preventDefault(); });
+});
+sync();
+if (mq.addEventListener) mq.addEventListener('change', sync); else if (mq.addListener) mq.addListener(sync);
+if (window.SP && SP.onVisible) {
+SP.onVisible(foot, { threshold: 0, rootMargin: '80px', enter: function () { foot.classList.add('is-vis'); }, leave: function () { foot.classList.remove('is-vis'); } });
+} else {
+foot.classList.add('is-vis');
+}
+var up = foot.querySelector('.foot-top-btn');
+if (up) up.addEventListener('click', function (e) {
+e.preventDefault();
+var reduced = window.SP ? SP.reduced : false;
+try { window.scrollTo({ top: 0, behavior: reduced ? 'auto' : 'smooth' }); } catch (err) { window.scrollTo(0, 0); }
+var m = document.getElementById('main');
+if (m) { try { m.focus({ preventScroll: true }); } catch (err2) {} }
+});
+})();
+</script>
+</body>
+</html>
